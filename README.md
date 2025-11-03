@@ -23,7 +23,7 @@ git clone https://github.com/ThisIsHwang/EXIT.git
 cd EXIT
 
 # Create a new conda environment
-conda create -n exit python=3.8
+conda create -n exit python=3.11
 conda activate exit
 
 # Install dependencies
