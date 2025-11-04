@@ -19,7 +19,7 @@ wget http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_train_v1.1.json
 ### 1.2 Process Training Data
 ```bash
 # Process the dataset
-python train/preprocess_hotpotqa.py \
+python train/datasampling.py \
     --dataset_path data/hotpotqa/hotpot_train_v1.1.json \
     --save_dir data/processed \
     --test_size 1000 \
