@@ -101,7 +101,7 @@ def parse_args() -> TrainingConfig:
     parser.add_argument("--lora_dropout", type=float, default=0.05)
     
     # Training arguments
-    parser.add_argument("--per_device_train_batch_size", type=int, default=8)
+    parser.add_argument("--per_device_train_batch_size", type=int, default=2)
     parser.add_argument("--gradient_accumulation_steps", type=int, default=8)
     parser.add_argument("--learning_rate", type=float, default=1e-5)
     parser.add_argument("--max_steps", type=int, default=-1)
@@ -173,7 +173,7 @@ def setup_model(config: TrainingConfig) -> tuple:
     # Load base model
     model = AutoModelForCausalLM.from_pretrained(
         config.model_id,
-        quantization_config=bnb_config,
+        # quantization_config=bnb_config,
         device_map="auto",
         cache_dir=config.cache_dir,
         trust_remote_code=True
@@ -237,12 +237,13 @@ def train(config: TrainingConfig) -> None:
             optim="paged_adamw_8bit",
             save_strategy="steps",
             eval_strategy="steps",
-            evaluation_strategy="steps",
             eval_steps=config.eval_steps,
             save_steps=config.save_steps,
             save_total_limit=config.save_total_limit,
             load_best_model_at_end=True,
             metric_for_best_model="eval_loss",
+            dataset_text_field="prompt",
+            max_seq_length=8192,
             weight_decay=config.weight_decay,
             report_to="wandb" if config.wandb_project else None
         )
@@ -252,8 +253,6 @@ def train(config: TrainingConfig) -> None:
             model=model,
             train_dataset=train_data,
             eval_dataset=test_data,
-            dataset_text_field="prompt",
-            max_seq_length=8192,
             peft_config=lora_config,
             data_collator=DataCollatorForCompletionOnlyLM(
                 tokenizer=tokenizer,

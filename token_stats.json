@@ -1,0 +1,38 @@
+{
+  "official_0.1": {
+    "2wikimultihop": {
+      "avg_original_tokens": 730.3064567430025,
+      "avg_compressed_tokens": 124.65370547073792
+    },
+    "HotpotQA": {
+      "avg_original_tokens": 700.894665766374,
+      "avg_compressed_tokens": 134.2442943956786
+    },
+    "NQ": {
+      "avg_original_tokens": 673.9375356857371,
+      "avg_compressed_tokens": 135.09158387575653
+    },
+    "TQA": {
+      "avg_original_tokens": 683.844515159551,
+      "avg_compressed_tokens": 129.70989127552374
+    }
+  },
+  "official": {
+    "2wikimultihop": {
+      "avg_original_tokens": 730.3064567430025,
+      "avg_compressed_tokens": 27.94553117048346
+    },
+    "HotpotQA": {
+      "avg_original_tokens": 700.894665766374,
+      "avg_compressed_tokens": 41.395138419986495
+    },
+    "NQ": {
+      "avg_original_tokens": 673.9375356857371,
+      "avg_compressed_tokens": 24.041224163526323
+    },
+    "TQA": {
+      "avg_original_tokens": 683.844515159551,
+      "avg_compressed_tokens": 32.19870944930611
+    }
+  }
+}

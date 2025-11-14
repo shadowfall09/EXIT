@@ -1,0 +1,764 @@
+{
+  "results": [
+    {
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "prediction": "No",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.6328539848327637,
+      "compressed_context": "Scott Derrickson Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer. Scott Derrickson\nScott Derrickson Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+      "original_tokens": 757,
+      "compressed_tokens": 56,
+      "token_compression_ratio": 0.07397622192866579,
+      "char_compression_ratio": 0.07273877292852625
+    },
+    {
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "prediction": "U.S. Secretary of the Interior",
+      "ground_truths": [
+        "Chief of Protocol"
+      ],
+      "em": 0.0,
+      "f1": 0.28571428571428575,
+      "latency": 2.9913575649261475,
+      "compressed_context": "Kiss and Tell (1945 film)\n1949 and also starred Temple, but was not written by Herbert. Kiss and Tell (1945 film)\nKiss and Tell (1945 film) Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer. Kiss and Tell (1945 film) Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.",
+      "original_tokens": 666,
+      "compressed_tokens": 98,
+      "token_compression_ratio": 0.14714714714714713,
+      "char_compression_ratio": 0.12516688918558078
+    },
+    {
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "prediction": "The War of the Worlds: The Lost Series",
+      "ground_truths": [
+        "Animorphs"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.923166036605835,
+      "compressed_context": "Animorphs\nAnimorphs Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.",
+      "original_tokens": 669,
+      "compressed_tokens": 72,
+      "token_compression_ratio": 0.10762331838565023,
+      "char_compression_ratio": 0.11202635914332784
+    },
+    {
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "prediction": "No.",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.6733782291412354,
+      "compressed_context": "Esma Sultan Mansion The Esma Sultan Mansion (), a historical yalı () located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped. Esma Sultan Mansion\nEsma Sultan Mansion The Esma Sultan Mansion (), a historical yalı () located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped. Laleli Mosque\nLaleli Mosque The Laleli Mosque () is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+      "original_tokens": 664,
+      "compressed_tokens": 146,
+      "token_compression_ratio": 0.21987951807228914,
+      "char_compression_ratio": 0.2117296222664016
+    },
+    {
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "prediction": "I'm not aware of the information about the director of the romantic comedy \"Big Stone Gap\" being based in a specific New York city.",
+      "ground_truths": [
+        "Greenwich Village, New York City"
+      ],
+      "em": 0.0,
+      "f1": 0.24,
+      "latency": 3.823378562927246,
+      "compressed_context": "",
+      "original_tokens": 721,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+      "prediction": "YG Entertainment",
+      "ground_truths": [
+        "YG Entertainment"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.1991424560546875,
+      "compressed_context": "2014 S/S 2014 S/S is the debut album of South Korean group WINNER. 2014 S/S\n2014 S/S 2014 S/S is the debut album of South Korean group WINNER.",
+      "original_tokens": 709,
+      "compressed_tokens": 46,
+      "token_compression_ratio": 0.06488011283497884,
+      "char_compression_ratio": 0.04694214876033058
+    },
+    {
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "prediction": "Stephen Covey",
+      "ground_truths": [
+        "Eenasul Fateh"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.6265180110931396,
+      "compressed_context": "",
+      "original_tokens": 747,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+      "prediction": "4,800",
+      "ground_truths": [
+        "3,677 seated"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.6797139644622803,
+      "compressed_context": "Androscoggin Bank Colisée\naccommodate up to 4,800 patrons.",
+      "original_tokens": 753,
+      "compressed_tokens": 22,
+      "token_compression_ratio": 0.029216467463479414,
+      "char_compression_ratio": 0.0198252688172043
+    },
+    {
+      "question": "Who is older, Annie Morton or Terry Richardson?",
+      "prediction": "I'm sorry, I do not have information on who Annie Morton and Terry Richardson are.",
+      "ground_truths": [
+        "Terry Richardson"
+      ],
+      "em": 0.0,
+      "f1": 0.23529411764705882,
+      "latency": 3.7867612838745117,
+      "compressed_context": "",
+      "original_tokens": 758,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "Are Local H and For Against both from the United States?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.2866411209106445,
+      "compressed_context": "",
+      "original_tokens": 671,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+      "prediction": "I'm a Jayhawk I'm a Jayhawk.",
+      "ground_truths": [
+        "Kansas Song"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.5437517166137695,
+      "compressed_context": "Wildcat Victory and Wabash Cannonball are both commonly used as fight songs. I'm a Jayhawk I'm a Jayhawk is the fight song of the University of Kansas.",
+      "original_tokens": 680,
+      "compressed_tokens": 37,
+      "token_compression_ratio": 0.054411764705882354,
+      "char_compression_ratio": 0.05053547523427041
+    },
+    {
+      "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+      "prediction": "David Diamond",
+      "ground_truths": [
+        "David Weissman"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 3.1245360374450684,
+      "compressed_context": "Evolution (2001 film)\ninto a screenplay along with David Diamond and David Weissman.",
+      "original_tokens": 724,
+      "compressed_tokens": 19,
+      "token_compression_ratio": 0.026243093922651933,
+      "char_compression_ratio": 0.027193266429265135
+    },
+    {
+      "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "prediction": "1999",
+      "ground_truths": [
+        "1999"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.7881813049316406,
+      "compressed_context": "The video was similar to the one for \"You Could Be Mine\" (released to promote \"\"), where Schwarzenegger interacted with Guns N' Roses. End of Days is a 1999 American supernatural action horror film directed by Peter Hyams and starring Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak, Rod Steiger, CCH Pounder, and Udo Kier. The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne)",
+      "original_tokens": 689,
+      "compressed_tokens": 113,
+      "token_compression_ratio": 0.16400580551523947,
+      "char_compression_ratio": 0.15275486638073243
+    },
+    {
+      "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.6692497730255127,
+      "compressed_context": "Random House Tower\nRandom House Tower The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the American headquarters of book publisher Penguin Random House and a luxury apartment complex. Random House Tower\nhousing 130 apartments, as well as of retail space. Random House Tower The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the American headquarters of book publisher Penguin Random House and a luxury apartment complex. 888 7th Avenue\n888 7th Avenue 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.",
+      "original_tokens": 648,
+      "compressed_tokens": 172,
+      "token_compression_ratio": 0.2654320987654321,
+      "char_compression_ratio": 0.25918570009930486
+    },
+    {
+      "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+      "prediction": "Sir Alex Ferguson.",
+      "ground_truths": [
+        "from 1986 to 2013"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.58335542678833,
+      "compressed_context": "United manager Sir Alex Ferguson had a great deal of confidence in the club's young players.",
+      "original_tokens": 645,
+      "compressed_tokens": 18,
+      "token_compression_ratio": 0.027906976744186046,
+      "char_compression_ratio": 0.03156089193825043
+    },
+    {
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "prediction": "I don't have enough information to answer your question.",
+      "ground_truths": [
+        "9,984"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.6326444149017334,
+      "compressed_context": "",
+      "original_tokens": 735,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "prediction": "North Atlantic Conference",
+      "ground_truths": [
+        "the North Atlantic Conference"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.1578238010406494,
+      "compressed_context": "",
+      "original_tokens": 699,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.6622185707092285,
+      "compressed_context": "Ambroise Thomas\nthe most influential and important of French 19th-century operatic composers.\" solo voice and piano, except where otherwise stated Ambroise Thomas Charles Louis Ambroise Thomas (; 5 August 1811 – 12 February 1896) was a French composer and teacher, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868). Ambroise Thomas\nAmbroise Thomas Charles Louis Ambroise Thomas (; 5 August 1811 – 12 February 1896) was a French composer and teacher, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868).",
+      "original_tokens": 734,
+      "compressed_tokens": 144,
+      "token_compression_ratio": 0.19618528610354224,
+      "char_compression_ratio": 0.16903225806451613
+    },
+    {
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "prediction": "Nixon",
+      "ground_truths": [
+        "1969 until 1974"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.506118059158325,
+      "compressed_context": "From 1969 to 1971, Egeberg was the Assistant Secretary for health and scientific affairs in the Department of Health, Education and Welfare. Roger O. Egeberg\nRoger O. Egeberg Roger Olaf Egeberg, M.D. (13 November 1902 – 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University He was appointed Deputy Assistant Secretary for Health in the U.S. Department of Health, Education and Welfare (now Department of Health and Human Services), and served through four Administrations—Presidents Jimmy Carter, Ronald Reagan, George H. W. Bush, and William J. Clinton—while also serving as Assistant Surgeon General and Director of the U.S. Office of Disease Prevention.",
+      "original_tokens": 691,
+      "compressed_tokens": 253,
+      "token_compression_ratio": 0.3661360347322721,
+      "char_compression_ratio": 0.3745562130177515
+    },
+    {
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "prediction": "Robert Erskine Childers",
+      "ground_truths": [
+        "Robert Erskine Childers DSC"
+      ],
+      "em": 0.0,
+      "f1": 0.8571428571428571,
+      "latency": 2.5261473655700684,
+      "compressed_context": "Erskine Childers (author)\nErskine Childers (author) Robert Erskine Childers DSC (25 June 1870 – 24 November 1922), universally known as Erskine Childers (), was an Irish writer, whose works included the influential novel \"The Riddle of the Sands\", and an Irish nationalist who smuggled guns to Ireland in his sailing yacht \"Asgard\".",
+      "original_tokens": 700,
+      "compressed_tokens": 85,
+      "token_compression_ratio": 0.12142857142857143,
+      "char_compression_ratio": 0.10549729901493486
+    },
+    {
+      "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+      "prediction": "Juan Pablo Montoya",
+      "ground_truths": [
+        "Pedro Rodríguez"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.821246862411499,
+      "compressed_context": "Sergio Pérez, the only other Mexican to finish on the podium, currently races with Racing Point Force India F1 Team. Sergio Pérez\nSergio Pérez Sergio Pérez Mendoza ( ; born 26 January 1990) also known as \"Checo\" Pérez, is a Mexican racing driver, currently driving in Formula One for Racing Point F1.",
+      "original_tokens": 662,
+      "compressed_tokens": 79,
+      "token_compression_ratio": 0.11933534743202417,
+      "char_compression_ratio": 0.10870350306970025
+    },
+    {
+      "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+      "prediction": "Jim Cummings",
+      "ground_truths": [
+        "Sonic"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.4629786014556885,
+      "compressed_context": "",
+      "original_tokens": 718,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+      "prediction": "iSight iMac G5",
+      "ground_truths": [
+        "keyboard function keys"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.692202568054199,
+      "compressed_context": "Apple Remote\nApple Remote The Apple Remote is a remote control device released in or after October 2005 by Apple Inc. for use with a number of its products which use infrared capabilities. The device was originally designed to interact with the Front Row media program on the iSight iMac G5 and is compatible with some later desktop and portable Macintosh computers.",
+      "original_tokens": 592,
+      "compressed_tokens": 73,
+      "token_compression_ratio": 0.12331081081081081,
+      "char_compression_ratio": 0.12265415549597855
+    },
+    {
+      "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+      "prediction": "I'm not aware of the information about Wolf Alice.",
+      "ground_truths": [
+        "Badly Drawn Boy"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.2287180423736572,
+      "compressed_context": "Badly Drawn Boy Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist. Badly Drawn Boy\nBadly Drawn Boy Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+      "original_tokens": 706,
+      "compressed_tokens": 104,
+      "token_compression_ratio": 0.14730878186968838,
+      "char_compression_ratio": 0.1262992125984252
+    },
+    {
+      "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+      "prediction": "World's Best Goalkeeper",
+      "ground_truths": [
+        "World's Best Goalkeeper"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.566789150238037,
+      "compressed_context": "Peter Schmeichel\nDenmark Source: Peter Schmeichel Peter Bolesław Schmeichel, MBE (; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993. Peter Schmeichel\nPeter Schmeichel Peter Bolesław Schmeichel, MBE (; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993. Kasper Schmeichel\nHall Grammar School in Cheadle Hulme, Stockport, Greater Manchester, and he also attended Saint Julian's School in Portugal while his father played for Sporting CP in Lisbon.",
+      "original_tokens": 706,
+      "compressed_tokens": 171,
+      "token_compression_ratio": 0.24220963172804533,
+      "char_compression_ratio": 0.21357349630106143
+    },
+    {
+      "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+      "prediction": "Lee Hazlewood was the writer of These Boots Are Made for Walkin'. \nThere is not enough information to determine who died in 2007.",
+      "ground_truths": [
+        "Barton Lee Hazlewood"
+      ],
+      "em": 0.0,
+      "f1": 0.16,
+      "latency": 4.0974647998809814,
+      "compressed_context": "These Boots Are Made for Walkin'\nThese Boots Are Made for Walkin' \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra. These Boots Are Made for Walkin' \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra.",
+      "original_tokens": 700,
+      "compressed_tokens": 74,
+      "token_compression_ratio": 0.10571428571428572,
+      "char_compression_ratio": 0.10383440787241262
+    },
+    {
+      "question": "The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+      "prediction": "1779",
+      "ground_truths": [
+        "1838"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.217235565185547,
+      "compressed_context": "2011–12 VCU Rams men's basketball team\n2011–12 VCU Rams men's basketball team The 2011–12 VCU Rams men's basketball team represented Virginia Commonwealth University during the 2011–12 NCAA Division I men's basketball season. Led by third-year head coach Shaka Smart, the Rams were coming off a season marked by a run to the Final Four. Led by third-year head coach Shaka Smart, the Rams were coming off a season marked by a run to the Final Four.",
+      "original_tokens": 747,
+      "compressed_tokens": 107,
+      "token_compression_ratio": 0.14323962516733602,
+      "char_compression_ratio": 0.1411430375749921
+    },
+    {
+      "question": "Are both Dictyosperma, and Huernia described as a genus?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.695772171020508,
+      "compressed_context": "Huernia\nHuernia The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810. Huernia\nhave shown the genus to be monophyletic, and most closely related to the genus \"Tavaresia\", and to a widespread branch of stapeliads comprising the genera \"Orbea\", \"Piaranthus\" and \"Stapelia\". Dictyosperma\nDictyosperma Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues). Dictyosperma Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues).",
+      "original_tokens": 786,
+      "compressed_tokens": 205,
+      "token_compression_ratio": 0.2608142493638677,
+      "char_compression_ratio": 0.22669947708397417
+    },
+    {
+      "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+      "prediction": "Henry J. Kaiser",
+      "ground_truths": [
+        "Henry J. Kaiser"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.426476240158081,
+      "compressed_context": "Henry J. Kaiser Henry John Kaiser (May 9, 1882 – August 24, 1967) was an American industrialist who became known as the father of modern American shipbuilding. Henry J. Kaiser\nHenry J. Kaiser Henry John Kaiser (May 9, 1882 – August 24, 1967) was an American industrialist who became known as the father of modern American shipbuilding.",
+      "original_tokens": 636,
+      "compressed_tokens": 87,
+      "token_compression_ratio": 0.13679245283018868,
+      "char_compression_ratio": 0.10645058786145535
+    },
+    {
+      "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+      "prediction": "Tunnels & Trolls",
+      "ground_truths": [
+        "Arena of Khazan"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.6489336490631104,
+      "compressed_context": "Tunnels & Trolls Tunnels & Trolls (abbreviated \"T&T\") is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo. Tunnels & Trolls\nTunnels & Trolls Tunnels & Trolls (abbreviated \"T&T\") is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo.",
+      "original_tokens": 722,
+      "compressed_tokens": 91,
+      "token_compression_ratio": 0.1260387811634349,
+      "char_compression_ratio": 0.11070356785595198
+    },
+    {
+      "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+      "prediction": "I don't have information on the release date of Poison's album \"Shut Up, Make Love\".",
+      "ground_truths": [
+        "2000"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.7090673446655273,
+      "compressed_context": "Poison's second album, \"Open Up and Say...Ahh!\", was released May 21, 1988.",
+      "original_tokens": 710,
+      "compressed_tokens": 25,
+      "token_compression_ratio": 0.035211267605633804,
+      "char_compression_ratio": 0.025527569775357386
+    },
+    {
+      "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+      "prediction": "Japan",
+      "ground_truths": [
+        "Fujioka, Gunma"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.7212648391723633,
+      "compressed_context": "Hayden (musician)\nHayden (musician) Paul Hayden Desser (born February 12, 1971) who records as Hayden, is a Canadian singer-songwriter from Thornhill, Ontario. Hayden (musician) Paul Hayden Desser (born February 12, 1971) who records as Hayden, is a Canadian singer-songwriter from Thornhill, Ontario.",
+      "original_tokens": 675,
+      "compressed_tokens": 79,
+      "token_compression_ratio": 0.11703703703703704,
+      "char_compression_ratio": 0.10087131367292225
+    },
+    {
+      "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+      "prediction": "Charles Nungesser and François Coli.",
+      "ground_truths": [
+        "Charles Eugène"
+      ],
+      "em": 0.0,
+      "f1": 0.28571428571428575,
+      "latency": 2.3545045852661133,
+      "compressed_context": "L'Oiseau Blanc\nfly from New York to Paris, but a number of French aviators planned an attempt to fly in the opposite direction, from Paris to New York. François Coli, age 45, a World War I veteran and recipient of the French Legion of Honor, had been making record-breaking flights across and around the Mediterranean Sea, and had been planning a transatlantic flight since 1923. The aircraft was flown by French World War I aviation heroes Charles Nungesser and François Coli.",
+      "original_tokens": 671,
+      "compressed_tokens": 105,
+      "token_compression_ratio": 0.15648286140089418,
+      "char_compression_ratio": 0.15942513368983957
+    },
+    {
+      "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+      "prediction": "No",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.369194984436035,
+      "compressed_context": "In the Realm of the Hackers In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990. In the Realm of the Hackers\nIn the Realm of the Hackers In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.",
+      "original_tokens": 661,
+      "compressed_tokens": 106,
+      "token_compression_ratio": 0.16036308623298035,
+      "char_compression_ratio": 0.15543871179756819
+    },
+    {
+      "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+      "prediction": "Letters to Cleo",
+      "ground_truths": [
+        "Letters to Cleo"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.33349871635437,
+      "compressed_context": "Letters to Cleo\nLetters to Cleo Letters to Cleo is an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\". The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce. Letters to Cleo Letters to Cleo is an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\". The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce. Letters to Cleo\nLula but did not have fixed members, except for McKenna and Hanley. Letters to Letters to Cleo\nthen recorded 13 new original songs for the Kids' WB cartoon, \"Generation O!\", which aired from 2000 to 2001. Letters to Cleo\nthe band and was replaced by drummer Jason Sutter.",
+      "original_tokens": 713,
+      "compressed_tokens": 237,
+      "token_compression_ratio": 0.332398316970547,
+      "char_compression_ratio": 0.3125
+    },
+    {
+      "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+      "prediction": "1922",
+      "ground_truths": [
+        "October 1922"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "latency": 2.905177116394043,
+      "compressed_context": "Alexander Kerensky\nforces, defeated, and captured. Alexander Kerensky\nAlexander Kerensky Alexander Fyodorovich Kerensky (, ; Russian: Александръ Ѳедоровичъ Керенскій; 4 May 1881 – 11 June 1970) was a Russian lawyer and revolutionist who was a key political figure in the Russian Revolution of 1917.",
+      "original_tokens": 751,
+      "compressed_tokens": 86,
+      "token_compression_ratio": 0.11451398135818908,
+      "char_compression_ratio": 0.0928927680798005
+    },
+    {
+      "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+      "prediction": "2000",
+      "ground_truths": [
+        "2000"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.492983341217041,
+      "compressed_context": "Carlo Rovelli\nCarlo Rovelli Carlo Rovelli (born 3 May 1956) is an Italian theoretical physicist and writer who has worked in Italy, the United States and since 2000, in France.",
+      "original_tokens": 662,
+      "compressed_tokens": 49,
+      "token_compression_ratio": 0.07401812688821752,
+      "char_compression_ratio": 0.05621207282018524
+    },
+    {
+      "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+      "prediction": "World War I",
+      "ground_truths": [
+        "World War II"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "latency": 2.6281254291534424,
+      "compressed_context": "Livesey Hall War Memorial\nLivesey Hall War Memorial The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London. From a population of fewer than five million, 416,809 men enlisted, of which over 60,000 were killed and 156,000 wounded, gassed, or taken prisoner.' Livesey Hall War Memorial The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London.",
+      "original_tokens": 606,
+      "compressed_tokens": 121,
+      "token_compression_ratio": 0.19966996699669967,
+      "char_compression_ratio": 0.18436527153234175
+    },
+    {
+      "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+      "prediction": "No",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.045072317123413,
+      "compressed_context": "Gerald R. Ford International Airport\nGerald R. Ford International Airport Gerald R. Ford International Airport is a commercial airport in Cascade Township approximately southeast of Grand Rapids, Michigan. The airport is the largest commercial airport in the West Michigan region and is the second largest airport in Michigan after Detroit Metropolitan Wayne County Airport. Gerald R. Ford International Airport Gerald R. Ford International Airport is a commercial airport in Cascade Township approximately southeast of Grand Rapids, Michigan.",
+      "original_tokens": 674,
+      "compressed_tokens": 90,
+      "token_compression_ratio": 0.13353115727002968,
+      "char_compression_ratio": 0.17465422965583788
+    },
+    {
+      "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+      "prediction": "New York City",
+      "ground_truths": [
+        "New York City"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.8709723949432373,
+      "compressed_context": "Ralph Hefferline Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana – 16 March 1974) was a psychology professor at Columbia University. Ralph Hefferline\nRalph Hefferline Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana – 16 March 1974) was a psychology professor at Columbia University.",
+      "original_tokens": 707,
+      "compressed_tokens": 81,
+      "token_compression_ratio": 0.11456859971711457,
+      "char_compression_ratio": 0.0988906497622821
+    },
+    {
+      "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+      "prediction": "The Irish Setter.",
+      "ground_truths": [
+        "Scotch Collie"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.1415395736694336,
+      "compressed_context": "A little bigger and heavier than either the Irish or English, he is nevertheless descended from the same genetic mixing pot, which undoubtedly has its origins among those setting spaniels we met earlier.",
+      "original_tokens": 676,
+      "compressed_tokens": 38,
+      "token_compression_ratio": 0.05621301775147929,
+      "char_compression_ratio": 0.06995175740868366
+    },
+    {
+      "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+      "prediction": "Mumbai",
+      "ground_truths": [
+        "Mumbai"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.4020440578460693,
+      "compressed_context": "He was working as a software engineer in Tata Consultancy Services in Kochi. He was working as a software engineer in Tata Consultancy Services in Kochi.",
+      "original_tokens": 706,
+      "compressed_tokens": 32,
+      "token_compression_ratio": 0.0453257790368272,
+      "char_compression_ratio": 0.050813683161740286
+    },
+    {
+      "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+      "prediction": "2002",
+      "ground_truths": [
+        "1962"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.8374216556549072,
+      "compressed_context": "",
+      "original_tokens": 724,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+      "prediction": "Victory",
+      "ground_truths": [
+        "sovereignty"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.0346927642822266,
+      "compressed_context": "With his death and the defeat of his brigade, the battle was lost. Giuseppe Arimondi\nGiuseppe Arimondi Giuseppe Edoardo Arimondi, OSML, OMS, OCI (Savigliano, 26 April 1846 – Adwa, 1 March 1896) was an Italian general, mostly known for his role during the First Italo-Ethiopian War. Giuseppe Arimondi\nwon a series of minor clashes and defeated the Dervishes under Emir Ahmed Alì at the Second Battle of Agordat in December 1893.",
+      "original_tokens": 753,
+      "compressed_tokens": 128,
+      "token_compression_ratio": 0.1699867197875166,
+      "char_compression_ratio": 0.13760876571060265
+    },
+    {
+      "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+      "prediction": "Nelson Rockefeller",
+      "ground_truths": [
+        "Nelson Rockefeller"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.0403032302856445,
+      "compressed_context": "Alfred Balk\nAlfred Balk Alfred Balk (July 24, 1930 – November 25, 2010) was an American reporter, nonfiction author and magazine editor who wrote groundbreaking articles about housing segregation, the Nation of Islam, the environment and Illinois politics. During a career-long emphasis on media improvement, he served on the Twentieth Century Fund's task force that established a National News Council, consulted for several foundations, served as secretary of New York Governor Nelson Rockefeller's Committee on the Employment of Minority Groups in the News Media, and produced a film, \"That",
+      "original_tokens": 632,
+      "compressed_tokens": 117,
+      "token_compression_ratio": 0.185126582278481,
+      "char_compression_ratio": 0.18819422405585529
+    },
+    {
+      "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+      "prediction": "The Firth of Forth",
+      "ground_truths": [
+        "Yellowcraig"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.9540979862213135,
+      "compressed_context": "Dirleton Castle Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland. Dirleton Castle\nDirleton Castle Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland.",
+      "original_tokens": 677,
+      "compressed_tokens": 52,
+      "token_compression_ratio": 0.07680945347119646,
+      "char_compression_ratio": 0.07567746199603437
+    },
+    {
+      "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+      "prediction": "Paul McCartney",
+      "ground_truths": [
+        "Phil Spector"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.813241481781006,
+      "compressed_context": "",
+      "original_tokens": 669,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "What type of forum did a former Soviet statesman initiate?",
+      "prediction": "A Citizen Forum",
+      "ground_truths": [
+        "Organizations could come together to address global issues"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.0531423091888428,
+      "compressed_context": "A Citizen Forum (reminiscent of the one established in 1989 Czechoslovakia) was to be created and serve as a guarantor for the cleansing of Bulgarian politics – the participants in it would set the tone for political discussions, but refrain from taking part in politics.",
+      "original_tokens": 668,
+      "compressed_tokens": 58,
+      "token_compression_ratio": 0.08682634730538923,
+      "char_compression_ratio": 0.08346165691407453
+    },
+    {
+      "question": "Are Ferocactus and Silene both types of plant?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.2317001819610596,
+      "compressed_context": "",
+      "original_tokens": 711,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+      "prediction": "The Bristol Blenheim.",
+      "ground_truths": [
+        "English Electric Canberra"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.7007882595062256,
+      "compressed_context": "",
+      "original_tokens": 696,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    }
+  ],
+  "metrics": {
+    "exact_match": 0.34,
+    "f1": 0.41794397759103646,
+    "latency": 2.9262717580795288,
+    "num_samples": 50,
+    "avg_original_tokens": 695.54,
+    "avg_compressed_tokens": 73.52,
+    "token_compression_ratio": 0.10654637369875804,
+    "char_compression_ratio": 0.09970583494054949
+  }
+}

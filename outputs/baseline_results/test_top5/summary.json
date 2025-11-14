@@ -1,0 +1,12 @@
+{
+  "NQ": {
+    "exact_match": 0.33,
+    "f1": 0.4294626542040335,
+    "latency": 2.9505850744247435,
+    "num_samples": 100,
+    "avg_original_tokens": 676.76,
+    "avg_compressed_tokens": 150.28,
+    "token_compression_ratio": 0.22075930310792063,
+    "char_compression_ratio": 0.21249939112977623
+  }
+}

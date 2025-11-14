@@ -1,0 +1,88 @@
+==========================================
+Job Array ID: 39254
+Job Array Task ID: 4
+Node: taurus
+Start time: Sun Nov  9 06:47:50 PM UTC 2025
+==========================================
+
+Environment Information:
+Python: /home/yichengtao/miniconda3/envs/exit/bin/python
+CUDA_VISIBLE_DEVICES: 6
+HF_HOME: /mnt/data2/yichengtao/huggingface_cache
+
+Sun Nov  9 18:47:50 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.107.02             Driver Version: 550.107.02     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:01:00.0 Off |                  Off |
+| 42%   58C    P8             22W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               Off |   00000000:21:00.0 Off |                  Off |
+| 37%   53C    P8             29W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA RTX A6000               Off |   00000000:41:00.0 Off |                  Off |
+| 30%   31C    P8             31W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA RTX A6000               Off |   00000000:61:00.0 Off |                  Off |
+| 36%   52C    P8             23W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA RTX A6000               Off |   00000000:81:00.0 Off |                  Off |
+| 30%   28C    P8             21W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA RTX A6000               Off |   00000000:A1:00.0 Off |                  Off |
+| 32%   50C    P8             36W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA RTX A6000               Off |   00000000:C1:00.0 Off |                  Off |
+| 40%   56C    P8             27W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA RTX A6000               Off |   00000000:E1:00.0 Off |                  Off |
+| 30%   26C    P8             23W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+==========================================
+Configuration:
+  Model Type: finetuned
+  Compression Model: /mnt/data2/yichengtao/EXIT/outputs/exit_model/final_model
+  Task: 
+  Output Directory: /home/yichengtao/EXIT/outputs/baseline_results/reproduction_0.1
+==========================================
+
+Loading tokenizer for token counting...
+Initializing EXIT RAG pipeline...
+Loading models...
+
+==================================================
+Evaluating task: 
+==================================================
+
+Warning: Data file not found: /mnt/data2/yichengtao/data/retrieval/contriever-msmarco_/dev.json
+
+==================================================
+OVERALL SUMMARY
+==================================================
+
+Summary saved to: /home/yichengtao/EXIT/outputs/baseline_results/reproduction_0.1/summary.json
+
+==========================================
+Task  (finetuned) completed successfully at Sun Nov  9 06:48:12 PM UTC 2025
+==========================================

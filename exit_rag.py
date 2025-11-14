@@ -116,17 +116,23 @@ Is this sentence useful in answering the query? Answer only "Yes" or "No".<end_o
         relevance_scores = []
         selections = []
         
-        for sent in all_sentences:
-            is_relevant, score = self.get_sentence_relevance(
-                query,
-                " ".join(all_sentences),  # Full context
-                sent,
-                threshold
-            )
-            selections.append(is_relevant)
-            relevance_scores.append(score)
-            if is_relevant:
-                selected_sentences.append(sent)
+        # If threshold is 0, select all sentences without model inference
+        if threshold == 0:
+            selected_sentences = all_sentences.copy()
+            selections = [True] * len(all_sentences)
+            relevance_scores = [1.0] * len(all_sentences)
+        else:
+            for sent in all_sentences:
+                is_relevant, score = self.get_sentence_relevance(
+                    query,
+                    " ".join(all_sentences),  # Full context
+                    sent,
+                    threshold
+                )
+                selections.append(is_relevant)
+                relevance_scores.append(score)
+                if is_relevant:
+                    selected_sentences.append(sent)
         
         compressed_text = " ".join(selected_sentences)
         
@@ -169,7 +175,9 @@ Is this sentence useful in answering the query? Answer only "Yes" or "No".<end_o
                 attention_mask=inputs.attention_mask,
                 max_new_tokens=100,
                 pad_token_id=self.reader_tokenizer.eos_token_id,
-                do_sample=False
+                # do_sample=False
+                temperature=0.01,
+                top_p=1.0
             )
             
         answer = self.reader_tokenizer.decode(

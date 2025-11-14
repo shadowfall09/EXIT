@@ -1,0 +1,1537 @@
+{
+  "results": [
+    {
+      "question": "who sings does he love me with reba",
+      "prediction": "Linda Davis",
+      "ground_truths": [
+        "Linda Davis"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.0757641792297363,
+      "compressed_context": "Does He Love You\nDoes He Love You \"Does He Love You\" is a song written by Sandy Knox and Billy Stritch, and recorded as a duet by American country music artists Reba McEntire and Linda Davis. Does He Love You\nsinging the second chorus. The scene then shifts to the next day, where Reba watches from afar as Linda and the man are seen on a speedboat, where he hugs her, implying that Linda is who he truly loves. Reba finally smiles at Does He Love You \"Does He Love \"Does He Love You\" is the first of three duets featuring Reba and Linda Davis.",
+      "original_tokens": 626,
+      "compressed_tokens": 132,
+      "token_compression_ratio": 0.2108626198083067,
+      "char_compression_ratio": 0.20481927710843373
+    },
+    {
+      "question": "how many pages is invisible man by ralph ellison",
+      "prediction": "The exact page count of \"Invisible Man\" by Ralph Ellison can vary depending on the edition. However, the original edition published in 1952 has 581 pages.",
+      "ground_truths": [
+        "581 (second edition)"
+      ],
+      "em": 0.0,
+      "f1": 0.15384615384615383,
+      "latency": 4.522986650466919,
+      "compressed_context": "Ralph Ellison\nbook, \"Invisible Man.\" Ralph Ellison Ralph Waldo Ellison (March 1, 1913 – April 16, 1994) was an American novelist, literary critic, and scholar. Ellison is best known for his novel \"Invisible Man\", which won the National Book Award in 1953. In 1967, Ellison experienced a major house fire at his summer home in Plainfield, Massachusetts, in which he claimed more than 300 pages of his second novel manuscript were lost. Ellison ultimately wrote more than 2,000 pages of this second novel but never finished it. Ralph Ellison\nRalph Ellison Ralph Waldo Ellison (March 1, 1913 – April 16, 1994) was an American novelist, literary critic, and scholar. Ellison is best known for his novel \"Invisible Man\", which won the National Book Award in 1953. Ralph",
+      "original_tokens": 694,
+      "compressed_tokens": 187,
+      "token_compression_ratio": 0.26945244956772335,
+      "char_compression_ratio": 0.25449700199866754
+    },
+    {
+      "question": "where do the great lakes meet the ocean",
+      "prediction": "The Saint Lawrence River.",
+      "ground_truths": [
+        "the Saint Lawrence River"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.692744493484497,
+      "compressed_context": "Great Lakes\nGreat Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada–United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. Great Lakes\nform a single, naturally interconnected body of fresh water, within the Great Lakes Basin. They form a chain connecting the east-central interior of North America to the Atlantic Ocean. Dynamically updated data Great Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada–United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. Lake Ontario\nthe Niagara River from Lake Erie. The last in the Great Lakes chain, Lake Ontario serves as the outlet to the Atlantic Ocean via the Saint Lawrence River. Great Lakes\nof the lakes: Ontario does not border Lake Michigan, and Michigan does not border Lake Ontario.",
+      "original_tokens": 615,
+      "compressed_tokens": 220,
+      "token_compression_ratio": 0.35772357723577236,
+      "char_compression_ratio": 0.38067254325824357
+    },
+    {
+      "question": "when does the new my hero academia movie come out",
+      "prediction": "October 17, 2018",
+      "ground_truths": [
+        "July 5, 2018"
+      ],
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "latency": 2.9282166957855225,
+      "compressed_context": "My Hero Academia\nannounced in the 44th issue of \"Weekly Shōnen Jump\" magazine of 2018. On December 19, 2018, the \"My Hero Academia\" website confirmed a release date of October 2019, along with a key visual. My Hero Academia: Two Heroes\nOctober 17, 2018 in Singapore and Indonesia respectively. \"My Hero Academia: Two Heroes\" will be released on Blu-ray and DVD on February 13, 2019 in Japan by Toho Pictures. My Hero Academia: Two Heroes\n2018.",
+      "original_tokens": 711,
+      "compressed_tokens": 124,
+      "token_compression_ratio": 0.17440225035161744,
+      "char_compression_ratio": 0.14664018536908308
+    },
+    {
+      "question": "what is the smallest prime number that is greater than 30",
+      "prediction": "31",
+      "ground_truths": [
+        "31"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.170966386795044,
+      "compressed_context": "30 (number)\n30 (number) 30 (thirty) is the natural number following 29 and preceding 31. 30 is the smallest sphenic number, and the smallest of the form , where \"r\" is a prime greater than 3. 30 has an aliquot sum of 42; the second sphenic number and all sphenic numbers of this form have an aliquot sum 12 greater than themselves.",
+      "original_tokens": 666,
+      "compressed_tokens": 92,
+      "token_compression_ratio": 0.13813813813813813,
+      "char_compression_ratio": 0.12590338531761125
+    },
+    {
+      "question": "who plays letty in bring it on all or nothing",
+      "prediction": "Solange Knowles",
+      "ground_truths": [
+        "Francia Raisa"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.4785995483398438,
+      "compressed_context": "Bring It On (film)\nCopon (who co-starred in \"Bring It On: In It to Win It\") during \"One Tree Hill\"s second season. Copon also starred in \"Power Rangers Time Force\", Ashley Benson from \"In It to Win It\", became known as Hanna Marin in the Freeform television series \"Pretty Little Liars\" and Cassandra Scerbo from \"In It to Win It\", who later known as Nova Clarke in Syfy's \"Sharknado\" film series. Bring It On (film)\n\"Dollhouse\" and \"Dr. Horrible's Sing-Along Blog\", as well as a screenwriter (\"The Guild\"), entrepreneur and web content creator. Bethany Joy Lenz and Hayden Panettiere, who appeared in \"Bring It On Again\" and \"Bring It On: All or Nothing\", went on to find sizable television audiences due to their roles on the television programs \"One Tree Hill\" and \"Heroes\"/\"Nashville\", respectively. Bring It On: All or Nothing\nBring It On: All or Nothing Bring It On: All or Nothing (previously known as Bring It On Yet Again) is a 2006 cheerleading comedy film directed by Steve Rash and starring Hayden Panettiere and Solange Knowles. It is the third installment in the \"Bring it On\" series of films that revolves around high school cheerleading. Bring It On: All or Nothing\nto win.",
+      "original_tokens": 685,
+      "compressed_tokens": 295,
+      "token_compression_ratio": 0.4306569343065693,
+      "char_compression_ratio": 0.4033242876526459
+    },
+    {
+      "question": "who was the creator of victoria's secret",
+      "prediction": "Roy Raymond",
+      "ground_truths": [
+        "Roy Raymond"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.8143293857574463,
+      "compressed_context": "Victoria's Secret\nVictoria's Secret Victoria's Secret is an American designer, manufacturer, and marketer of women's lingerie, womenswear, and beauty products. Victoria's Secret was founded by Roy Raymond, and his wife Gaye Raymond, in San Francisco, California, on June 12, 1977. Victoria's Secret\nthe show.\" Victoria's Secret Victoria's Secret is an American designer, manufacturer, and marketer of women's lingerie, womenswear, and beauty products. Victoria's Secret was founded by Roy Raymond, and his wife Gaye Raymond, in San Francisco, California, on June 12, 1977. Victoria's Secret\nand became the first trademark awarded a star on the Hollywood Walk of Fame on November 13, 2007, with Klum, Lima, Ambrosio, Kurkova, Goulart, Ebanks, Marisa Miller, and Miranda Kerr at hand. Roy Raymond\nRoy Raymond Roy Larson Raymond (April 15, 1947 – August 26, 1993) was an American businessman who founded the Victoria's Secret lingerie retail store.",
+      "original_tokens": 712,
+      "compressed_tokens": 223,
+      "token_compression_ratio": 0.31320224719101125,
+      "char_compression_ratio": 0.2906797908335897
+    },
+    {
+      "question": "when did wesley leave last of the summer wine",
+      "prediction": "I couldn't find any information about a character named Wesley in the context provided.",
+      "ground_truths": [
+        "2002"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.5376944541931152,
+      "compressed_context": "Gordon Wharmby\nstart recording the 25th series of \"Last of the Summer Wine\". Gordon died of cancer on 18 May 2002, aged 68. The BBC confirmed on 2 June 2010 that \"Last of the Summer Wine\" would no longer be produced and the 31st series would be its last.",
+      "original_tokens": 653,
+      "compressed_tokens": 71,
+      "token_compression_ratio": 0.10872894333843798,
+      "char_compression_ratio": 0.09136690647482014
+    },
+    {
+      "question": "who introduced the system of civil services in india",
+      "prediction": "Charles Cornwallis",
+      "ground_truths": [
+        "Charles Cornwallis"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.779726266860962,
+      "compressed_context": "Civil Services of India\nadminister them. The civil service system in India is rank-based and does not follow the tenets of the position-based civil services. Hence, Charles Cornwallis is known as the 'Father of Civil Service in India'. He introduced Covenanted Civil Services (Higher Civil Services) and Uncovenanted Civil Services (Lower Civil Services). The present civil services of India Vallabhbhai Patel\nthem on 21 April 1947.",
+      "original_tokens": 650,
+      "compressed_tokens": 93,
+      "token_compression_ratio": 0.14307692307692307,
+      "char_compression_ratio": 0.13614875512133628
+    },
+    {
+      "question": "southern soul was considered the sound of what independent record label",
+      "prediction": "Southern Records",
+      "ground_truths": [
+        "Motown"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.6910064220428467,
+      "compressed_context": "Memphis soul\nwere not members of the Hi roster. Memphis soul Memphis soul, also known as the Memphis sound, was the most prominent strain of Southern soul. Southern Records\nclosed its US distribution and label offices in November 2008 and moved all operations to London. Southern Records Southern Records is an independent record label closely associated with Crass Records, Corpus Christi Records and Dischord Records. Memphis soul\nMemphis soul Memphis soul, also known as the Memphis sound, was the most prominent strain of Southern soul. Southern soul\nPioneers of southern soul include: Georgia natives Ray Charles and James Brown; Little Willie John, Bobby \"Blue\" Bland, New Orleans R&B artist Allen Toussaint; and Memphis DJ Rufus Thomas. Southern Records\nSouthern Records Southern Records is an independent record label closely associated with Crass Records, Corpus Christi Records and Dischord Records.",
+      "original_tokens": 670,
+      "compressed_tokens": 182,
+      "token_compression_ratio": 0.2716417910447761,
+      "char_compression_ratio": 0.2958984375
+    },
+    {
+      "question": "who is the bad guy in lord of the rings",
+      "prediction": "Saruman",
+      "ground_truths": [
+        "Sauron"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.2420573234558105,
+      "compressed_context": "Théoden\nthe Rings\", Théoden's death is described in song rather than dramatized conventionally. However, unlike in the books, the Lord of the Mark is actually possessed and prematurely aged by Saruman (Christopher Lee). Gandalf (Ian McKellen) releases him from the spell, instantly restoring him to his true age, after which Théoden banishes Gríma Wormtongue (Brad Dourif) from Edoras. The Lord of the Rings: The Third Age\nOn the outskirts of Rivendell, he is attacked by the Nazgûl, but is rescued by Idrial (Lori Phillips), an elf in the service of Galadriel. As they travel through the forest, they see a murder of crebain and Idrial deduces Saruman (Christopher Lee) has betrayed the elves leaving Middle-earth for the Grey Havens. In the DVD commentary, Wilson notes a review that described Hannett as Serkis' \"strangest role\" and points out that Serkis is best known for his portrayal of Gollum in Peter Jackson's \"The Lord of the Rings\" trilogy. Saruman\nin the book of \"wraithing\", a distinctive 20th-century view of evil that he attributes to Tolkien in which individuals are \"'eaten up inside' by devotion to some abstraction\". Referring to Saruman's demise, Kocher says that he is one example of the consistent theme of nothingness as the fate of evil throughout \"The Lord of the Rings\". Saruman has appeared in film, audio and stage adaptations of \"The Lord of the Rings\". They head towards Rivendell, stopping at Weathertop for the night, where they are attacked by the Nazgûl.",
+      "original_tokens": 736,
+      "compressed_tokens": 361,
+      "token_compression_ratio": 0.4904891304347826,
+      "char_compression_ratio": 0.48661005878510777
+    },
+    {
+      "question": "where is the most distortion on a robinson projection",
+      "prediction": "The poles.",
+      "ground_truths": [
+        "close to the poles"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 3.0095765590667725,
+      "compressed_context": "Arthur H. Robinson\nwas pleasing to the eye of general viewers. Robinson could not find a projection that satisfied the criteria, so Rand McNally commissioned him to design one. Robinson proceeded through an iterative process to create a pseudo-cylindrical projection that intends to strike a compromise between distortions in areas and in distances, in order to attain a more natural visualization. Robinson projection\npurpose world maps in 1988, replacing the Van der Grinten projection. In 1998 NGS abandoned the Robinson projection for that use in favor of the Winkel tripel projection, as the latter \"reduces the distortion of land masses as they near the poles\". Hence, distortion close to the poles is severe, Like the Robinson projection, it is a compromise projection, not having any special attributes other than a pleasing, low distortion appearance. Like the Robinson projection, it is a compromise projection, not having any special attributes other than a pleasing, low distortion appearance.",
+      "original_tokens": 629,
+      "compressed_tokens": 194,
+      "token_compression_ratio": 0.30842607313195547,
+      "char_compression_ratio": 0.31643576826196473
+    },
+    {
+      "question": "when was the public service commission original version of the upsc set up",
+      "prediction": "1926",
+      "ground_truths": [
+        "October 1, 1926"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 2.4546658992767334,
+      "compressed_context": "",
+      "original_tokens": 651,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "what is the name of wonder womans mother",
+      "prediction": "Hippolyta",
+      "ground_truths": [
+        "Queen Hippolyta"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "latency": 2.4247701168060303,
+      "compressed_context": "Children of Ares\nThe shock of the shooting and the black hole caused Donna to go into premature labor. Wonder Woman helped calm Donna and deliver her baby. Ashamed that she previously aided Ares in destroying Wonder Woman after sacrificing her own life to save her, Donna named her newborn daughter after Wonder Woman's mother Hippolyta, or \"Lyta\". In this continuity, the Queen Hippolyta is depicted as having blond hair and is the biological mother of Diana. Wonder Woman\nher mother Queen Hippolyta and was given a life to live as an Amazon, along with superhuman powers as gifts by the Greek gods.",
+      "original_tokens": 626,
+      "compressed_tokens": 127,
+      "token_compression_ratio": 0.20287539936102236,
+      "char_compression_ratio": 0.20366598778004075
+    },
+    {
+      "question": "which apostle had a thorn in his side",
+      "prediction": "Paul",
+      "ground_truths": [
+        "Paul"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.545037269592285,
+      "compressed_context": "Thorn in the flesh\nhis other epistles do not directly address the topic. Throughout church history, there has been a significant amount of speculation about what Paul was referring to, although scholars such as Philip Edgcumbe Hughes, F. F. Bruce and Ralph P. Martin conclude that definite identification of the thorn is impossible with the evidence available. The \"thorn\" is most commonly interpreted as a reference to some form of serious physical infirmity that hindered his work. Thorn in the flesh\nthorn has been seen as a physical impediment that made Paul the object of ridicule, without necessarily making him physically weak. It is synonymous with the phrase \"thorn in the side,\" which is also of biblical origin, The Apostle Paul had experience and an assured spirit yet he had this thorn in the side and the order not to discuss being caught up in the third heaven. Thorn in the flesh\nor head pain. Apostles\nhe had seen and was anointed by Jesus while on the road to Damascus. James, Peter and John in Jerusalem accepted his calling to the apostleship from the Lord to the Gentiles (specifically those not circumcised) as of equal authority as Peter's to the Jews (specifically those circumcised) according to Paul. \"James, Peter and John, those reputed to be pillars ... agreed that we [ Paul and Barnabas] should go to the Gentiles, and they to the Jews.\" Paul, despite his divine calling as an apostle, considered himself perhaps inferior to the other apostles because he had originally persecuted Christ's followers.",
+      "original_tokens": 651,
+      "compressed_tokens": 327,
+      "token_compression_ratio": 0.5023041474654378,
+      "char_compression_ratio": 0.5011456628477905
+    },
+    {
+      "question": "where is each type of cartilage located in the body",
+      "prediction": "Fibrocartilage: intervertebral discs\nElastic cartilage: external ear\nHyaline cartilage: many joint surfaces in the body",
+      "ground_truths": [
+        "rib cage",
+        "intervertebral discs",
+        "many other body components",
+        "bronchial tubes",
+        "ear",
+        "nose"
+      ],
+      "em": 0.0,
+      "f1": 0.25,
+      "latency": 4.082032918930054,
+      "compressed_context": "There are three types of cartilage in the human body: fibrocartilage, hyaline cartilage and elastic cartilage. Each type of cartilage has varying concentrations of components such as proteoglycans, collagen and water which determine its functional properties and location in the body. Fibrocartilage is most often found in the intervertebral discs, elastic cartilage is found in the external ear and hyaline cartilage is found on many joint surfaces in the body. Cartilage is classified in three types, elastic cartilage, hyaline cartilage and fibrocartilage, which differ in the relative amounts of these three main components.",
+      "original_tokens": 735,
+      "compressed_tokens": 134,
+      "token_compression_ratio": 0.18231292517006803,
+      "char_compression_ratio": 0.18740674425544612
+    },
+    {
+      "question": "who wrote the song two out of three ain't bad",
+      "prediction": "Jim Steinman",
+      "ground_truths": [
+        "Meat Loaf"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.5551373958587646,
+      "compressed_context": "Two Out of Three Ain't Bad\nTwo Out of Three Ain't Bad \"Two Out of Three Ain't Bad\" is a power ballad performed by the American musician Meat Loaf. It is a track off his 1977 album \"Bat Out of Hell\", written by Jim Steinman. Two Out of Three Ain't Bad\n1997 debut album \"What My Heart Already Knows\" and reached No. 10 on the \"RPM\" Top Country Tracks charts. Two Out of Three Ain't Bad \"Two Out of Three Ain't Bad\" is a power ballad performed by the American musician Meat Loaf. It is a track off his 1977 album \"Bat Out of Hell\", written by Jim Steinman. Bat Out of Hell\nof The Who's \"Baba O'Riley\" with a Phil Spector style melody on top. The song \"Two Out of Three Ain't Bad\" was written in direct response to actress Mimi Kennedy asking Jim Steinman whether he could write a simple song like Elvis Presley's \"I Want You, I Need You, I Love You\". Two Out of Three Ain't Bad\nstarted singing my own song but it was 'I Want You, I Need You, I Love You.' I remember going home and I tried so hard but the best I could do was: \"I want you, I need you but there ain't no way I'm ever gonna love you, don't be sad, 'cause two out of three ain't bad\". Two Out of Three Ain't Bad\nsong which includes the line, \"\"There ain't no Coupe de Ville hiding at the bottom of a Cracker Jack box\"\", and does some overlapping, splicing and editing to seamlessly merge back into the second part of the lyrical bridge, starting with, \"\"I can't lie, I can't tell you that I'm something I'm not\"\".",
+      "original_tokens": 664,
+      "compressed_tokens": 385,
+      "token_compression_ratio": 0.5798192771084337,
+      "char_compression_ratio": 0.5624284077892325
+    },
+    {
+      "question": "where is human sperm stored in the body",
+      "prediction": "The epididymis.",
+      "ground_truths": [
+        "in the epididymis"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "latency": 2.728638172149658,
+      "compressed_context": "Human Fertilisation and Embryology Act 1990\ndamaging. The sperm is then put into straw shaped vials, and placed in a storage tank of either liquid nitrogen, or liquid nitrogen vapor. Sperm outside the body generally has a life expectancy which is considered to depend on pH, temperature, presence of air and other factors, and is unpredictable but smaller than the life expectancy inside the human body. In a non-harmful environment outside the body, such as in a sterile glass container the number of motile sperm",
+      "original_tokens": 650,
+      "compressed_tokens": 108,
+      "token_compression_ratio": 0.16615384615384615,
+      "char_compression_ratio": 0.16688311688311688
+    },
+    {
+      "question": "when did bat out of hell get released",
+      "prediction": "2006",
+      "ground_truths": [
+        "September 1977"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.6202428340911865,
+      "compressed_context": "Bat Out of Hell II: Back into Hell\nAmerica, where it was released by MCA. The third part of the \"Bat\" trilogy, \"\", was released in 2006. Bat Out of Hell II: Back into Hell\nBat Out of Hell II: Back into Hell Bat Out of Hell II: Back into Hell is the sixth studio album by American rock singer Meat Loaf and was written and produced by Jim Steinman.",
+      "original_tokens": 657,
+      "compressed_tokens": 88,
+      "token_compression_ratio": 0.1339421613394216,
+      "char_compression_ratio": 0.12785556374355195
+    },
+    {
+      "question": "when were manatees put on the endangered list",
+      "prediction": "The 1970s",
+      "ground_truths": [
+        "1966"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.484907388687134,
+      "compressed_context": "West Indian manatee\nspecies were reclassified federally by the US Fish and Wildlife Service on March 30, 2017 from endangered to threatened as the number of sea cows had increased from a few hundred in the 1970s to over 6,000 in the 2010s. On March 30, 2017, FWS issued its final rule to downgrade the status of the West Indian manatee from endangered to threatened under the ESA.",
+      "original_tokens": 670,
+      "compressed_tokens": 93,
+      "token_compression_ratio": 0.13880597014925372,
+      "char_compression_ratio": 0.11949685534591195
+    },
+    {
+      "question": "who has the most receiving yards in one game",
+      "prediction": "Hines Ward",
+      "ground_truths": [
+        "Flipper Anderson"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.489755153656006,
+      "compressed_context": "Hines Ward\nworth of passes in that game to pass Hall of Fame Steelers receiver John Stallworth for the most 100-yard receiving games all-time for the Steelers with his 26th.",
+      "original_tokens": 648,
+      "compressed_tokens": 39,
+      "token_compression_ratio": 0.06018518518518518,
+      "char_compression_ratio": 0.06057422969187675
+    },
+    {
+      "question": "when does the new season of el señor de los cielos start",
+      "prediction": "May 8, 2018",
+      "ground_truths": [
+        "May 8 2018"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.395739793777466,
+      "compressed_context": "El Señor de los Cielos (season 6)\nEl Señor de los Cielos (season 6) The six season of \"El Señor de los Cielos\", an American television series created by Luis Zelkowicz, that premiered on Telemundo on May 8, 2018 and concluded on 24 September 2018. El Señor de los Cielos (season 6)\nrenewed the series for a seventh season during the \"Upfront\" for the 2018–19 television season. < onlyinclude> </onlyinclude> El Señor de los Cielos (season 6) The six season of \"El Señor de los Cielos\", an American television series created by Luis Zelkowicz, that premiered on Telemundo on May 8, 2018 and concluded on 24 September 2018. El Señor de los Cielos (season 5)\nseason. El Señor de los Cielos (season 5)\nEl Señor de los Cielos (season 5)",
+      "original_tokens": 723,
+      "compressed_tokens": 237,
+      "token_compression_ratio": 0.3278008298755187,
+      "char_compression_ratio": 0.25681341719077566
+    },
+    {
+      "question": "who played young king t'chaka in black panther",
+      "prediction": "Atandwa Kani",
+      "ground_truths": [
+        "Atandwa Kani"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.407095432281494,
+      "compressed_context": "T'Chaka\nT'Chaka T'Chaka is a fictional character appearing in American comic books published by Marvel Comics. He was the king of Wakanda and Black Panther before T’Challa, who inherited both titles following his father's death. The character was portrayed by John Kani in the Marvel Cinematic Universe films \"\" (2016) and \"Black Panther\" (2018). Atandwa Kani\n2018, Kani portrayed the younger King T'Chaka, a dual part shared with his father, in the comic book film \"Black Panther\". Black Panther (film)\nwho portrays T'Challa's father King T'Chaka. He T'Chaka\nUpon eating a special heart-shaped herb, T'Chaka possesses superhuman strength, speed, agility, stamina, durability, reflexes, and senses. T'Chaka T'Chaka is a fictional character appearing in American comic books published by Marvel Comics. He was the king of Wakanda and Black Panther before T’Challa, who inherited both titles following his father's death. The character was portrayed by John Kani",
+      "original_tokens": 717,
+      "compressed_tokens": 231,
+      "token_compression_ratio": 0.32217573221757323,
+      "char_compression_ratio": 0.31413612565445026
+    },
+    {
+      "question": "when was the first manmade object sent into space",
+      "prediction": "1957",
+      "ground_truths": [
+        "3 October 1942"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.6955456733703613,
+      "compressed_context": "Ralph Harry\nUS space agency, had programmed the launch in that year of two space probes, Voyagers 1 and 2, which were designed to take and send back to earth images of the outer planets, then continue beyond the solar system after escaping the sun's gravitational pull to become the first man-made objects to leave it. The first artificial object sent into space was the Soviet satellite \"Sputnik 1\", launched in 1957, which successfully orbited Earth until 4 January the following year. Within only two months of the launch of the Semyorka, Sputnik 1 became the first man made object in Earth's orbit.",
+      "original_tokens": 660,
+      "compressed_tokens": 135,
+      "token_compression_ratio": 0.20454545454545456,
+      "char_compression_ratio": 0.20420624151967434
+    },
+    {
+      "question": "how many games to get premier league medal",
+      "prediction": "20 seasons",
+      "ground_truths": [
+        "a minimum of five"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.560692310333252,
+      "compressed_context": "Premier League 20 Seasons Awards\ninception and won twelve championship medals, the most by a player.",
+      "original_tokens": 633,
+      "compressed_tokens": 22,
+      "token_compression_ratio": 0.03475513428120063,
+      "char_compression_ratio": 0.03318951211417192
+    },
+    {
+      "question": "when is star vs the forces of evil coming back on 2017",
+      "prediction": "November 6, 2017",
+      "ground_truths": [
+        "November 6, 2017"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.9860944747924805,
+      "compressed_context": "Star vs. the Forces of Evil\nfirst episode premiered on Disney Channel in January 2015. It premiered on July 15, 2017 with a two-hour long television movie entitled Star vs. the Forces of Evil\n\"The Battle for Mewni\" and consisted of the first four episodes. The remaining third-season episodes started airing on November 6, 2017.",
+      "original_tokens": 655,
+      "compressed_tokens": 77,
+      "token_compression_ratio": 0.11755725190839694,
+      "char_compression_ratio": 0.11557434813248767
+    },
+    {
+      "question": "when is the fifth round of the fa cup played",
+      "prediction": "After extra time The draw for the Fifth Round Proper was held on 25 January 2009.",
+      "ground_truths": [
+        "16 February 2018"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.6952974796295166,
+      "compressed_context": "† – After extra time The draw for the Fifth Round Proper was held on 25 January 2009.",
+      "original_tokens": 635,
+      "compressed_tokens": 22,
+      "token_compression_ratio": 0.03464566929133858,
+      "char_compression_ratio": 0.030641672674837778
+    },
+    {
+      "question": "who is the chief legal advisor to the government",
+      "prediction": "The Attorney General of the United States.",
+      "ground_truths": [
+        "Law Officers of the Crown"
+      ],
+      "em": 0.0,
+      "f1": 0.22222222222222224,
+      "latency": 2.2934491634368896,
+      "compressed_context": "",
+      "original_tokens": 607,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "what do they call snowboarders in johnny tsunami",
+      "prediction": "Urchins",
+      "ground_truths": [
+        "Urchins"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.6619906425476074,
+      "compressed_context": "Johnny Tsunami\nsudden job transfer, the family is forced to move to Vermont, while Tsunami stays in Hawaii. In Kapahaala's new town, there are two schools: a private school where the students are skiers known as Skies; and the public school where the students are snowboarders known as Urchins. The Urchins ride the side of the mountain that belongs to the skiers and are confronted by the Skies.",
+      "original_tokens": 646,
+      "compressed_tokens": 93,
+      "token_compression_ratio": 0.14396284829721362,
+      "char_compression_ratio": 0.1345565749235474
+    },
+    {
+      "question": "who is tanyas husband in real housewives of cheshire",
+      "prediction": "Phil Bardsley",
+      "ground_truths": [
+        "Phil Bardsley"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.2117743492126465,
+      "compressed_context": "Tanya Bardsley\nTanya Bardsley Tanya Louise Bardsley (née Robinson; born 29 April 1981) is an English model, born in Wigan, Greater Manchester, and grew up in Richmond, North Yorkshire. She is also the wife of footballer Phil Bardsley. The Real Housewives of Cheshire\nThe Real Housewives of Cheshire The Real Housewives of Cheshire (abbreviated RHOCheshire) is a British reality television series broadcast on ITVBe.",
+      "original_tokens": 785,
+      "compressed_tokens": 106,
+      "token_compression_ratio": 0.13503184713375796,
+      "char_compression_ratio": 0.13233418367346939
+    },
+    {
+      "question": "where are tight junctions found in the human body",
+      "prediction": "Epithelial and endothelial tissues.",
+      "ground_truths": [
+        "vertebrates"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.7288408279418945,
+      "compressed_context": "Found in vertebrate epithelia, tight junctions act as barriers that regulate the movement of water and solutes between epithelial layers. Tight junction\nTight junction Tight junctions, also known as occluding junctions or zonulae occludentes (singular, zonula occludens) are multiprotein junctional complexes whose general function is to prevent leakage of transported solutes and water and seals the paracellular pathway. Tight junctions are present only in vertebrates. Tight junctions are normally present in epithelial and endothelial tissues, where they seal gaps and regulate paracellular transport of solutes and extracellular fluids in these tissues that function as barriers.",
+      "original_tokens": 643,
+      "compressed_tokens": 136,
+      "token_compression_ratio": 0.2115085536547434,
+      "char_compression_ratio": 0.20466786355475763
+    },
+    {
+      "question": "where was the mona lisa kept during ww2",
+      "prediction": "Château d'Amboise, Loc-Dieu Abbey, Château de Chambord, and the Ingres Museum in Montauban.",
+      "ground_truths": [
+        "Château de Chambord",
+        "the Loc-Dieu Abbey",
+        "the Ingres Museum",
+        "Château d'Amboise"
+      ],
+      "em": 0.0,
+      "f1": 0.4,
+      "latency": 3.8037731647491455,
+      "compressed_context": "Albrecht Gaiswinkler\nweeks and months of the war harassing local German forces. The administrators of the Louvre have stated that the Mona Lisa was kept in France during the Second World War, but that it is possible that a 15th- or 16th-century copy of Mona Lisa\nFranco-Prussian War (1870–71) it was moved from the Louvre to the Brest Arsenal. During World War II, \"Mona Lisa\" was again removed from the Louvre and taken safely, first to Château d'Amboise, then to the Loc-Dieu Abbey and Château de Chambord, then finally to the Ingres Museum in Montauban.",
+      "original_tokens": 665,
+      "compressed_tokens": 148,
+      "token_compression_ratio": 0.22255639097744362,
+      "char_compression_ratio": 0.18663981201745553
+    },
+    {
+      "question": "who is the old man in waiting on a woman",
+      "prediction": "Brad Paisley",
+      "ground_truths": [
+        "Andy Griffith"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.8587112426757812,
+      "compressed_context": "The Woman Who Waited\nThe Woman Who Waited The Woman Who Waited () is a 2004 novel by the French writer Andreï Makine. Waitin' on a Woman\ndoes it just 'cause she can do it\"). He tells the younger man that he will often find himself \"waitin' on a woman\" as well. In the end, the old man is seen sitting on a white bench, wearing a Waitin' on a Woman\nGriffith's personality matched the personality of the older man in the song. \"Waitin' on a Woman\" Waitin' on a Woman\nWaitin' on a Woman \"Waitin' on a Woman\" is a song written by Don Sampson and Wynn Varble, and performed three times by American country music artist Brad Paisley.",
+      "original_tokens": 675,
+      "compressed_tokens": 167,
+      "token_compression_ratio": 0.2474074074074074,
+      "char_compression_ratio": 0.22007722007722008
+    },
+    {
+      "question": "who have won the world cup the most times",
+      "prediction": "Brazil",
+      "ground_truths": [
+        "Brazil"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.8663711547851562,
+      "compressed_context": "FIFA World Cup\nin the tournament. Three players share the record for playing in the most World Cups; Mexico's Antonio Carbajal (1950–1966) and Rafael Márquez (2002–2018); and Germany's Lothar Matthäus (1982–1998) all played in five tournaments. Miroslav Klose of Germany FIFA World Cup\nhave won three World Cup winners' medals (1958, 1962, and 1970, although he did not play in the 1962 final due to injury), with 20 other players who have won two winners' medals. FIFA World Cup\nFrance's Didier Deschamps are the only people to date to win the World Cup as both player and head coach.",
+      "original_tokens": 779,
+      "compressed_tokens": 159,
+      "token_compression_ratio": 0.20410783055198972,
+      "char_compression_ratio": 0.1939655172413793
+    },
+    {
+      "question": "list of companies with highest number of employees",
+      "prediction": "I don't have access to real-time data. However, based on the available information, here are some of the top companies with the highest number of employees (excluding LinkedIn and Microsoft):\n\n1. Walmart - approximately 2.3 million employees\n2. Amazon - approximately 1.6 million employees\n3. McDonald's - approximately 210,000 employees\n4. Apple - approximately 154,000 employees\n5. Alphabet (Google's parent company) - approximately 150,000 employees",
+      "ground_truths": [
+        "Walmart",
+        "McDonald's"
+      ],
+      "em": 0.0,
+      "f1": 0.034482758620689655,
+      "latency": 7.165410757064819,
+      "compressed_context": "LinkedIn Top Companies\nheld companies with 500 or more employees, with the exception of LinkedIn and its parent company, Microsoft, which are excluded.",
+      "original_tokens": 701,
+      "compressed_tokens": 29,
+      "token_compression_ratio": 0.04136947218259629,
+      "char_compression_ratio": 0.044333529066353496
+    },
+    {
+      "question": "who sang the original version of true colors",
+      "prediction": "Cyndi Lauper",
+      "ground_truths": [
+        "Cyndi Lauper"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.514941692352295,
+      "compressed_context": "True Colors (Cyndi Lauper song)\nrights in the US and beyond. In 1998, the song was covered by Phil Collins for his compilation album \"...Hits\". R&B singer Kenneth \"Babyface\" Edmonds produced and provided backing vocals. True Colors (Cyndi Lauper song) \"True Colors\" is a song written by American songwriters Billy Steinberg and Tom Kelly. True Colors (Cyndi Lauper song)\nTrue Colors (Cyndi Lauper song) \"True Colors\" is a song written by American songwriters Billy Steinberg and Tom Kelly. Billy Steinberg originally wrote \"True Colors\" about True Colors (Cyndi Lauper album)\nTrue Colors (Cyndi Lauper album) True Colors is the second album by American pop singer Cyndi Lauper, released on September 15, 1986.",
+      "original_tokens": 687,
+      "compressed_tokens": 176,
+      "token_compression_ratio": 0.2561863173216885,
+      "char_compression_ratio": 0.24009481882831019
+    },
+    {
+      "question": "in attack on titan who is the female titan",
+      "prediction": "Annie Leonhart",
+      "ground_truths": [
+        "Ymir Fritz"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.2363386154174805,
+      "compressed_context": "The one-shot crossover featured Spider-Man, the Avengers and the Guardians of the Galaxy facing off against several Titans, including the Colossal Titan, the Armored Titan, and the Female Titan on the streets of New York City.",
+      "original_tokens": 731,
+      "compressed_tokens": 45,
+      "token_compression_ratio": 0.06155950752393981,
+      "char_compression_ratio": 0.07419566644780039
+    },
+    {
+      "question": "what is the horses name in never-ending story",
+      "prediction": "Atreyu",
+      "ground_truths": [
+        "Artax"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.331632614135742,
+      "compressed_context": "",
+      "original_tokens": 640,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "who made the first telephone in the world",
+      "prediction": "Alexander Graham Bell",
+      "ground_truths": [
+        "Alexander Graham Bell"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.5190470218658447,
+      "compressed_context": "Invention of the telephone\nmay have made one in 1864, as an enhancement to an automaton built by him in 1849. Charles Bourseul was a French telegraph engineer who proposed (but did not build) the first design of a \"make-and-break\" telephone in 1854. Invention of the telephone\nthe transmission of telegraphic signals at the University of Göttingen, in Lower Saxony, helping to create the fundamental basis for the technology that was later used in similar telecommunication devices. Telephony in Greater Manchester\nwas in its infancy, just 18 months after Alexander Graham Bell had made the world's first phone call, Charles Moseley, the son of a Manchester rubber manufacturer (then making telegraph equipment), took an interest in Bell's work. Antonio Meucci invented the first device that allowed the electrical transmission of voice over a line in 1849.",
+      "original_tokens": 648,
+      "compressed_tokens": 186,
+      "token_compression_ratio": 0.28703703703703703,
+      "char_compression_ratio": 0.27345245692405873
+    },
+    {
+      "question": "who is charles off of pretty little liars",
+      "prediction": "Alex Drake",
+      "ground_truths": [
+        "Drake",
+        "CeCe"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "latency": 2.3617520332336426,
+      "compressed_context": "Pretty Little Liars (season 6)\nthe Liars realize that he isn't Charles after all. After discovering a photo of Mrs. DiLaurentis with Jason and another boy, Alison and Jason found out that they had an older brother that was, in fact, Charles. Pretty Little Liars (season 6)\nwritten by I. Marlene King and Lijah J. Barasz and was directed by Chad Lowe.",
+      "original_tokens": 643,
+      "compressed_tokens": 88,
+      "token_compression_ratio": 0.1368584758942457,
+      "char_compression_ratio": 0.1201510470305527
+    },
+    {
+      "question": "who got pregnant in gossip girl season 5",
+      "prediction": "Blair",
+      "ground_truths": [
+        "Blair"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.7354576587677,
+      "compressed_context": "Gossip Girl (season 5)\nGossip Girl (season 5) The fifth season of the American teen drama television series \"Gossip Girl\" premiered on The CW on September 26, 2011, and concluded on May 14, 2012, consisting of 24 episodes. It was later announced that Taylor Momsen, who played Jenny Humphrey since the pilot, and Jessica Szohr, who joined the series as Vanessa Abrams in season one, Gossip Girl (season 5)\nwith producers for a recurring role for the fifth season. The rumors cause Andy to question his sexuality, and Pam and Jim to debate whether or not to tell the office that Pam is pregnant. \"Gossip\" confirmed the fact that protagonist Pam was pregnant, which was strongly hinted in the fifth season finale, \"Company Picnic\". \"Gossip\" Gossip Girl (season 5)\nwould not be returning for the fifth season as regulars. And at the end of the episode it's been revealed that Blair is the one pregnant.",
+      "original_tokens": 663,
+      "compressed_tokens": 212,
+      "token_compression_ratio": 0.31975867269984914,
+      "char_compression_ratio": 0.30453929539295393
+    },
+    {
+      "question": "where is the new england patriots stadium located",
+      "prediction": "Foxborough, Massachusetts.",
+      "ground_truths": [
+        "Foxborough, Massachusetts"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.494357109069824,
+      "compressed_context": "Gillette Stadium\nbegan opening in July 2008, and were followed by the openings of the Hall at Patriot Place and the CBS Scene in time for the beginning of the 2008 New England Patriots season. Gillette Stadium Gillette Stadium is a stadium located in Foxborough, Massachusetts, southwest of downtown Boston and northeast of downtown Providence, Rhode Island.",
+      "original_tokens": 645,
+      "compressed_tokens": 73,
+      "token_compression_ratio": 0.11317829457364341,
+      "char_compression_ratio": 0.11722331368696791
+    },
+    {
+      "question": "who played jason in friday the 13th part 1",
+      "prediction": "Ari Lehman",
+      "ground_truths": [
+        "Ari Lehman"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.06112003326416,
+      "compressed_context": "Jason Voorhees\nfrom the water to grab Whitney and their fates are left unknown. Jason Voorhees\non a minor aspect of him. Also interviewed was Adrienne King, actresses Eileen Dietz, Tracie Savage, Caroline Williams; as well as C.J. Graham and Dick Wieand the men who played Jason in \"\" and \"\" respectively. Jason, played by Kane Hodder, threw Kirzinger over the counter.",
+      "original_tokens": 702,
+      "compressed_tokens": 89,
+      "token_compression_ratio": 0.1267806267806268,
+      "char_compression_ratio": 0.1264131551901336
+    },
+    {
+      "question": "who won the pittsburgh steeler baltimore raven game",
+      "prediction": "Steelers won.",
+      "ground_truths": [
+        "Pittsburgh Steelers"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 2.7903993129730225,
+      "compressed_context": "2009 Baltimore Ravens season\nwere forced to punt.",
+      "original_tokens": 648,
+      "compressed_tokens": 11,
+      "token_compression_ratio": 0.016975308641975308,
+      "char_compression_ratio": 0.01728395061728395
+    },
+    {
+      "question": "who sang the theme from the greatest american hero",
+      "prediction": "Joey Scarbury",
+      "ground_truths": [
+        "American singer Joey Scarbury"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "latency": 2.960287570953369,
+      "compressed_context": "Theme from The Greatest American Hero (Believe It or Not)\nTheme from The Greatest American Hero (Believe It or Not) \"Theme from \"The Greatest American Hero\" (Believe It or Not)\" is a song composed by Mike Post with lyrics by Stephen Geyer, and sung by American singer Joey Scarbury. Theme from The Greatest American Hero (Believe It or Not)\neventually peaking at number 2 during the weeks ending August 15–22, 1981, kept off the top spot by \"Endless Love\" by Diana Ross and Lionel Richie, and spending a total of 18 weeks in the Top 40. Theme from The Greatest American Hero (Believe It or Not) \"Theme from \"The Greatest American Hero\" (Believe It or Not)\" is a song composed by Mike Post with lyrics by Stephen Geyer, and sung by American singer Joey Scarbury\nJoey Scarbury Joey Scarbury (born June 7, 1955) is an American singer best known for his hit song, \"Theme from \"The Greatest American Hero\" (Believe It or Not)\", in 1981. Joey Scarbury Joey Scarbury (born June 7, 1955) is an American singer best known for his hit song, \"Theme from \"The Greatest American Hero\" (Believe It or Not)\", in 1981.",
+      "original_tokens": 701,
+      "compressed_tokens": 281,
+      "token_compression_ratio": 0.4008559201141227,
+      "char_compression_ratio": 0.380524861878453
+    },
+    {
+      "question": "who wrote the song the beat goes on",
+      "prediction": "Sonny Bono",
+      "ground_truths": [
+        "Sonny Bono"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.6529200077056885,
+      "compressed_context": "The Beat Goes On (Sonny & Cher song)\nChart. The Beat Goes On (Sonny & Cher song)\nThe Beat Goes On (Sonny & Cher song) \"The Beat Goes On\" is a \"Billboard\" Hot 100 Top 10 hit song written and composed by Sonny Bono and recorded by Sonny & Cher. The Beat Goes On (Sonny & Cher song)\nBattiste, but Wrecking Crew bassist Carol Kaye asserts that at the session she devised the distinctive syncopated bass line that is featured on the released recording, replacing the original walking bass line in the prepared arrangement: The song was sung at Sonny Bono's funeral, and the phrase \"And the beat goes on\" appears on his tombstone. Sonny and Cher The Beat Goes On (Sonny & Cher song)\nOther versions were recorded by jazz pianist/singer Patricia Barber, Italian singer Mina, and the French duo Casino Music. The Beat Goes On (Sonny & Cher song)\nperformed the song many times on their hit '70s television variety shows, as well as in their live concerts.",
+      "original_tokens": 666,
+      "compressed_tokens": 232,
+      "token_compression_ratio": 0.3483483483483483,
+      "char_compression_ratio": 0.3309982486865149
+    },
+    {
+      "question": "who won women's cricket world cup 2016",
+      "prediction": "England",
+      "ground_truths": [
+        "England"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.571950674057007,
+      "compressed_context": "2017 Women's Cricket World Cup Final\nCup final – Mithali Raj and Jhulan Goswami for India, and Katherine Brunt, Laura Marsh, and Sarah Taylor for England. 2017 Women's Cricket World Cup Final\n2017 Women's Cricket World Cup Final The 2017 ICC Women's World Cup Final was a one-day international cricket match played between England and India to decide the winner of the 2017 Women's World Cup.",
+      "original_tokens": 696,
+      "compressed_tokens": 95,
+      "token_compression_ratio": 0.13649425287356323,
+      "char_compression_ratio": 0.136158388329281
+    },
+    {
+      "question": "who played v in the movie v for vendetta",
+      "prediction": "Hugo Weaving",
+      "ground_truths": [
+        "Hugo Weaving"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.5653696060180664,
+      "compressed_context": "V for Vendetta (film)\nV for Vendetta (film) V for Vendetta is a 2005 dystopian political thriller film directed by James McTeigue and written by The Wachowskis, based on the 1988 DC/Vertigo Comics limited series of the same name by Alan Moore and David Lloyd. Hugo Weaving portrays V, an anarchist freedom fighter who attempts to ignite a revolution through elaborate terrorist acts, and Natalie Portman plays Evey, a young, working-class woman caught up in V's mission, while Stephen Rea portrays the detective leading V for Vendetta (film)\ncharacterized in the film as a romantic freedom fighter who shows concern over the loss of innocent life. V for Vendetta (film)\nunder the all-powerful High Chancellor Adam Sutler. V (character)\nV (character) V is the title character of the comic book series \"V for Vendetta\", created by Alan Moore and David Lloyd.",
+      "original_tokens": 652,
+      "compressed_tokens": 196,
+      "token_compression_ratio": 0.3006134969325153,
+      "char_compression_ratio": 0.28353759523020866
+    },
+    {
+      "question": "who wins the 2017 australian open men's single title",
+      "prediction": "Rafael Nadal",
+      "ground_truths": [
+        "Roger Federer"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.363250494003296,
+      "compressed_context": "2017 Australian Open – Men's singles final\nmen's singles Grand Slam defeating four top 10 players for the title was 35 years ago, accomplished by the unseeded 17 year-old Mats Wilander at the 1982 French Open - Men's Singles. Andy Murray \"(Fourth round)\" 2017 Australian Open – Men's Singles Novak Djokovic was the two-time defending champion, but lost in the second round to the 117th ranked Denis Istomin from Uzbekistan. 2017 Australian Open – Men's singles final\nvictory from being down 1–3 in the final set against Nadal in the 2017 Australian Open men's singles final is considered by some to be the biggest win in his career. 2017 Australian Open – Men's singles final\n2017 Australian Open men's singles final would either see Federer breaking his historic all-time record of 17 men's Grand Slam singles titles, or, Nadal with 15 Grand Slam singles titles that would break the tie between himself and Sampras' Grand Slam title count and subsequently narrow the Grand Slam title count gap between himself and Federer.",
+      "original_tokens": 670,
+      "compressed_tokens": 233,
+      "token_compression_ratio": 0.34776119402985073,
+      "char_compression_ratio": 0.34363453140745714
+    },
+    {
+      "question": "how many judges currently serve on the supreme court",
+      "prediction": "9",
+      "ground_truths": [
+        "nine"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.2716143131256104,
+      "compressed_context": "Supreme Court of the United States\nof a chief justice, currently John Roberts, and eight associate justices.",
+      "original_tokens": 626,
+      "compressed_tokens": 22,
+      "token_compression_ratio": 0.03514376996805112,
+      "char_compression_ratio": 0.035596572181938034
+    },
+    {
+      "question": "who did the toronto maple leafs draft this year",
+      "prediction": "I do not have information on the current year's draft.",
+      "ground_truths": [
+        "Semyon Kizimov",
+        "Riley Stotts",
+        "Pontus Holmberg",
+        "Mac Hollowell",
+        "Zachary Bouthillier",
+        "Filip Kral",
+        "Sean Durzi",
+        "Rasmus Sandin",
+        "Semyon Der-Arguchintsev"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.0347118377685547,
+      "compressed_context": "Toronto Maple Leafs\nEntry Draft, selecting London Knights forward Nazem Kadri with the seventh overall pick. Toronto Maple Leafs\nDraft. The Maple Leafs have drafted two players with a first overall draft pick; Clark in the 1985 draft, and Auston Matthews in the 2016 draft. Toronto Maple Leafs\ndrafted Lanny McDonald. History of the Toronto Maple Leafs\nBurke made his first appearance as the Leafs GM at the 2009 NHL Entry Draft, selecting London Knights forward Nazem Kadri with the seventh overall pick.",
+      "original_tokens": 687,
+      "compressed_tokens": 110,
+      "token_compression_ratio": 0.16011644832605532,
+      "char_compression_ratio": 0.16666666666666666
+    },
+    {
+      "question": "who is the youngest judge currently sitting on the u.s. supreme court",
+      "prediction": "Clarence Thomas",
+      "ground_truths": [
+        "Neil Gorsuch"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.813384771347046,
+      "compressed_context": "Neil Gorsuch Supreme Court nomination\nNeil Gorsuch Supreme Court nomination After his nomination on January 31, 2017, Neil Gorsuch was confirmed by the Senate on April 7, 2017. Gorsuch, age 49 at confirmation, is the youngest sitting Supreme Court justice since Clarence Thomas. At age 49, Gorsuch would become the youngest sitting Supreme Court justice since Clarence Thomas.",
+      "original_tokens": 654,
+      "compressed_tokens": 81,
+      "token_compression_ratio": 0.12385321100917432,
+      "char_compression_ratio": 0.1261744966442953
+    },
+    {
+      "question": "who does the voice for love island australia",
+      "prediction": "Eoghan McDermott",
+      "ground_truths": [
+        "Eoghan McDermott"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.094475030899048,
+      "compressed_context": "Love Island Australia\nLove Island Australia Love Island Australia is an Australian dating reality show based on the British series \"Love Island\". The series is presented by Sophie Monk and narrated by Eoghan McDermott. Love Island Australia\nfrom Nine's streaming service, 9Now. Love Island Australia Love Island Australia is an Australian dating reality show based on the British series \"Love Island\". The series is presented by Sophie Monk and narrated by Eoghan McDermott.",
+      "original_tokens": 661,
+      "compressed_tokens": 96,
+      "token_compression_ratio": 0.14523449319213314,
+      "char_compression_ratio": 0.16133424098025867
+    },
+    {
+      "question": "when did beauty and the beast come out on dvd",
+      "prediction": "October 8, 2002",
+      "ground_truths": [
+        "June 6, 2017"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.8630194664001465,
+      "compressed_context": "Beauty and the Beast (1991 film)\nSpecial Edition\", as the enhanced version of the film released in IMAX/large-format is called, was released on two-disc \"Platinum Edition\" DVD and VHS on October 8, 2002.",
+      "original_tokens": 696,
+      "compressed_tokens": 52,
+      "token_compression_ratio": 0.07471264367816093,
+      "char_compression_ratio": 0.06671048307591193
+    },
+    {
+      "question": "when was the last time the 76ers went to the finals",
+      "prediction": "1983",
+      "ground_truths": [
+        "2001"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.3742525577545166,
+      "compressed_context": "History of the Philadelphia 76ers\nfor the first time since 1983. As had been the case in their three previous Finals appearances, their opponent would be the Los Angeles Lakers, who had run up an 11–0 record in the first three rounds of the playoffs and were expected by many to make quick work of a worn-down 76ers squad. Because of a seemingly meaningless loss to the lowly Chicago Bulls in the regular season finale (both the Sixers and the Lakers finished with identical 56–26 records, but Los Angeles was awarded a higher seed based on tiebreakers), the NBA Finals marked the first time in The Philadelphia 76ers made the playoffs for the first time since 1971, starting a 12-year run that included four NBA Finals appearances (1977, 1980, 1982, and 1983).",
+      "original_tokens": 645,
+      "compressed_tokens": 176,
+      "token_compression_ratio": 0.27286821705426356,
+      "char_compression_ratio": 0.26313969571230983
+    },
+    {
+      "question": "who wrote variations on twinkle twinkle little star",
+      "prediction": "Ernő Dohnányi and Wolfgang Amadeus Mozart.",
+      "ground_truths": [
+        "Jane Taylor"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.6842362880706787,
+      "compressed_context": "Variations on a Nursery Tune (Dohnányi)\nevery composer his audience of 1914 would have been familiar with. Variations on a Nursery Tune (Dohnányi) The Variations on a Nursery Tune, Op. 25, is a piece for piano and orchestra by Ernő Dohnányi. Written in 1914, it captures the spirit of Romanticism, and manages to delight and enthrall in its sparkling piano writing and lush orchestral textures, and its wit in the treatment of the theme – the French nursery song \"Ah, vous dirai-je, Maman\", otherwise known as \"Twinkle Twinkle Little Star\". Variations on a Nursery Tune (Dohnányi)\nVariations on a Nursery Tune (Dohnányi) The Variations on a Nursery Tune, Op. 25, is a piece for piano and orchestra by Ernő Dohnányi. Written in 1914, it captures the spirit of Romanticism, and manages to delight and enthrall in its sparkling piano writing and lush orchestral textures, and its wit in the treatment of the theme – the French nursery song \"Ah, vous dirai-je, Maman\", otherwise known as \"Twinkle Twinkle Little Star\". Like Dohnányi, Mozart also wrote variations on this nursery tune (K. 265/300e). Twinkle, Twinkle, Little Star\nbut further stanzas typically contain minor variations. Twelve Variations on \"Ah vous dirai-je, Maman\" Twelve Variations on \"Ah vous dirai-je, Maman\", K. 265/300e, is a piano composition by Wolfgang Amadeus Mozart, composed when he was around 25 years old (1781 or 1782).",
+      "original_tokens": 727,
+      "compressed_tokens": 372,
+      "token_compression_ratio": 0.5116918844566712,
+      "char_compression_ratio": 0.4583606557377049
+    },
+    {
+      "question": "when did the king kong ride burn down",
+      "prediction": "June 1, 2008",
+      "ground_truths": [
+        "2008"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 2.7828943729400635,
+      "compressed_context": "King Kong\nA second more elaborate ride was constructed at Universal Studios Florida on June 7, 1990, called Kongfrontation. King Kong\nand the subsequent appeal. In 1986 they opened a King Kong ride called \"King Kong Encounter\" at their Universal Studios Tour theme park in Hollywood (which was destroyed in 2008 by a backlot fire), and followed it up with the Kongfrontation ride at their Orlando park in 1990 (which was closed down in 2002 due to maintenance issues). King Kong Encounter\nanimated King Kong in December 1985 to be housed in his own lower-lot studio that duplicated Lower East Side New York. The attraction opened on June 14, 1986 and was completely destroyed by a fire in the early morning of June 1, 2008. King Kong: 360 3-D\nreported that King Kong Encounter, among other things, had burned down. In August 2008, Universal announced that instead of replacing the King Kong Encounter attraction with a new concept, as they had originally planned, it would instead be rebuilt as a new experience titled \"King Kong: 360 3-D\". King Kong: 360 3-D\ntry to attack the tram from both sides, while Kong jumps to each side to defeat them, as air and water effects are blown onto guests to further the illusion. A three alarm fire broke out on the backlot of Universal Studios on June 1, 2008.",
+      "original_tokens": 635,
+      "compressed_tokens": 303,
+      "token_compression_ratio": 0.47716535433070867,
+      "char_compression_ratio": 0.4619487908961593
+    },
+    {
+      "question": "who plays mrs. potato head in toy story",
+      "prediction": "Laurie Metcalf",
+      "ground_truths": [
+        "Estelle Harris"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.974492073059082,
+      "compressed_context": "Mr. Potato Head\nPotato Head feels guilty about what he's done. In the second film, \"Toy Story 2\" (1999), Mr. Potato Head goes with Buzz, Rex (Wallace Shawn), Slinky Dog (Jim Varney), and Hamm to rescue Woody after he is stolen by Al McWhiggin (Wayne Knight). In the third film, \"Toy Story Mr. Potato Head\nPop singer Melanie Martinez released a song called \"Mrs. Potato Head\" on her debut album \"Cry Baby\". Mr. Potato Head is also in the Disney/Pixar \"Toy Story films\" voiced by Don Rickles. Mr. Potato Head\nthe toy in the wrong locations. Mr. Potato Head\n3\" (2010), Mr. Potato Head is one of Andy's remaining toys, alongside his wife, the aliens, Woody, Buzz, Rex, Hamm, Slinky (now voiced by Blake Clark), Jessie (Joan Cusack), and Bullseye. Mr. Potato Head has appeared in all three Toy Story 3\nKristen Schaal and Laurie Metcalf will reprise their roles of Woody, Buzz, Trixie and Mrs. Davis.",
+      "original_tokens": 710,
+      "compressed_tokens": 245,
+      "token_compression_ratio": 0.34507042253521125,
+      "char_compression_ratio": 0.3132445690259285
+    },
+    {
+      "question": "who sang the original me and bobby mcgee",
+      "prediction": "Roger Miller",
+      "ground_truths": [
+        "Roger Miller"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.6072778701782227,
+      "compressed_context": "Me and Bobby McGee\nMe and Bobby McGee \"Me and Bobby McGee\" is a song written by American singer-songwriter Kris Kristofferson and songwriter Fred Foster, originally performed by Roger Miller. Me and Bobby McGee\nin 2004, her version of this song was ranked No. 148 on \"Rolling Stone\"s list of the 500 Greatest Songs of All Time. Me and Bobby McGee \"Me and Bobby McGee\" is a song written by American singer-songwriter Kris Kristofferson and songwriter Fred Foster, originally performed by Roger Miller. Me and Bobby McGee\nby both male and female singers with only minor changes needed to the lyrical content. Kenny Rogers and The First Edition recorded the song (with Rogers on lead vocals) and released it on their album \"Ruby, Kris Kristofferson\nand Bobby McGee\" from her posthumous album \"Pearl\". The country music performer Kenny Rogers has also recorded some of Kristofferson's compositions, including a version of \"Me and",
+      "original_tokens": 718,
+      "compressed_tokens": 209,
+      "token_compression_ratio": 0.29108635097493035,
+      "char_compression_ratio": 0.31239446133063153
+    },
+    {
+      "question": "who plays the fairy god mother in shrek 2",
+      "prediction": "Julie Andrews",
+      "ground_truths": [
+        "Jennifer Saunders"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.486586093902588,
+      "compressed_context": "Princess Fiona\nbecoming a mother by \"Shrek the Third\" (2007) and an empowered warrior princess in \"Shrek Forever After\" (2010), much of which is set in an alternate reality in which Fiona never meets Shrek. Fiona is voiced by actress Cameron Diaz. Princess Fiona\nprove naturally beneficial to her adjustment to motherhood because \"she can use her whole body. Mother Gothel\nwas ranked twenty-fifth. Mother Gothel\nMother Gothel Mother Gothel is a fictional character who appears in Walt Disney Pictures' 50th animated feature film \"Tangled \"(2010).",
+      "original_tokens": 658,
+      "compressed_tokens": 125,
+      "token_compression_ratio": 0.1899696048632219,
+      "char_compression_ratio": 0.17796610169491525
+    },
+    {
+      "question": "5 types of control that could be programmed on a gui",
+      "prediction": "1. Mice\n2. Joysticks\n3. Light pens\n4. Proportional controllers\n5. Trackballs",
+      "ground_truths": [
+        "Button",
+        "Slider",
+        "Drop-down list",
+        "List box",
+        "Spinner"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.6825575828552246,
+      "compressed_context": "This included handlers for five types of input devices, include mice, joysticks, light pens and \"proportional controllers\" as a catch-all for analog inputs like paddles and analog joysticks.",
+      "original_tokens": 620,
+      "compressed_tokens": 42,
+      "token_compression_ratio": 0.06774193548387097,
+      "char_compression_ratio": 0.05875077303648732
+    },
+    {
+      "question": "who is the actress who plays rita on ncis new orleans",
+      "prediction": "Jacqueline Obradors",
+      "ground_truths": [
+        "Chelsea Field"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.7026865482330322,
+      "compressed_context": "NCIS: New Orleans\nis keen to leave her past behind as she moves to New Orleans; Sonja Percy (Shalita Grant), a former ATF special agent and LaSalle's partner; Tammy Gregorio (Vanessa Ferlito), an FBI prodigy recruited after a short stint investigating Pride; and Sebastian Lund (Rob Kerkovich), a criminalist turned forensics agent and the team’s newest member. Jacqueline Obradors\nReynosa on \"NCIS\". Jacqueline Obradors Jacqueline Danell Obradors (born October 6, 1966) is an American actress. Rita Ortiz in the ABC crime drama series \"NYPD Blue\" (2001–2005). Rita Ortiz\nRita Ortiz Rita Ortiz is a character in the long running police drama series \"NYPD Blue\". She was played by Jacqueline Obradors. NCIS: New Orleans\nthe series, though Daryl Mitchell and Shalita Grant joined the series as regulars during season 2.",
+      "original_tokens": 727,
+      "compressed_tokens": 203,
+      "token_compression_ratio": 0.2792297111416781,
+      "char_compression_ratio": 0.2686616244656363
+    },
+    {
+      "question": "p diddy nicki minaj hello good morning lyrics",
+      "prediction": "Hello Good Morning",
+      "ground_truths": [
+        "Official Remix"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.830233097076416,
+      "compressed_context": "Hello Good Morning\nhours of the morning\" and see Diddy return to using his signature ad-libs. Nicki Escudero from \"The Phoenix New Times\" noted the song's superficial themes which included lyrics about \"sex, money and cheating\" Brandon Soderberg from \"The Village Voice\" noted the song's bridge where there was an \"epic acid-squelch breakdown\". The first of these remixes added an introduction verse from rapper Rick Ross and then a new verse later in the song from female rapper, Nicki Minaj. Hello Good Morning\nHello Good Morning \"Hello Good Morning\" is a song by American rapper and producer Diddy and his group Dirty Money, from their debut album, \"Last Train to Paris\". Hello Good Morning\nof 500,000 copies. Internationally, the single peaked at No. 22 in UK, and was particularly successful on the German Black Chart and UK R&B Chart, reaching number one and number eight respectively.morning \"Hello Good Morning\" was written by Marcella Araica, Richard Butler, T.I., Nathaniel \"Danja\" Hills. According to \"Rap-Up\" magazine, the lyrics refer to \"keeping a party going till early Hello Good Morning\nmoney. Three official remixes were released alongside the main single: the Official Remix with Rick Ross & Nicki Minaj, the \"Grime Remix\" with Skepta, and a \"Team UK remix\" with Tinchy Stryder and Tinie Tempah. Hello Good Morning\nT.I.'s vocals with a new verse from Eminem.",
+      "original_tokens": 702,
+      "compressed_tokens": 323,
+      "token_compression_ratio": 0.4601139601139601,
+      "char_compression_ratio": 0.44534282018111254
+    },
+    {
+      "question": "element whose third shell contains two p electrons",
+      "prediction": "Boron",
+      "ground_truths": [
+        "Magnesium"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.819209098815918,
+      "compressed_context": "Electron configuration\nvalence electrons: each element in a period differs only by the last few subshells. Phosphorus, for instance, is in the third period. It differs from the second-period neon, whose configuration is 1s 2s 2p, only by the presence of a third shell. Electron shell\ncan contain only a fixed number of electrons: The first shell can hold up to two electrons, the second shell can hold up to eight (2 + 6) electrons, the third shell can hold up to 18 (2 + 6 + 10) and so on.",
+      "original_tokens": 655,
+      "compressed_tokens": 126,
+      "token_compression_ratio": 0.19236641221374046,
+      "char_compression_ratio": 0.16214427531436135
+    },
+    {
+      "question": "who is the ceo of t rowe price",
+      "prediction": "Bill Stromberg",
+      "ground_truths": [
+        "William Stromberg"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 2.934237241744995,
+      "compressed_context": "T. Rowe Price\nT. Rowe Price T. Rowe Price Group, Inc. is an American publicly owned global asset management firm that offers funds, advisory services, account management, and retirement plans and services for individuals, institutions, and financial intermediaries. Bill Stromberg William \"Bill\" Stromberg (born March 10, 1960) is President and CEO of T. Rowe Price, a Baltimore-based global asset management firm and a former American football player.",
+      "original_tokens": 668,
+      "compressed_tokens": 94,
+      "token_compression_ratio": 0.1407185628742515,
+      "char_compression_ratio": 0.15066666666666667
+    },
+    {
+      "question": "who plays caroline on the bold and beautiful",
+      "prediction": "Joanna Johnson",
+      "ground_truths": [
+        "Linsey Godfrey"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.981250286102295,
+      "compressed_context": "Caroline Spencer Forrester\nCaroline Spencer Forrester Caroline Spencer Forrester is a fictional character from the American soap opera, \"The Bold and the Beautiful\". The role was played by Joanna Johnson from March 23, 1987, to early July 1990. Caroline Spencer\nCaroline Spencer Caroline Spencer is a fictional character from the CBS Daytime soap opera, \"The Bold and the Beautiful\", created by producer Bradley Bell. Caroline Spencer Forrester Caroline Spencer Forrester is a fictional character from the American soap opera, \"The Bold and the Beautiful\". The role was played by Joanna Johnson from March 23, 1987, to early July",
+      "original_tokens": 683,
+      "compressed_tokens": 137,
+      "token_compression_ratio": 0.2005856515373353,
+      "char_compression_ratio": 0.2082092022509103
+    },
+    {
+      "question": "when does the second part of season 3 fuller house",
+      "prediction": "December 22, 2017",
+      "ground_truths": [
+        "December 22, 2017"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.3065099716186523,
+      "compressed_context": "Fuller House (TV series)\n2016. It was announced on June 26, 2017 that the third season would be split into two parts, with the release of the first part on September 22, 2017 to consist of nine episodes. Fuller House (TV series)\nrole of Michelle Tanner in \"Full House.\" The third season is split into two parts, with the first half of nine episodes being released on September 22, 2017, and the second half on December 22, 2017.",
+      "original_tokens": 710,
+      "compressed_tokens": 108,
+      "token_compression_ratio": 0.15211267605633802,
+      "char_compression_ratio": 0.1459256733719741
+    },
+    {
+      "question": "who played davenport in last of the summer wine",
+      "prediction": "Nigel Davenport",
+      "ground_truths": [
+        "Josephine Tewson"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.302307367324829,
+      "compressed_context": "Juliette Kaplan\nJuliette Kaplan Marlene Juliette Kaplan is a British actress, whose married name is Marlene Hoser. She is most famous for playing the role of battle-axe Pearl Sibshaw in the BBC comedy \"Last of the Summer Wine\", from 1985 to 2010. Last of the Summer Wine\nEngland, and centred on a trio of old men and their youthful misadventures; the membership of the trio changed several times over the years. Last of the Summer Wine\nused for the final two instalments of the show. Nigel Davenport\nlast episode of the first season of the TV series\"The Saint\" tilted \"The Charitable Countess\" with Roger Moore as Simon Templar and Patricia Donahue as Countess Rovagna, Davenport played a supporting role as Countess's confidant, Aldo Petri.",
+      "original_tokens": 691,
+      "compressed_tokens": 181,
+      "token_compression_ratio": 0.2619392185238784,
+      "char_compression_ratio": 0.2473297730307076
+    },
+    {
+      "question": "who plays chaka in land of the lost",
+      "prediction": "Phillip Paley",
+      "ground_truths": [
+        "Jorma Taccone"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.4394564628601074,
+      "compressed_context": "Phillip Paley\nand commentary on the \"Land of the Lost\" DVDs. Phillip Paley Phillip Paley (born September 15, 1963) is an American actor possibly best recalled for his role as Cha-Ka in the 1974 American television series \"Land of the Lost\". Phillip Paley\nPhillip Paley Phillip Paley (born September 15, 1963) is an American actor possibly best recalled for his role as Cha-Ka in the 1974 American television series \"Land of the Lost\". Cha-Ka\nCha-Ka \"Cha-Ka\" is the first episode of the first season of the 1974 American television series \"Land of the Lost\".",
+      "original_tokens": 666,
+      "compressed_tokens": 144,
+      "token_compression_ratio": 0.21621621621621623,
+      "char_compression_ratio": 0.1893913634818089
+    },
+    {
+      "question": "who narrated the original 1966 how the grinch stole christmas",
+      "prediction": "Boris Karloff",
+      "ground_truths": [
+        "Boris Karloff"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 4.099462032318115,
+      "compressed_context": "How the Grinch Stole Christmas! (TV special)\nHow the Grinch Stole Christmas! How the Grinch Stole Christmas! (also known as Dr. Seuss' How the Grinch Stole Christmas!) is a 1966 Christmas animated television special directed and co-produced by Chuck Jones. The special also features the voice of Boris Karloff as the Grinch and the In 1968 actor Boris Karloff recorded a narrated version of the story for a promotional Capitol Records LP which also featured various Christmas songs from the label's catalog on the flip side. How the Grinch Stole Christmas! The dialogues are the originals, being voiced by Boris Karloff for \"Grinch\" and Hans Conried for \"Horton.\" How the Grinch Stole Christmas! How the Grinch Stole Christmas! How the Grinch Stole Christmas! (also known as Dr. Seuss' How the Grinch Stole Christmas!) is a 1966 Christmas animated television special directed and co-produced by Chuck Jones.",
+      "original_tokens": 705,
+      "compressed_tokens": 209,
+      "token_compression_ratio": 0.29645390070921984,
+      "char_compression_ratio": 0.2951513179303612
+    },
+    {
+      "question": "is the governor of puerto rico democratic or republican",
+      "prediction": "Pedro Pierluisi is the current Governor of Puerto Rico, and he is a member of the New Progressive Party (Partido Nuevo Progresista), which is a center-right party.",
+      "ground_truths": [
+        "Democrat"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 4.2766032218933105,
+      "compressed_context": "",
+      "original_tokens": 693,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "i've got a brand new pair of roller skates original artist",
+      "prediction": "Melanie",
+      "ground_truths": [
+        "Melanie"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.212756633758545,
+      "compressed_context": "Roller skates\nRoller skates Roller skates are shoes, or bindings that fit onto shoes, that are worn to enable the wearer to roll along on wheels. Roller skates\nthe benefits they list include: Roller skates Roller skates are shoes, or bindings that fit onto shoes, that are worn to enable the wearer to roll along on wheels. Artistic roller skating\nskates. Skates designed for inline artistic skating have leather boots (as ice and quad figure skates do), and usually have rockered wheels and a toe stop or toe \"pic\". Melanie (singer)\nIn 1971 she formed her own label, Neighborhood Records, with Peter Schekeryk, who was also her producer and husband.",
+      "original_tokens": 631,
+      "compressed_tokens": 150,
+      "token_compression_ratio": 0.23771790808240886,
+      "char_compression_ratio": 0.2223742730071844
+    },
+    {
+      "question": "who is the head coach of the minnesota timberwolves",
+      "prediction": "Tom Thibodeau",
+      "ground_truths": [
+        "Thomas Joseph Thibodeau Jr."
+      ],
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "latency": 2.9339778423309326,
+      "compressed_context": "Minnesota Timberwolves\nhonor of Saunders, the team announced that they would wear a patch reading \"FLIP\" on their uniforms for the duration of the 2015–16 season. On April 20, 2016, the Timberwolves agreed to sign Tom Thibodeau to be their head coach and president of basketball operations. On April 20, 2016, it was announced that the Minnesota Timberwolves had hired Thibodeau as head coach and president of basketball operations. Tom Thibodeau\nTom Thibodeau Thomas Joseph Thibodeau Jr. ( ; born January 17, 1958) is an American basketball coach who is head coach and president of basketball operations of the Minnesota Timberwolves of the National Basketball Association (NBA). Tom Thibodeau Thomas Joseph Thibodeau Jr. ( ; born January 17, 1958) is an American basketball coach who is head coach and president of basketball operations of the Minnesota Timberwolves of the National Basketball Association (NBA). Minnesota Timberwolves\nnot been worn by any other Timberwolves player since his departure and the team defeated the Washington Wizards 97–77 at the Target Center. On June 6, 2014, Saunders was named the head coach of the Minnesota Timberwolves, returning to the franchise for a second stint.",
+      "original_tokens": 673,
+      "compressed_tokens": 281,
+      "token_compression_ratio": 0.4175334323922734,
+      "char_compression_ratio": 0.4104833219877468
+    },
+    {
+      "question": "who plays zack and cody in the suite life",
+      "prediction": "Dylan Sprouse",
+      "ground_truths": [
+        "Dylan and Cole Sprouse"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "latency": 2.717172861099243,
+      "compressed_context": "The Suite Life Goes Hollywood\n\"How Suite It Is\". They stay at the Tipton in Los Angeles, which is largely identical to the one in Boston, and they meet the cast of the show: Zack and Cody are portrayed by two young boys, Carey by a young lady, Maddie by a pretty girl who pretends to like her, London by a boy, and Moseby by a tall man who talks with street slang. Zack Martin (Suite Life) Zack Martin (played by Dylan Sprouse) is a main character created by Danny Kallis and Jim Geoghan for \"The Suite Life of Zack & Cody\" and its sequel/spin-off \"The Suite Life on Deck\". The Suite Life of Zack & Cody\nThe Suite Life of Zack & Cody The Suite Life of Zack & Cody is an American sitcom created by Danny Kallis and Jim Geoghan. Zack Martin (Suite Life)\nZack Martin (Suite Life) Zack Martin (played by Dylan Sprouse) is a main character created by Danny Kallis and Jim Geoghan for \"The Suite Life of Zack & Cody\" and its sequel/spin-off \"The Suite Life on Deck\". Sprouse The Suite Life of Zack & Cody The Suite Life of Zack & Cody is an American sitcom created by Danny Kallis and Jim Geoghan.",
+      "original_tokens": 657,
+      "compressed_tokens": 271,
+      "token_compression_ratio": 0.4124809741248097,
+      "char_compression_ratio": 0.3910394265232975
+    },
+    {
+      "question": "who was the last person executed in ireland",
+      "prediction": "Robert McGladdery",
+      "ground_truths": [
+        "Michael Manning"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.925842046737671,
+      "compressed_context": "Robert McGladdery\nOctober 1961. Robert McGladdery Robert Andrew McGladdery (18 October 193520 December 1961) was the last person to be executed in Northern Ireland and the island of Ireland. Robert McGladdery\nRobert McGladdery Robert Andrew McGladdery (18 October 193520 December 1961) was the last person to be executed in Northern Ireland and the island of Ireland.",
+      "original_tokens": 711,
+      "compressed_tokens": 93,
+      "token_compression_ratio": 0.1308016877637131,
+      "char_compression_ratio": 0.12274247491638796
+    },
+    {
+      "question": "where are the fruits of the spirit found in the bible",
+      "prediction": "Galatians 5:22-23.",
+      "ground_truths": [
+        "Epistle to the Galatians"
+      ],
+      "em": 0.0,
+      "f1": 0.4,
+      "latency": 2.9135329723358154,
+      "compressed_context": "Christian theology\nbelieve the \"Fruit of the Spirit\" consists of virtuous characteristics engendered in the Christian by the action of the Holy Spirit. They are those listed in : \"But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control.\" Fruit of the Holy Spirit\nFruit of the Holy Spirit The Fruit of the Holy Spirit is a biblical term that sums up nine attributes of a person or community living in accord with the Holy Spirit, according to chapter 5 of the Epistle to the Galatians: \"But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control.\" Fruit of the Holy Spirit\nthe left\". Popular English Bibles (e.g. NIV, NASB, NLT) translate the single Greek word \"chrestotes\" into two English words: kindness and goodness. \"For the fruit of the Spirit is in all goodness and righteousness and truth\", with agathosune being \"found only in Biblical and ecclesiastical writings, uprightness of heart and life\" The root of pistis (\"faith\") is peithô that is to persuade or be persuaded which supplies But the fruit of the Spirit is love, joy, peace, longsuffering, kindness, goodness, faithfulness, gentleness, self-control.",
+      "original_tokens": 682,
+      "compressed_tokens": 291,
+      "token_compression_ratio": 0.42668621700879766,
+      "char_compression_ratio": 0.40323624595469254
+    },
+    {
+      "question": "when was the planning commission set up to prepare a blue print of development for the country",
+      "prediction": "1953",
+      "ground_truths": [
+        "15 March 1950"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.5925161838531494,
+      "compressed_context": "Planning Commission (Pakistan)\na six-year development plan and embodied in the Colombo Plan for Cooperative Economic Development in South and South East Asia. Finally, in 1953, Prime minister Khawaja Nazimuddin decided to give commission to an institution that was set up on 18 July 1953. Planning Commission (Pakistan)\nPlanning Commission (Pakistan)",
+      "original_tokens": 631,
+      "compressed_tokens": 73,
+      "token_compression_ratio": 0.11568938193343899,
+      "char_compression_ratio": 0.11146496815286625
+    },
+    {
+      "question": "who is the coach of arizona state men's basketball",
+      "prediction": "Bobby Hurley",
+      "ground_truths": [
+        "Bobby Hurley"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.891037940979004,
+      "compressed_context": "Arizona Wildcats men's basketball\nFloyd on campus for an interview and while Arizona claims no formal offer was ever presented, Floyd ultimately turned down the job publicly. Arizona hired Sean Miller from Xavier University to fill the head coaching position. Arizona State is currently led by third year head coach Bobby Hurley, who replaced Herb Sendek. Arizona Wildcats men's basketball\nArizona Wildcats men's basketball The Arizona Wildcats men's basketball team is the intercollegiate men's basketball program representing the University of Arizona in Tucson, Arizona. They compete in the Pac-12 Conference of NCAA Division I and are currently coached by Sean Miller.",
+      "original_tokens": 687,
+      "compressed_tokens": 124,
+      "token_compression_ratio": 0.1804949053857351,
+      "char_compression_ratio": 0.21846553966189858
+    },
+    {
+      "question": "who won i want to work for diddy",
+      "prediction": "Ebony Jones",
+      "ground_truths": [
+        "Suzanne Siegel"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.336564779281616,
+      "compressed_context": "I Want to Work for Diddy 2\nI Want to Work for Diddy 2 I Want to Work for Diddy 2 is a reality show on VH1. It is the second season of \"I Want to Work for Diddy\", where contestants are brought together to see who can become Sean Combs' personal assistant. In the end, Ebony Jones was chosen to be his assistant. I Want to Work for Diddy (season 1)\nI Want to Work for Diddy (season 1) I Want To Work For Diddy was a reality show on VH1. -executive produced and directed by Mark Jacobs, the 13 contestants are brought together to see who can become Sean Combs' assistant. I Want to Work for Diddy 2\n\"First aired November 2, 2009 \"First aired November 9, 2009 \"First aired November 16, 2009 \"First aired November 23, 2009 \"First aired November 30, 2009 \"First aired December 7, 2009\" \"First aired December 14, 2009\" \"First aired December 21, 2009\" \"First aired December 28, 2009\" \"First aired January 4, 2010\" I Want to Work for Diddy 2 I Want to Work for Diddy 2 is a reality show on VH1. It is the second season of \"I Want to Work for Diddy\", where contestants are brought together to see who can become Sean Combs' personal assistant. I Want to Work for Diddy (season 1)\nSeptember 15, 2008 \"First aired September 22, 2008 \"First aired September 29, 2008 \"First aired October 6, 2008 A second season of \"I Want to Work for Diddy\" was confirmed by VH1. I Want to Work for Diddy (season 1) I Want To Work For Diddy was a reality show on VH1. -executive produced and directed by Mark Jacobs, the 13 contestants are brought together to see who can become Sean Combs' assistant. In the end, Suzanne Siegel was chosen to be his assistant and Laverne Cox\nqueen (where she had applied initially to work as a waitress). Both those shows were nominated for GLAAD media awards for outstanding reality programs, and when \"Diddy\" won in 2009, Cox accepted the award at the GLAAD ceremony, giving a speech described by the \"San Francisco Sentinel\" as \"among",
+      "original_tokens": 732,
+      "compressed_tokens": 527,
+      "token_compression_ratio": 0.7199453551912568,
+      "char_compression_ratio": 0.6952005730659025
+    },
+    {
+      "question": "who played mason on wizards of waverly place",
+      "prediction": "David Henrie",
+      "ground_truths": [
+        "Sulkin"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.375962972640991,
+      "compressed_context": "Wizards of Waverly Place (season 3)\nfrom Harper and Alex, who has resumed her relationship with Mason after \"country magic\" restores him to human form. During this, Alex and Mason get back together and, after a long time, Justin finally gets back together with Juliet. Finally, in the hour-long series finale, Alex, Justin, and Wizards of Waverly Place\nWizards of Waverly Place Wizards of Waverly Place is an American fantasy teen sitcom which ran from October 12, 2007 to January 6, 2012 on Disney Channel. Wizards of Waverly Place\n(who also co-wrote the special with Dan Berendsen), centers on the Russos', Mason, and Harper's visit to Italy to meet long-lost relatives from Jerry's side of the family. Wizards of Waverly Place (season 4)\nreveal to Zeke that they are wizards. Meanwhile, Alex's relationship with Mason is jeopardized again when a beast tamer, Chase Riprock, falls in love with Alex and Mason gets jealous. This results in Alex breaking up with Mason.",
+      "original_tokens": 632,
+      "compressed_tokens": 230,
+      "token_compression_ratio": 0.3639240506329114,
+      "char_compression_ratio": 0.3280297901150982
+    },
+    {
+      "question": "where is the mesophyll located in a plant",
+      "prediction": "The mesophyll is located in the leaf.",
+      "ground_truths": [
+        "In leaves"
+      ],
+      "em": 0.0,
+      "f1": 0.28571428571428575,
+      "latency": 3.4820125102996826,
+      "compressed_context": "Leaf\ncalled the mesophyll (Greek for \"middle leaf\"). This assimilation tissue is the primary location of photosynthesis in the plant.",
+      "original_tokens": 724,
+      "compressed_tokens": 29,
+      "token_compression_ratio": 0.04005524861878453,
+      "char_compression_ratio": 0.04167972422438107
+    },
+    {
+      "question": "who was the richest person in us history adjusted for inflation",
+      "prediction": "John D. Rockefeller",
+      "ground_truths": [
+        "Jakob Fugger"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.761164665222168,
+      "compressed_context": "Warren Buffett\nby \"Forbes\" as the richest person in the world with an estimated net worth of approximately $62 billion. John D. Rockefeller\n86, penned the following words to sum up his life: John D. Rockefeller John Davison Rockefeller Sr. (July 8, 1839 – May 23, 1937) was an American oil industry business magnate, industrialist, and philanthropist. He is widely considered the wealthiest American of all time, and the richest person in modern history.",
+      "original_tokens": 680,
+      "compressed_tokens": 107,
+      "token_compression_ratio": 0.15735294117647058,
+      "char_compression_ratio": 0.15363790186125212
+    },
+    {
+      "question": "who directed one flew over the cuckoos nest",
+      "prediction": "Miloš Forman",
+      "ground_truths": [
+        "Miloš Forman"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.981541395187378,
+      "compressed_context": "One Flew Over the Cuckoo's Nest (film)\nOne Flew Over the Cuckoo's Nest (film) One Flew Over the Cuckoo's Nest is a 1975 American comedy-drama film directed by Miloš Forman, based on the 1962 novel \"One Flew Over the Cuckoo's Nest\" by Ken Kesey.",
+      "original_tokens": 719,
+      "compressed_tokens": 77,
+      "token_compression_ratio": 0.1070931849791377,
+      "char_compression_ratio": 0.08410892795587728
+    },
+    {
+      "question": "who plays mayor hamilton on ncis new orleans",
+      "prediction": "Caitlin Stasey",
+      "ground_truths": [
+        "Steven Robert Weber"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.238103151321411,
+      "compressed_context": "NCIS: New Orleans\nof the city of New Orleans, and CBS' decision to cast Scott Bakula as \"one of the most likable leading men in television, so they're set there.\" On February 22, 2016, Caitlin Stasey was cast as Ada Hamilton. NCIS: New Orleans\nis keen to leave her past behind as she moves to New Orleans; Sonja Percy (Shalita Grant), a former ATF special agent and LaSalle's partner; Tammy Gregorio (Vanessa Ferlito), an FBI prodigy recruited after a short stint investigating Pride; and Sebastian Lund (Rob Kerkovich), a criminalist turned forensics agent and the team’s newest member. NCIS: New Orleans\nOrleans\" follows a fictional team of Naval Criminal Investigative Service (NCIS) agents stationed out of New Orleans, Louisiana and led by Special Agent Dwayne Cassius Pride (Scott Bakula). NCIS (TV series)\nas Tony, Robyn Lively as Vivian Blackadder, Pauley Perrette as Abby, and David McCallum as Ducky.",
+      "original_tokens": 760,
+      "compressed_tokens": 231,
+      "token_compression_ratio": 0.30394736842105263,
+      "char_compression_ratio": 0.2969004893964111
+    },
+    {
+      "question": "who sings bartender i really did it this time",
+      "prediction": "T-Pain",
+      "ground_truths": [
+        "American southern rock group Rehab"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.442983627319336,
+      "compressed_context": "Bartender (T-Pain song)\nBartender (T-Pain song) \"Bartender\" is an R&B/hip-hop song by T-Pain, Co-written by Ali Noordin and the official second single from his second album, \"Epiphany\". Bartender (Lady Antebellum song)\nBartender (Lady Antebellum song) \"Bartender\" is a song written and recorded by American country music trio Lady Antebellum.",
+      "original_tokens": 746,
+      "compressed_tokens": 100,
+      "token_compression_ratio": 0.13404825737265416,
+      "char_compression_ratio": 0.11538461538461539
+    },
+    {
+      "question": "who did the lions play on thanksgiving last year",
+      "prediction": "New England Patriots",
+      "ground_truths": [
+        "Minnesota Vikings"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.9679665565490723,
+      "compressed_context": "2010 Detroit Lions season\nfrom 4 yards out. Later, Jon Kitna sealed the Cowboys win with a 29-yard TD run. For their 71st annual Thanksgiving Day game, the Lions hosted the New England Patriots.",
+      "original_tokens": 628,
+      "compressed_tokens": 47,
+      "token_compression_ratio": 0.07484076433121019,
+      "char_compression_ratio": 0.06740792216817235
+    },
+    {
+      "question": "who is the owner of phoenix mall pune",
+      "prediction": "Phoenix Mills Limited",
+      "ground_truths": [
+        "Phoenix Mills Limited"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.8744914531707764,
+      "compressed_context": "High Street Phoenix High Street Phoenix, formerly known as Phoenix Mall, is one of the largest shopping malls in India, situated in Lower Parel, Mumbai. Phoenix Marketcity (Pune)\nPhoenix Marketcity (Pune) Phoenix Market City is a shopping mall developed by Phoenix Mills Limited located in Pune, Maharashtra. High Street Phoenix\nHigh Street Phoenix High Street Phoenix, formerly known as Phoenix Mall, is one of the largest shopping malls in India, situated in Lower Parel, Mumbai.",
+      "original_tokens": 652,
+      "compressed_tokens": 98,
+      "token_compression_ratio": 0.15030674846625766,
+      "char_compression_ratio": 0.1610850636302746
+    },
+    {
+      "question": "what is the postal code for warri nigeria",
+      "prediction": "332",
+      "ground_truths": [
+        "332"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.1275229454040527,
+      "compressed_context": "Warri South\noil companies operating in Nigeria and is also home to three different ethnic groups namely Ijaws, Urhobos and Itsekiris It has an area of 633 km² and a population of 303,417 at the 2006 census. The postal code of the area is 332. Warri South Warri South is a Local Government Area of Delta State, Nigeria. The postal code of the area is 332. The postal code of the area is 332. Warri South\nWarri South Warri South is a Local Government Area of Delta State, Nigeria.",
+      "original_tokens": 715,
+      "compressed_tokens": 123,
+      "token_compression_ratio": 0.17202797202797201,
+      "char_compression_ratio": 0.16409200137315483
+    },
+    {
+      "question": "who wrote somebody like you by keith urban",
+      "prediction": "Dan Wilson",
+      "ground_truths": [
+        "John Shanks",
+        "Keith Urban"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.681586503982544,
+      "compressed_context": "Somebody Like You\nSomebody Like You \"Somebody Like You\" is a song co-written and recorded by Australian country music singer Keith Urban. Dan Wilson (musician)\nthe writing and recording of \"Someone Like You\": \"Someone Like You\" won the 2012 Grammy for Best Pop Solo Performance, and as she accepted the award, Adele said, \"I want to thank Dan Wilson, who wrote this song with me. Keith Martin (musician)\nGrammy award winning songwriter Marti Sharron and Danny Sembello, brother of Michael Sambello, wrote the title track, “Never Found Someone Like You.”",
+      "original_tokens": 675,
+      "compressed_tokens": 130,
+      "token_compression_ratio": 0.1925925925925926,
+      "char_compression_ratio": 0.19228094575799723
+    },
+    {
+      "question": "when was the last time loyola made march madness",
+      "prediction": "2018",
+      "ground_truths": [
+        "2018"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 3.132323741912842,
+      "compressed_context": "1963 NCAA University Division Basketball Championship Game\nlack of experience against teams with African-American players, claimed before the game that \"Any good team with a predominantly Negro lineup could beat them. The game took place on March 23 at Freedom Hall in Louisville, Kentucky, before an announced crowd of 19,153 spectators, a sellout. Loyola Ramblers men's basketball\n2013, at the White House to commemorate the 50th anniversary of their victory. 1963 NCAA University Division Basketball Championship Game\nPoll and ended up winning 22 games. 1963 NCAA University Division Basketball Championship Game The 1963 NCAA",
+      "original_tokens": 678,
+      "compressed_tokens": 127,
+      "token_compression_ratio": 0.1873156342182891,
+      "char_compression_ratio": 0.21079088471849866
+    },
+    {
+      "question": "who plays christian grey in 50 shades of grey",
+      "prediction": "Jamie Dornan",
+      "ground_truths": [
+        "James Dornan"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 2.9176697731018066,
+      "compressed_context": "Fifty Shades (film series)\nreplacement for Christian Grey. In October 2013, Jennifer Ehle was cast as Carla Wilks. Fifty Shades of Grey (film)\nFifty Shades of Grey (film) Fifty Shades of Grey is a 2015 American erotic romantic drama film directed by Sam Taylor-Johnson, with a screenplay by Kelly Marcel. The film is based on E. L. James’ 2011 novel of the same name and stars Dakota Johnson as Anastasia Steele, a college graduate who begins a sadomasochistic relationship with young business magnate Christian Grey, played by Jamie Dornan. The film is based on E. L. James’ 2011 novel of the same name and stars Dakota Johnson as Anastasia Steele, a college graduate who begins a sadomasochistic relationship with young business magnate Christian Grey, played by Jamie Dornan. Fifty Shades of Grey (film)\nJames' first choice for the role of Christian Grey, but James felt that casting Pattinson and his \"Twilight\" co-star Kristen Stewart in the film would be \"weird\". On September 2, 2013, James revealed that Charlie Hunnam and Dakota Johnson had been cast as Christian Grey and Anastasia Steele, respectively.",
+      "original_tokens": 685,
+      "compressed_tokens": 255,
+      "token_compression_ratio": 0.3722627737226277,
+      "char_compression_ratio": 0.3681773073106186
+    },
+    {
+      "question": "where was sir gawain and the green knight written",
+      "prediction": "In the late 14th century.",
+      "ground_truths": [
+        "late 14th-century"
+      ],
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "latency": 3.0043601989746094,
+      "compressed_context": "Sir Gawain and the Green Knight\nCastle and in August 1995 at Brimham Rocks, North Yorkshire. \"Sir Gawain and the Green Knight\" The Squire, His Knight, and His Lady\nThe Squire, His Knight, and His Lady The Squire, His Knight, and His Lady is a book written by Gerald Morris. Sir Gawain and the Green Knight\nGawain and the Green Knight\" in 2002. Green Knight\nis in the late 14th century alliterative poem \"Sir Gawain and the Green Knight\", which survives in only one manuscript along with other poems by the same author, the so-called Pearl Poet. Sir Gawain and the Green Knight\nwith a planned publication date of 2018.",
+      "original_tokens": 690,
+      "compressed_tokens": 157,
+      "token_compression_ratio": 0.22753623188405797,
+      "char_compression_ratio": 0.20711648204095334
+    },
+    {
+      "question": "in what year did japan attack pearl harbor",
+      "prediction": "1941",
+      "ground_truths": [
+        "1941"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.196772336959839,
+      "compressed_context": "Attack on Pearl Harbor\nAttack on Pearl Harbor The attack on Pearl Harbor was a surprise military strike by the Imperial Japanese Navy Air Service against the United States naval base at Pearl Harbor, Hawaii Territory, on the morning of December 7, 1941. The attack, also known as the Battle of Pearl Harbor, led to the United States' entry into World War II. The Imperial Japanese Navy made its surprise attack on Pearl Harbor, Oahu, Hawaii Territory, on Sunday morning, December 7, 1941. Attack on Pearl Harbor\nJapan, but the lack of any formal warning, particularly while negotiations were still apparently ongoing, led President Franklin D. Roosevelt to proclaim December 7, 1941, \"a date which will live in infamy\".",
+      "original_tokens": 612,
+      "compressed_tokens": 154,
+      "token_compression_ratio": 0.25163398692810457,
+      "char_compression_ratio": 0.2369028006589786
+    },
+    {
+      "question": "when did country boy can survive come out",
+      "prediction": "January 1982",
+      "ground_truths": [
+        "January 1982"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.810202121734619,
+      "compressed_context": "A Country Boy Can Survive\nA Country Boy Can Survive \"A Country Boy Can Survive\" is a song written and recorded by American country music artist Hank Williams Jr. The song was released as a single in January 1982 and reached a peak of number 2 on the \"Billboard\" Hot Country Singles charts in March 1982. At the \"UFC 56\" live broadcast, Joe Rogan said: \"My favorite walk-out song in all the UFC, ′A country boy can survive.′\" Hughes released his autobiography, \"Made in America: The Most Dominant Champion in UFC History\", co-written with Michael Malice, on January 1, 2008. A Country Boy",
+      "original_tokens": 695,
+      "compressed_tokens": 146,
+      "token_compression_ratio": 0.21007194244604316,
+      "char_compression_ratio": 0.19737726967047747
+    },
+    {
+      "question": "when did michael jordan retired from basketball for good",
+      "prediction": "January 13, 1999",
+      "ground_truths": [
+        "2003"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 3.0600037574768066,
+      "compressed_context": "The closing titles mentions that Jordan retired from basketball for good on January 13, 1999.",
+      "original_tokens": 673,
+      "compressed_tokens": 20,
+      "token_compression_ratio": 0.029717682020802376,
+      "char_compression_ratio": 0.03192584963954686
+    },
+    {
+      "question": "the story idea for the yellow wallpaper was based on a civil war treatment called",
+      "prediction": "The rest cure.",
+      "ground_truths": [
+        "rest cure"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 2.4466755390167236,
+      "compressed_context": "The Yellow Wallpaper\nThe Yellow Wallpaper \"The Yellow Wallpaper\" (original title: \"The Yellow Wall-paper. A Story\") is a short story by American writer Charlotte Perkins Gilman, first published in January 1892 in \"The New England Magazine\". The Yellow Wallpaper \"The Yellow Wallpaper\" (original title: \"The Yellow Wall-paper. A Story\") is a short story by American writer Charlotte Perkins Gilman, first Charlotte Perkins Gilman\nThe narrator in the story must do as her husband, who is also her doctor, demands, although the treatment he prescribes contrasts directly with what she truly needs — mental stimulation and the freedom to escape the monotony of the room to which she is confined. \"The Yellow Wallpaper\" was essentially a response to the doctor who had tried to cure her of her depression through a \"rest cure\", Dr. Silas Weir Mitchell, and she sent him a copy of the story. Believing she must try to free the woman in the wallpaper, the woman begins to strip the remaining paper off the wall.",
+      "original_tokens": 598,
+      "compressed_tokens": 212,
+      "token_compression_ratio": 0.35451505016722407,
+      "char_compression_ratio": 0.34933890048712596
+    },
+    {
+      "question": "when is the show six coming back on",
+      "prediction": "I'm sorry, I don't have any information about the show \"Six\" coming back on.",
+      "ground_truths": [
+        "May 28, 2018"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 4.474210500717163,
+      "compressed_context": "Six (TV series)\nSix (TV series) Six (stylized as SIX) is an American television drama series. \"Six\" premiered on January 18, 2017. \"Six\" was renewed for a second season of 10 episodes on February 23, 2017, which premiered on May 28, 2018, with the second new episode airing during its regular timeslot on May 30, 2018. Six (TV series)\nre-shot. Six (TV series)\nan average rating of 6.1/10. Six (TV series) Six (stylized as SIX) is an American television drama series. \"Six\" premiered on January 18, 2017. \"Six\" was renewed for a second season Community (season 6)\nTelevision starting March 18, 2015. In Australia, the sixth season was available on Stan beginning March 17, 2015.",
+      "original_tokens": 706,
+      "compressed_tokens": 191,
+      "token_compression_ratio": 0.2705382436260623,
+      "char_compression_ratio": 0.2187399030694669
+    },
+    {
+      "question": "when was the first time the word catholic was used",
+      "prediction": "The first known use of the word \"catholic\" was in the early 2nd century.",
+      "ground_truths": [
+        "in the early 2nd century"
+      ],
+      "em": 0.0,
+      "f1": 0.5333333333333333,
+      "latency": 3.399423360824585,
+      "compressed_context": "Catholic (term)\nuse of the term \"Catholic Christian\" exclusively to those who followed the same faith as Pope Damasus I of Rome and Pope Peter of Alexandria. Numerous other early writers including Cyril of Jerusalem (c. 315–386), Augustine of Hippo (354–430) further developed the use of the term \"catholic\" in relation to Christianity. Catholic (from ) was first used to describe the church in the early 2nd century. The first known use of the phrase \"the catholic church\" ( \"he katholike ekklesia\") occurred in the letter written about 110 AD from Saint Ignatius of Antioch to the Smyrnaeans.",
+      "original_tokens": 711,
+      "compressed_tokens": 144,
+      "token_compression_ratio": 0.20253164556962025,
+      "char_compression_ratio": 0.18947368421052632
+    },
+    {
+      "question": "how many o'reilly auto parts stores are there",
+      "prediction": "182",
+      "ground_truths": [
+        "5,100"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 2.745774745941162,
+      "compressed_context": "O'Reilly Auto Parts\nIn March 1975, annual sales volume rose to $7 million and a 52,000 square-foot facility at 233 S. Patterson was built for the O’Reilly/Ozark warehouse operation. By that time, the company had nine stores, all located in southwest Missouri. On January 30, 1998, O’Reilly merged with Hi/LO Auto Supply, adding 182 auto parts stores O'Reilly Auto Parts O’Reilly Auto Parts is an American auto parts retailer that provides automotive aftermarket parts, tools, supplies, equipment, and accessories in the United States serving both the professional service providers and do-it-yourself customers. O'Reilly Auto Parts\nO'Reilly Auto Parts O’Reilly Auto Parts is an American auto parts retailer that provides automotive aftermarket parts, tools, supplies, equipment, and accessories in the United States serving both the professional service providers and do-it-yourself customers.",
+      "original_tokens": 724,
+      "compressed_tokens": 194,
+      "token_compression_ratio": 0.26795580110497236,
+      "char_compression_ratio": 0.28134845620667925
+    },
+    {
+      "question": "the good doctor season 1 episode 2 air date",
+      "prediction": "September 25, 2017",
+      "ground_truths": [
+        "October 2, 2017"
+      ],
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "latency": 3.2344303131103516,
+      "compressed_context": "The Good Doctor (TV series)\nthe first as Alex, Morgan, Audrey, and Lea, respectively. In September 19, 2018, it was announced that Beau Garrett had left the series ahead of the second season premiere. The Good Doctor (TV series)\nat ABC after a previous attempted series did not move forward at CBS Television Studios in 2015; \"The Good Doctor\" was ordered to series in May 2017. On October 3, 2017, ABC picked up the series for a full season of 18 episodes. The Good Doctor (TV series)\nseason of 18 episodes on October 3, 2017.",
+      "original_tokens": 717,
+      "compressed_tokens": 134,
+      "token_compression_ratio": 0.18688981868898186,
+      "char_compression_ratio": 0.1822268326417704
+    }
+  ],
+  "metrics": {
+    "exact_match": 0.33,
+    "f1": 0.4294626542040335,
+    "latency": 2.9505850744247435,
+    "num_samples": 100,
+    "avg_original_tokens": 676.76,
+    "avg_compressed_tokens": 150.28,
+    "token_compression_ratio": 0.22075930310792063,
+    "char_compression_ratio": 0.21249939112977623
+  }
+}

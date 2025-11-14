@@ -3,7 +3,7 @@ from exit_rag import ExitRAG, Document
 # Initialize pipeline
 rag = ExitRAG(
     retriever_model="google/gemma-2b-it",
-    compression_model="doubleyyh/exit-gemma-2b",
+    compression_model="/mnt/data2/yichengtao/EXIT/outputs/exit_model/final_model",
     reader_model="meta-llama/Llama-3.1-8B-Instruct"
 )
 

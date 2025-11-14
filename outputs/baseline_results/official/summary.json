@@ -1,0 +1,12 @@
+{
+  "TQA": {
+    "exact_match": 0.566781578714753,
+    "f1": 0.6576565921620976,
+    "latency": 2.7383707092957525,
+    "num_samples": 11313,
+    "avg_original_tokens": 683.844515159551,
+    "avg_compressed_tokens": 32.19870944930611,
+    "token_compression_ratio": 0.04714734288336429,
+    "char_compression_ratio": 0.04437601257075791
+  }
+}

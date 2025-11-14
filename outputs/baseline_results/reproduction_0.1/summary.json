@@ -1,0 +1,12 @@
+{
+  "2wikimultihop": {
+    "exact_match": 0.15354643765903309,
+    "f1": 0.24955683368686252,
+    "latency": 3.3186936175626047,
+    "num_samples": 12576,
+    "avg_original_tokens": 730.3064567430025,
+    "avg_compressed_tokens": 126.25071564885496,
+    "token_compression_ratio": 0.17314026687167497,
+    "char_compression_ratio": 0.15923103577288897
+  }
+}
