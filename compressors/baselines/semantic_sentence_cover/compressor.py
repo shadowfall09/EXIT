@@ -30,6 +30,7 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
         query_expansion_min: int = 10,
         query_expansion_ratio: float = 0.1,
         document_sampling_ratio: float = 0.15,
+        dedup_threshold: float = 0.95,
         cache_dir: str = "./cache"
     ):
         """Initialize Semantic Sentence Cover compressor.
@@ -40,12 +41,14 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
             query_expansion_min: Minimum number of sentences for query expansion
             query_expansion_ratio: Ratio of total sentences to include in query expansion (10%)
             document_sampling_ratio: Ratio of sentences to select (p=15%)
+            dedup_threshold: Similarity threshold for de-duplication (default: 0.95)
             cache_dir: Cache directory for models
         """
         self.device = device if device else ("cuda" if torch.cuda.is_available() else "cpu")
         self.query_expansion_min = query_expansion_min
         self.query_expansion_ratio = query_expansion_ratio
         self.document_sampling_ratio = document_sampling_ratio
+        self.dedup_threshold = dedup_threshold
         
         # Load sentence embedding model
         print(f"Loading embedding model: {embedding_model}")
@@ -66,6 +69,50 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
         """Split text into sentences using spacy."""
         doc = self.nlp(text)
         return [sent.text.strip() for sent in doc.sents if sent.text.strip()]
+    
+    def _deduplicate_sentences(
+        self,
+        sentences: List[str],
+        sentence_to_doc: List[int],
+        embeddings: torch.Tensor
+    ) -> Tuple[List[str], List[int], torch.Tensor]:
+        """Remove near-duplicate sentences using embedding similarity.
+        
+        Args:
+            sentences: List of all sentences
+            sentence_to_doc: List mapping each sentence to its document index
+            embeddings: Pre-computed sentence embeddings
+            
+        Returns:
+            Tuple of (deduplicated_sentences, deduplicated_sentence_to_doc, deduplicated_embeddings)
+        """
+        if not sentences or self.dedup_threshold >= 1.0:
+            return sentences, sentence_to_doc, embeddings
+        
+        # Compute pairwise cosine similarity
+        similarity_matrix = torch.nn.functional.cosine_similarity(
+            embeddings.unsqueeze(1),
+            embeddings.unsqueeze(0),
+            dim=2
+        )
+        
+        # Find duplicates (sentences with similarity above threshold, excluding self-similarity)
+        keep_mask = [True] * len(sentences)
+        
+        for i in range(len(sentences)):
+            if not keep_mask[i]:
+                continue
+            for j in range(i + 1, len(sentences)):
+                if keep_mask[j] and similarity_matrix[i, j].item() >= self.dedup_threshold:
+                    # Mark the later sentence for removal
+                    keep_mask[j] = False
+        
+        # Filter sentences, mappings, and embeddings
+        deduped_sentences = [s for i, s in enumerate(sentences) if keep_mask[i]]
+        deduped_sentence_to_doc = [d for i, d in enumerate(sentence_to_doc) if keep_mask[i]]
+        deduped_embeddings = embeddings[keep_mask]
+        
+        return deduped_sentences, deduped_sentence_to_doc, deduped_embeddings
     
     def _expand_query_bm25(
         self,
@@ -112,26 +159,20 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
     def _compute_similarity_matrix(
         self,
         query_sentences: List[str],
-        document_sentences: List[str]
+        doc_embeddings: torch.Tensor
     ) -> np.ndarray:
         """Compute similarity between query and document sentences.
         
         Args:
             query_sentences: Expanded query sentences
-            document_sentences: All document sentences
+            doc_embeddings: Pre-computed document sentence embeddings
             
         Returns:
             Similarity matrix [num_doc_sentences, num_query_sentences]
         """
-        # Generate embeddings
+        # Generate embeddings for query sentences only
         query_embeddings = self.embedding_model.encode(
             query_sentences,
-            convert_to_tensor=True,
-            device=self.device
-        )
-        
-        doc_embeddings = self.embedding_model.encode(
-            document_sentences,
             convert_to_tensor=True,
             device=self.device
         )
@@ -211,22 +252,36 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
                 score=0.0
             )]
         
-        # Step 2: Query Expansion using BM25
-        expanded_query_sentences = self._expand_query_bm25(query, all_sentences)
-        
-        # Step 3: Compute similarity between query sentences and document sentences
-        similarity_matrix = self._compute_similarity_matrix(
-            expanded_query_sentences,
-            all_sentences
+        # Step 2: Encode all document sentences (single forward pass)
+        doc_embeddings = self.embedding_model.encode(
+            all_sentences,
+            convert_to_tensor=True,
+            device=self.device
         )
         
-        # Step 4: Document Sampling - select top p% sentences
+        # Step 3: De-duplicate sentences using pre-computed embeddings
+        all_sentences, sentence_to_doc, doc_embeddings = self._deduplicate_sentences(
+            all_sentences,
+            sentence_to_doc,
+            doc_embeddings
+        )
+        
+        # Step 4: Query Expansion using BM25
+        expanded_query_sentences = self._expand_query_bm25(query, all_sentences)
+        
+        # Step 5: Compute similarity between query sentences and document sentences
+        similarity_matrix = self._compute_similarity_matrix(
+            expanded_query_sentences,
+            doc_embeddings
+        )
+        
+        # Step 6: Document Sampling - select top p% sentences
         selected_indices = self._sample_documents(
             all_sentences,
             similarity_matrix
         )
         
-        # Step 5: Reconstruct compressed document in original order
+        # Step 7: Reconstruct compressed document in original order
         selected_sentences = [all_sentences[i] for i in selected_indices]
         compressed_text = " ".join(selected_sentences)
         
