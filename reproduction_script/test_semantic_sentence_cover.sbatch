@@ -44,7 +44,7 @@ nvidia-smi
 echo ""
 
 # Define models and tasks
-EMBEDDING_MODEL="Alibaba-NLP/gte-Qwen2-7B-instruct"
+EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
 TASKS="HotpotQA 2wikimultihop musique NQ TQA"
 DATA_ROOT="/mnt/data2/yichengtao/data/retrieval"

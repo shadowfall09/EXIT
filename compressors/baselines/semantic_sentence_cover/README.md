@@ -44,7 +44,7 @@ from compressors import SemanticSentenceCoverCompressor, SearchResult
 
 # Initialize compressor
 compressor = SemanticSentenceCoverCompressor(
-    embedding_model="Alibaba-NLP/gte-Qwen2-7B-instruct",
+    embedding_model="Qwen/Qwen3-Embedding-4B",
     query_expansion_min=10,
     query_expansion_ratio=0.1,  # 10%
     document_sampling_ratio=0.15  # 15% (p value)
@@ -72,7 +72,7 @@ compressed_text = compressed_docs[0].text
 ```bash
 # Run on all datasets with default parameters (p=15%)
 python test_semantic_sentence_cover.py \
-    --embedding_model "Alibaba-NLP/gte-Qwen2-7B-instruct" \
+    --embedding_model "Qwen/Qwen3-Embedding-4B" \
     --reader_model "meta-llama/Llama-3.1-8B-Instruct" \
     --data_root "/path/to/data/retrieval" \
     --tasks HotpotQA 2wikimultihop musique NQ TQA \
@@ -92,7 +92,7 @@ This will run experiments with p=10%, p=15%, and p=20% to find the optimal sampl
 
 ## Parameters
 
-- `embedding_model`: Sentence embedding model (default: "Alibaba-NLP/gte-Qwen2-7B-instruct")
+- `embedding_model`: Sentence embedding model (default: "Qwen/Qwen3-Embedding-4B")
 - `query_expansion_min`: Minimum number of sentences for query expansion (default: 10)
 - `query_expansion_ratio`: Ratio of total sentences to include in query expansion (default: 0.1 = 10%)
 - `document_sampling_ratio`: Ratio of sentences to select for final compression (default: 0.15 = 15%, i.e., p=15%)

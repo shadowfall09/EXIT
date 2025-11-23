@@ -25,7 +25,7 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
     
     def __init__(
         self,
-        embedding_model: str = "Alibaba-NLP/gte-Qwen2-7B-instruct",
+        embedding_model: str = "Qwen/Qwen3-Embedding-4B",
         device: str = None,
         query_expansion_min: int = 10,
         query_expansion_ratio: float = 0.1,
