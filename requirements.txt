@@ -16,6 +16,7 @@ sentencepiece>=0.1.99
 tokenizers>=0.15.0
 jsonlines>=4.0.0
 nltk>=3.8.1
+rank-bm25>=0.2.2
 
 # Data science utilities
 numpy>=1.24.0
