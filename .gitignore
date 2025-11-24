@@ -1,4 +1,7 @@
+# Python ignores
 *.pyc
 __pycache__/
 
+# Custom ignores
 data/
+cache/
