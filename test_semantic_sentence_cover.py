@@ -108,6 +108,9 @@ def generate_answer(
     """Generate answer using compressed context."""
     start_time = time.time()
     
+    # Get actual device from model (in case device_map="auto" placed it elsewhere)
+    model_device = next(reader_model.parameters()).device
+    
     # Format prompt
     chat = [{
         "role": "system",
@@ -128,7 +131,7 @@ def generate_answer(
     inputs = reader_tokenizer(
         prompt,
         return_tensors="pt"
-    ).to(device)
+    ).to(model_device)
     
     with torch.no_grad():
         outputs = reader_model.generate(
