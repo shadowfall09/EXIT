@@ -72,7 +72,7 @@ python test_semantic_sentence_cover.py \
     --top_k 5 \
     --retriever "$RETRIEVER" \
     --query_expansion_min 10 \
-    --query_expansion_ratio 0.1 \
+    --query_expansion_ratio 0.3 \
     --document_sampling_ratio 0.15 \
     --output_dir "$OUTPUT_DIR_1"
 
@@ -103,7 +103,7 @@ python test_semantic_sentence_cover.py \
     --top_k 5 \
     --retriever "$RETRIEVER" \
     --query_expansion_min 10 \
-    --query_expansion_ratio 0.1 \
+    --query_expansion_ratio 0.3 \
     --document_sampling_ratio 0.10 \
     --output_dir "$OUTPUT_DIR_2"
 
@@ -134,7 +134,7 @@ python test_semantic_sentence_cover.py \
     --top_k 5 \
     --retriever "$RETRIEVER" \
     --query_expansion_min 10 \
-    --query_expansion_ratio 0.1 \
+    --query_expansion_ratio 0.3 \
     --document_sampling_ratio 0.20 \
     --output_dir "$OUTPUT_DIR_3"
 
