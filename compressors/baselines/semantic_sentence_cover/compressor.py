@@ -114,6 +114,57 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
         
         return deduped_sentences, deduped_sentence_to_doc, deduped_embeddings
     
+    def _expand_query_dense(
+        self,
+        query: str,
+        all_sentences: List[str],
+        doc_embeddings: torch.Tensor
+    ) -> Tuple[List[str], List[int]]:
+        """Expand query using dense retrieval top scoring sentences.
+        
+        Args:
+            query: Original query
+            all_sentences: All sentences from documents
+            doc_embeddings: Pre-computed document embeddings
+            
+        Returns:
+            Tuple of (expanded_query_sentences, expansion_indices)
+        """
+        # Split query into sentences
+        query_sentences = self._split_into_sentences(query)
+        
+        # Encode query sentences
+        query_embeddings = self.embedding_model.encode(
+            query_sentences,
+            convert_to_tensor=True,
+            device=self.device
+        )
+        
+        # Compute similarity between query and document sentences
+        similarity = torch.nn.functional.cosine_similarity(
+            doc_embeddings.unsqueeze(1),
+            query_embeddings.unsqueeze(0),
+            dim=2
+        )
+        
+        # Get max similarity to any query sentence for each document sentence
+        max_similarities = similarity.max(dim=1)[0].cpu().numpy()
+        
+        # Determine number of sentences to include
+        num_to_include = max(
+            self.query_expansion_min,
+            int(self.query_expansion_ratio * len(all_sentences))
+        )
+        
+        # Get top scoring sentences by dense similarity
+        top_indices = np.argsort(max_similarities)[::-1][:num_to_include]
+        top_sentences = [all_sentences[i] for i in top_indices]
+        
+        # Combine original query sentences with top dense-retrieved sentences
+        expanded_query_sentences = query_sentences + top_sentences
+        
+        return expanded_query_sentences, top_indices.tolist()
+    
     def _expand_query_bm25(
         self,
         query: str,
@@ -156,7 +207,7 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
         
         return expanded_query_sentences
     
-    def _compute_similarity_matrix(
+    def _compute_dense_similarity_matrix(
         self,
         query_sentences: List[str],
         doc_embeddings: torch.Tensor
@@ -185,6 +236,47 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
         )
         
         return similarity.cpu().numpy()
+
+    def _compute_bm25_similarity_matrix(
+        self,
+        query_sentences: List[str],
+        query_indices: List[int],
+        all_sentences: List[str]
+    ) -> np.ndarray:
+        """Compute BM25 similarity between query sentences and document sentences.
+        
+        Args:
+            query_sentences: Expanded query sentences (original query + dense-retrieved)
+            query_indices: Indices of expanded sentences in all_sentences (for masking self-similarity)
+            all_sentences: All document sentences
+            
+        Returns:
+            Similarity matrix [num_doc_sentences, num_query_sentences] with BM25 scores
+        """
+        # Tokenize all document sentences
+        tokenized_corpus = [sent.lower().split() for sent in all_sentences]
+        
+        # Create BM25 index
+        bm25 = BM25Okapi(tokenized_corpus)
+        
+        # Compute BM25 scores for each query sentence against all document sentences
+        similarity_matrix = np.zeros((len(all_sentences), len(query_sentences)))
+        
+        for q_idx, query_sent in enumerate(query_sentences):
+            tokenized_query = query_sent.lower().split()
+            scores = bm25.get_scores(tokenized_query)
+            
+            # If this query sentence came from document sentences, mask self-similarity
+            if q_idx >= len(self._split_into_sentences(query_sentences[0])):
+                # This is an expanded sentence, find its original index
+                expansion_idx = q_idx - len(self._split_into_sentences(query_sentences[0]))
+                if expansion_idx < len(query_indices):
+                    original_idx = query_indices[expansion_idx]
+                    scores[original_idx] = 0  # Prevent sentence from selecting itself
+            
+            similarity_matrix[:, q_idx] = scores
+        
+        return similarity_matrix
     
     def _sample_documents(
         self,
@@ -266,13 +358,18 @@ class SemanticSentenceCoverCompressor(BaseCompressor):
             doc_embeddings
         )
         
-        # Step 4: Query Expansion using BM25
-        expanded_query_sentences = self._expand_query_bm25(query, all_sentences)
-        
-        # Step 5: Compute similarity between query sentences and document sentences
-        similarity_matrix = self._compute_similarity_matrix(
-            expanded_query_sentences,
+        # Step 4: Query Expansion using Dense Retrieval
+        expanded_query_sentences, expansion_indices = self._expand_query_dense(
+            query,
+            all_sentences,
             doc_embeddings
+        )
+        
+        # Step 5: Compute BM25 similarity between expanded query sentences and all document sentences
+        similarity_matrix = self._compute_bm25_similarity_matrix(
+            expanded_query_sentences,
+            expansion_indices,
+            all_sentences
         )
         
         # Step 6: Document Sampling - select top p% sentences
