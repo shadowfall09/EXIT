@@ -8,7 +8,8 @@ import errno
 from typing import Union, Tuple, List, Dict
 from collections import defaultdict
 import sys
-import dist_utils
+import math
+from .dist_utils import is_main, weighted_average
 
 Number = Union[float, int]
 
@@ -25,7 +26,7 @@ def init_logger(args, stdout_only=False):
         handlers.append(file_handler)
     logging.basicConfig(
         datefmt="%m/%d/%Y %H:%M:%S",
-        level=logging.INFO if dist_utils.is_main() else logging.WARN,
+        level=logging.INFO if is_main() else logging.WARN,
         format="[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s",
         handlers=handlers,
     )
@@ -185,7 +186,7 @@ class WeightedAvgStats:
                 v = 0.0
             else:
                 v = self.raw_stats[k] / self.total_weights[k]
-            v, _ = dist_utils.weighted_average(v, self.total_weights[k])
+            v, _ = weighted_average(v, self.total_weights[k])
             global_dict[k] = v
         return global_dict
 
@@ -202,7 +203,7 @@ def init_tb_logger(output_dir):
     try:
         from torch.utils import tensorboard
 
-        if dist_utils.is_main():
+        if is_main():
             tb_logger = tensorboard.SummaryWriter(output_dir)
         else:
             tb_logger = None

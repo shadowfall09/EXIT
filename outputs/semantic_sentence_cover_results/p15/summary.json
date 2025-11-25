@@ -1,0 +1,52 @@
+{
+  "HotpotQA": {
+    "exact_match": 0.20027008777852803,
+    "f1": 0.2805119637720096,
+    "latency": 1.514198766569283,
+    "num_samples": 7405,
+    "avg_original_tokens": 700.894665766374,
+    "avg_compressed_tokens": 103.68372721134368,
+    "token_compression_ratio": 0.14804451937224025,
+    "char_compression_ratio": 0.1461383836603728
+  },
+  "2wikimultihop": {
+    "exact_match": 0.13120229007633588,
+    "f1": 0.2034199708412851,
+    "latency": 1.7128984897797952,
+    "num_samples": 12576,
+    "avg_original_tokens": 730.3064567430025,
+    "avg_compressed_tokens": 108.28156806615776,
+    "token_compression_ratio": 0.14823745965542892,
+    "char_compression_ratio": 0.14491726729355053
+  },
+  "musique": {
+    "exact_match": 0.0244104261481175,
+    "f1": 0.07216848176368121,
+    "latency": 1.5513942210103147,
+    "num_samples": 4834,
+    "avg_original_tokens": 683.3268514687629,
+    "avg_compressed_tokens": 104.6938353330575,
+    "token_compression_ratio": 0.15345866265930863,
+    "char_compression_ratio": 0.1528627249463135
+  },
+  "NQ": {
+    "exact_match": 0.22359255452780633,
+    "f1": 0.3227540489383373,
+    "latency": 1.4306129958921743,
+    "num_samples": 8757,
+    "avg_original_tokens": 673.9375356857371,
+    "avg_compressed_tokens": 101.70115336302386,
+    "token_compression_ratio": 0.15102118830468333,
+    "char_compression_ratio": 0.14878850675960295
+  },
+  "TQA": {
+    "exact_match": 0.5021656501370105,
+    "f1": 0.5875906634977515,
+    "latency": 1.409137228065699,
+    "num_samples": 11313,
+    "avg_original_tokens": 683.844515159551,
+    "avg_compressed_tokens": 104.9724211084593,
+    "token_compression_ratio": 0.15359780744495838,
+    "char_compression_ratio": 0.1517549614307453
+  }
+}
