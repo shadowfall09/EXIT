@@ -1,0 +1,22 @@
+{
+  "HotpotQA": {
+    "exact_match": 0.22687373396353816,
+    "f1": 0.31872493511232697,
+    "latency": 1.194748445397531,
+    "num_samples": 7405,
+    "avg_original_tokens": 700.894665766374,
+    "avg_compressed_tokens": 144.67994598244428,
+    "token_compression_ratio": 0.2065007294215162,
+    "char_compression_ratio": 0.20197009814535877
+  },
+  "TQA": {
+    "exact_match": 0.5399098382391938,
+    "f1": 0.6300879929958176,
+    "latency": 1.1062002981582624,
+    "num_samples": 11313,
+    "avg_original_tokens": 683.844515159551,
+    "avg_compressed_tokens": 148.47387960753116,
+    "token_compression_ratio": 0.21724519869636355,
+    "char_compression_ratio": 0.21334608571535313
+  }
+}
