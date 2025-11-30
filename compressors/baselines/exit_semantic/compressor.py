@@ -188,7 +188,7 @@ class EXITSemanticCompressor(BaseCompressor):
         # Step 5: Filter out bottom 50%, keep top 50% by similarity
         num_to_keep = max(1, int(self.semantic_filter_ratio * len(all_sentences)))
         top_indices = np.argsort(similarities)[::-1][:num_to_keep]
-        top_indices_sorted = sorted(top_indices)  # Maintain original order
+        top_indices_sorted = np.sort(top_indices)  # Maintain original order
         
         # Step 6: Reconstruct documents with only kept sentences
         # Group sentences by document
