@@ -1,0 +1,50 @@
+{
+  "2wikimultihop": {
+    "metrics": {
+      "exact_match": 0.15354643765903309,
+      "f1": 0.24955683368686252,
+      "latency": 3.3186936175626047,
+      "num_samples": 12576,
+      "avg_original_tokens": 730.3064567430025,
+      "avg_compressed_tokens": 126.25071564885496,
+      "token_compression_ratio": 0.17314026687167497,
+      "char_compression_ratio": 0.15923103577288897
+    }
+  },
+  "HotpotQA": {
+    "metrics": {
+      "exact_match": 0.2837272113436867,
+      "f1": 0.39306205044242803,
+      "latency": 3.0624500583427166,
+      "num_samples": 7405,
+      "avg_original_tokens": 700.894665766374,
+      "avg_compressed_tokens": 149.10925050641458,
+      "token_compression_ratio": 0.21330155981982002,
+      "char_compression_ratio": 0.20238845763808241
+    }
+  },
+  "NQ": {
+    "metrics": {
+      "exact_match": 0.3175745118191161,
+      "f1": 0.43750641298373893,
+      "latency": 2.9129449833306573,
+      "num_samples": 8757,
+      "avg_original_tokens": 673.9375356857371,
+      "avg_compressed_tokens": 147.91115678885464,
+      "token_compression_ratio": 0.21961909363128101,
+      "char_compression_ratio": 0.2102820453771856
+    }
+  },
+  "TQA": {
+    "metrics": {
+      "exact_match": 0.5799522673031027,
+      "f1": 0.6778160957152726,
+      "latency": 2.7962359256267253,
+      "num_samples": 11313,
+      "avg_original_tokens": 683.844515159551,
+      "avg_compressed_tokens": 143.71236630425176,
+      "token_compression_ratio": 0.21045582685260028,
+      "char_compression_ratio": 0.19971645906836188
+    }
+  }
+}
