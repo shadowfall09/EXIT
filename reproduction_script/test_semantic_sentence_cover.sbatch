@@ -22,7 +22,7 @@ echo "=========================================="
 
 # Activate conda environment
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate exit
+conda activate exit2
 
 # Set CUDA visible devices
 export CUDA_VISIBLE_DEVICES=0
@@ -46,7 +46,7 @@ echo ""
 # Define models and tasks
 EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
-TASKS="HotpotQA 2wikimultihop musique NQ TQA"
+TASKS="HotpotQA TQA"
 DATA_ROOT="/mnt/data2/yichengtao/data/retrieval"
 RETRIEVER="contriever-msmarco"
 
@@ -54,7 +54,7 @@ RETRIEVER="contriever-msmarco"
 echo "=========================================="
 echo "TEST: Semantic Sentence Cover (p=15%)"
 echo "=========================================="
-OUTPUT_DIR_1="/home/yichengtao/EXIT/outputs/semantic_sentence_cover_results/p15"
+OUTPUT_DIR_1="/home/yichengtao/EXIT/outputs/semantic_sentence_cover_results1126/p15"
 
 echo "Embedding Model: $EMBEDDING_MODEL"
 echo "Reader Model: $READER_MODEL"
@@ -72,7 +72,7 @@ python test_semantic_sentence_cover.py \
     --top_k 5 \
     --retriever "$RETRIEVER" \
     --query_expansion_min 10 \
-    --query_expansion_ratio 0.1 \
+    --query_expansion_ratio 0.3 \
     --document_sampling_ratio 0.15 \
     --output_dir "$OUTPUT_DIR_1"
 
@@ -90,7 +90,7 @@ echo ""
 echo "=========================================="
 echo "TEST: Semantic Sentence Cover (p=10%)"
 echo "=========================================="
-OUTPUT_DIR_2="/home/yichengtao/EXIT/outputs/semantic_sentence_cover_results/p10"
+OUTPUT_DIR_2="/home/yichengtao/EXIT/outputs/semantic_sentence_cover_results1126/p10"
 
 echo "Document Sampling Ratio: 0.10 (10%)"
 echo ""
@@ -103,7 +103,7 @@ python test_semantic_sentence_cover.py \
     --top_k 5 \
     --retriever "$RETRIEVER" \
     --query_expansion_min 10 \
-    --query_expansion_ratio 0.1 \
+    --query_expansion_ratio 0.3 \
     --document_sampling_ratio 0.10 \
     --output_dir "$OUTPUT_DIR_2"
 
@@ -121,7 +121,7 @@ echo ""
 echo "=========================================="
 echo "TEST: Semantic Sentence Cover (p=20%)"
 echo "=========================================="
-OUTPUT_DIR_3="/home/yichengtao/EXIT/outputs/semantic_sentence_cover_results/p20"
+OUTPUT_DIR_3="/home/yichengtao/EXIT/outputs/semantic_sentence_cover_results1126/p20"
 
 echo "Document Sampling Ratio: 0.20 (20%)"
 echo ""
@@ -134,7 +134,7 @@ python test_semantic_sentence_cover.py \
     --top_k 5 \
     --retriever "$RETRIEVER" \
     --query_expansion_min 10 \
-    --query_expansion_ratio 0.1 \
+    --query_expansion_ratio 0.3 \
     --document_sampling_ratio 0.20 \
     --output_dir "$OUTPUT_DIR_3"
 

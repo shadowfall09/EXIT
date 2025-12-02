@@ -1,0 +1,141 @@
+==========================================
+Job Array ID: 39547
+Job Array Task ID: 2
+Node: taurus
+Start time: Sun Nov 30 04:34:35 AM UTC 2025
+Working directory: /home/yichengtao/EXIT/reproduction_script
+==========================================
+
+Environment Information:
+Python: /home/yichengtao/miniconda3/envs/exit2/bin/python
+CUDA_VISIBLE_DEVICES: 2
+HF_HOME: /mnt/data2/yichengtao/huggingface_cache
+
+Sun Nov 30 04:34:36 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.107.02             Driver Version: 550.107.02     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:01:00.0 Off |                  Off |
+| 54%   68C    P5             38W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               Off |   00000000:21:00.0 Off |                  Off |
+| 46%   60C    P5             40W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA RTX A6000               Off |   00000000:41:00.0 Off |                  Off |
+| 53%   66C    P5             56W /  300W |       5MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA RTX A6000               Off |   00000000:61:00.0 Off |                  Off |
+| 30%   28C    P8             20W /  300W |       5MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA RTX A6000               Off |   00000000:81:00.0 Off |                  Off |
+| 30%   27C    P8             21W /  300W |       5MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA RTX A6000               Off |   00000000:A1:00.0 Off |                  Off |
+| 30%   27C    P8             32W /  300W |       5MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA RTX A6000               Off |   00000000:C1:00.0 Off |                  Off |
+| 30%   28C    P8             25W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA RTX A6000               Off |   00000000:E1:00.0 Off |                  Off |
+| 30%   27C    P8             24W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+==========================================
+TEST: EXIT-Semantic (filter=70%, compression_threshold=0.1)
+Task ID: 2 / GPU: 2
+==========================================
+
+Embedding Model: Qwen/Qwen3-Embedding-4B
+Compression Model: /mnt/data2/yichengtao/EXIT/outputs/exit_model/final_model
+Reader Model: meta-llama/Llama-3.1-8B-Instruct
+Retriever Model: google/gemma-2b-it
+Output Directory: /home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1
+Tasks: HotpotQA TQA
+Semantic Filter Ratio: 0.7 (70%)
+Compression Threshold: 0.1
+
+Using device: cuda
+Loading tokenizer for token counting...
+Initializing EXIT-Semantic compressor...
+Loading embedding model: Qwen/Qwen3-Embedding-4B
+Loading reader model...
+
+==================================================
+Evaluating task: HotpotQA
+==================================================
+
+Loading dataset from /mnt/data2/yichengtao/data/retrieval/contriever-msmarco_HotpotQA/dev.json
+Processing 7405 samples...
+Using top 5 documents per sample
+
+Task: HotpotQA
+  Exact Match: 0.2836
+  F1 Score: 0.3913
+  Latency (s): 2.5611
+  Num Samples: 7405
+  Avg Original Tokens: 700.89
+  Avg Compressed Tokens: 191.53
+  Token Compression Ratio: 0.2742
+  Char Compression Ratio: 0.2614
+  Results saved to: /home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1/HotpotQA_results.json
+
+==================================================
+Evaluating task: TQA
+==================================================
+
+Loading dataset from /mnt/data2/yichengtao/data/retrieval/contriever-msmarco_TQA/test.json
+Processing 11313 samples...
+Using top 5 documents per sample
+
+Task: TQA
+  Exact Match: 0.5778
+  F1 Score: 0.6787
+  Latency (s): 2.4204
+  Num Samples: 11313
+  Avg Original Tokens: 683.84
+  Avg Compressed Tokens: 200.80
+  Token Compression Ratio: 0.2940
+  Char Compression Ratio: 0.2809
+  Results saved to: /home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1/TQA_results.json
+
+==================================================
+OVERALL SUMMARY
+==================================================
+
+HotpotQA:
+  EM: 0.2836
+  F1: 0.3913
+  Latency: 2.5611s
+  Token Compression: 0.2742 (192/701)
+
+TQA:
+  EM: 0.5778
+  F1: 0.6787
+  Latency: 2.4204s
+  Token Compression: 0.2940 (201/684)
+
+Summary saved to: /home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1/summary.json
+
+==========================================
+Task (filter=70%) completed successfully at Sun Nov 30 05:29:01 PM UTC 2025
+==========================================
