@@ -11,7 +11,9 @@ Process:
 """
 
 import torch
+import torch.nn.functional as F
 import numpy as np
+import re
 from typing import List, Tuple
 from sentence_transformers import SentenceTransformer
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -38,7 +40,9 @@ class EXITSemanticCompressor(BaseCompressor):
         cache_dir: str = "./cache",
         batch_size: int = 8,
         threshold: float = 0.5,
-        semantic_filter_ratio: float = 0.5
+        semantic_filter_ratio: float = 0.5,
+        num_hypothetical_documents: int = 0,
+        hypothetical_document_model: str = None
     ):
         """Initialize EXIT-Semantic compressor.
         
@@ -51,10 +55,13 @@ class EXITSemanticCompressor(BaseCompressor):
             batch_size: Batch size for processing
             threshold: Confidence threshold for EXIT selection
             semantic_filter_ratio: Ratio of sentences to keep after semantic filtering (default: 0.5 = 50%)
+            num_hypothetical_documents: Number of hypothetical documents to generate for HyDE (default: 0 = disabled)
+            hypothetical_document_model: Model string for generating hypothetical documents (default: None = use base_model)
         """
         self.batch_size = batch_size
         self.threshold = threshold
         self.semantic_filter_ratio = semantic_filter_ratio
+        self.num_hypothetical_documents = num_hypothetical_documents
         
         # Set device
         if device is None:
@@ -107,6 +114,28 @@ class EXITSemanticCompressor(BaseCompressor):
             )
         else:
             self.model = self.base_model
+        
+        # Initialize hypothetical document model (use base_model if not specified)
+        if hypothetical_document_model is None:
+            # Use the same model reference for memory efficiency
+            self.hypothetical_document_model = self.model
+            self.hypothetical_document_tokenizer = self.tokenizer
+        else:
+            # Load separate model for hypothetical document generation
+            self.hypothetical_document_tokenizer = AutoTokenizer.from_pretrained(
+                hypothetical_document_model,
+                use_fast=True
+            )
+            self.hypothetical_document_tokenizer.pad_token = self.hypothetical_document_tokenizer.eos_token
+            self.hypothetical_document_tokenizer.padding_side = "left"
+            
+            self.hypothetical_document_model = AutoModelForCausalLM.from_pretrained(
+                hypothetical_document_model,
+                **model_kwargs
+            )
+            self.hypothetical_document_model.eval()
+            if hasattr(self.hypothetical_document_model, 'half'):
+                self.hypothetical_document_model.half()
             
         # Prepare model
         self.model.eval()
@@ -131,6 +160,66 @@ class EXITSemanticCompressor(BaseCompressor):
         """Split text into sentences using spacy."""
         doc = self.nlp(text)
         return [sent.text.strip() for sent in doc.sents if sent.text.strip()]
+    
+    def _generate_hypothetical_documents(self, query: str) -> List[str]:
+        """Generate hypothetical document sentences using HyDE approach.
+        
+        Args:
+            query: The input query
+            
+        Returns:
+            List of hypothetical document sentences
+        """
+        if self.num_hypothetical_documents <= 0:
+            return []
+        
+        # Create prompt for hypothetical document generation
+        prompt = (
+            f'<start_of_turn>user\n'
+            f'Given the following question, generate {self.num_hypothetical_documents} diverse sentences that could appear in documents '
+            f'containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. '
+            f'Make them concise and capture key phrases or concepts related to the question.\n\n'
+            f'Question: {query}\n\n'
+            f'Generate exactly {self.num_hypothetical_documents} hypothetical document sentences, one per line:<end_of_turn>\n'
+            f'<start_of_turn>model\n'
+        )
+        
+        # Generate hypothetical documents
+        with torch.cuda.amp.autocast():
+            inputs = self.hypothetical_document_tokenizer(
+                prompt,
+                return_tensors='pt',
+                truncation=True,
+                max_length=2048
+            ).to(next(self.hypothetical_document_model.parameters()).device)
+            
+            with torch.no_grad():
+                outputs = self.hypothetical_document_model.generate(
+                    **inputs,
+                    max_new_tokens=256,
+                    temperature=0.7,
+                    do_sample=True,
+                    top_p=0.9,
+                    num_return_sequences=1
+                )
+            
+            generated_text = self.hypothetical_document_tokenizer.decode(
+                outputs[0][inputs['input_ids'].shape[1]:],
+                skip_special_tokens=True
+            ).strip()
+        
+        # Parse the generated hypothetical documents
+        # Split by newlines and take first num_hypothetical_documents non-empty lines
+        hypothetical_docs = []
+        for line in generated_text.split('\n'):
+            line = line.strip()
+            # Remove numbering if present (e.g., "1. ", "- ", etc.)
+            line = re.sub(r'^[\d]+\.\s*', '', line)
+            line = re.sub(r'^[-*]\s*', '', line)
+            if line and len(hypothetical_docs) < self.num_hypothetical_documents:
+                hypothetical_docs.append(line)
+        
+        return hypothetical_docs[:self.num_hypothetical_documents]
     
     def _semantic_filter(
         self,
@@ -164,33 +253,38 @@ class EXITSemanticCompressor(BaseCompressor):
         if not all_sentences:
             return documents, []
         
-        # Step 2: Encode the whole query as a single sentence
-        query_embedding = self.embedding_model.encode(
-            [query],  # Treat entire query as one sentence
+        # Step 2: Generate hypothetical documents and create expanded query
+        hypothetical_docs = self._generate_hypothetical_documents(query)
+        expanded_query = [query] + hypothetical_docs  # Query + hypothetical documents
+        
+        # Step 3: Encode the expanded query (query + hypothetical documents)
+        expanded_query_embeddings = self.embedding_model.encode(
+            expanded_query,
             convert_to_tensor=True,
             device=self.device
-        )
+        )  # Shape: (num_hypothetical_documents + 1, embedding_dim)
         
-        # Step 3: Encode all document sentences
+        # Step 4: Encode all document sentences
         doc_embeddings = self.embedding_model.encode(
             all_sentences,
             convert_to_tensor=True,
             device=self.device
-        )
+        )  # Shape: (num_sentences, embedding_dim)
         
-        # Step 4: Compute cosine similarity between query and each sentence
-        similarities = torch.nn.functional.cosine_similarity(
-            doc_embeddings,
-            query_embedding.expand_as(doc_embeddings),
-            dim=1
-        ).cpu().numpy()
+        # Step 5: Compute cosine similarity between each document sentence and all expanded query embeddings
+        # Vectorized computation: compute all similarities at once and take max per sentence
+        # Shape: (num_sentences, num_expanded_queries)
+        doc_norm = F.normalize(doc_embeddings, p=2, dim=1)
+        query_norm = F.normalize(expanded_query_embeddings, p=2, dim=1)
+        similarity_matrix = doc_norm @ query_norm.T
+        similarities = similarity_matrix.max(dim=1).values.cpu().numpy() # Shape: (num_sentences,)
         
-        # Step 5: Filter out bottom 50%, keep top 50% by similarity
+        # Step 6: Filter out bottom sentences, keep top by similarity
         num_to_keep = max(1, int(self.semantic_filter_ratio * len(all_sentences)))
         top_indices = np.argsort(similarities)[::-1][:num_to_keep]
         top_indices_sorted = np.sort(top_indices)  # Maintain original order
         
-        # Step 6: Reconstruct documents with only kept sentences
+        # Step 7: Reconstruct documents with only kept sentences
         # Group sentences by document
         doc_sentences = {}
         for idx in top_indices_sorted:

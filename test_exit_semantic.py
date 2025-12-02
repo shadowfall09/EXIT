@@ -394,6 +394,18 @@ def main():
         default=8,
         help="Batch size for EXIT processing"
     )
+    parser.add_argument(
+        "--num_hypothetical_documents",
+        type=int,
+        default=0,
+        help="Number of hypothetical documents to generate for HyDE (default: 0 = disabled)"
+    )
+    parser.add_argument(
+        "--hypothetical_document_model",
+        type=str,
+        default=None,
+        help="Model for generating hypothetical documents (default: None = use base model)"
+    )
     
     # Output arguments
     parser.add_argument(
@@ -432,7 +444,9 @@ def main():
         cache_dir=args.cache_dir,
         batch_size=args.batch_size,
         threshold=args.compression_threshold,
-        semantic_filter_ratio=args.semantic_filter_ratio
+        semantic_filter_ratio=args.semantic_filter_ratio,
+        num_hypothetical_documents=args.num_hypothetical_documents,
+        hypothetical_document_model=args.hypothetical_document_model
     )
     
     # Initialize reader model
