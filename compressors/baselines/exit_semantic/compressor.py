@@ -74,7 +74,6 @@ class EXITSemanticCompressor(BaseCompressor):
         self.embedding_model = SentenceTransformer(
             embedding_model,
             device=self.device,
-            cache_folder=cache_dir
         )
         
         # Load spacy for sentence splitting
@@ -97,7 +96,6 @@ class EXITSemanticCompressor(BaseCompressor):
             "device_map": "auto" if device is None else device,
             "torch_dtype": torch.float16,
             "load_in_4bit": True,
-            "cache_dir": cache_dir,
             "max_length": 4096,
         }
         
@@ -134,13 +132,13 @@ class EXITSemanticCompressor(BaseCompressor):
                 **model_kwargs
             )
             self.hypothetical_document_model.eval()
-            if hasattr(self.hypothetical_document_model, 'half'):
-                self.hypothetical_document_model.half()
+            # if hasattr(self.hypothetical_document_model, 'half'):
+            #     self.hypothetical_document_model.half()
             
         # Prepare model
         self.model.eval()
-        if hasattr(self.model, 'half'):
-            self.model.half()
+        # if hasattr(self.model, 'half'):
+        #     self.model.half()
             
         # Cache device and token IDs for EXIT
         self.exit_device = next(self.model.parameters()).device

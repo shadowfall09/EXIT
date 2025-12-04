@@ -7,7 +7,7 @@
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=80G
 #SBATCH --gres=gpu:1
-#SBATCH --partition=taurus
+#SBATCH --partition=aries
 #SBATCH --time=48:00:00
 #SBATCH --array=0-2%4
 #SBATCH --mail-type=END,FAIL
@@ -31,16 +31,16 @@ echo "=========================================="
 
 # Activate conda environment
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate exit2
+conda activate exit
 
 # Set CUDA visible devices for this task (distribute across 4 GPUs)
-export CUDA_VISIBLE_DEVICES=$((SLURM_ARRAY_TASK_ID % 4))
+# export CUDA_VISIBLE_DEVICES=$((SLURM_ARRAY_TASK_ID % 4))
 
 # Change to project directory
 cd /home/yichengtao/EXIT
 
 # Set HuggingFace cache
-export HF_HOME=/mnt/data2/yichengtao/huggingface_cache
+export HF_HOME=/mnt/data6/yichengtao/hf_cache
 
 # Print environment info
 echo ""
@@ -55,20 +55,20 @@ echo ""
 # Define models and tasks
 EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 RETRIEVER_MODEL="google/gemma-2b-it"
-COMPRESSION_MODEL="/mnt/data2/yichengtao/EXIT/outputs/exit_model/final_model"
+COMPRESSION_MODEL="Yugong09/exit_reproduction"
 HYPOTHETICAL_DOCUMENT_MODEL="meta-llama/Llama-3.1-8B-Instruct"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
 TASKS="HotpotQA TQA"
-DATA_ROOT="/mnt/data2/yichengtao/data/retrieval"
+DATA_ROOT="/mnt/data6/yichengtao/data/retrieval"
 RETRIEVER="contriever-msmarco"
 
 # Define test configurations array
 # Array index: 0 = filter50_th0.1, 1 = filter30_th0.1, 2 = filter70_th0.1
 FILTER_RATIOS=(0.5 0.3 0.7)
 OUTPUT_DIRS=(
-    "/home/yichengtao/EXIT/outputs/exit_semantic_results/filter50_th0.1"
-    "/home/yichengtao/EXIT/outputs/exit_semantic_results/filter30_th0.1"
-    "/home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1"
+    "/home/yichengtao/EXIT/outputs/exit_semantic_hyde_results/filter50_th0.1"
+    "/home/yichengtao/EXIT/outputs/exit_semantic_hyde_results/filter30_th0.1"
+    "/home/yichengtao/EXIT/outputs/exit_semantic_hyde_results/filter70_th0.1"
 )
 
 # Get configuration for this task
