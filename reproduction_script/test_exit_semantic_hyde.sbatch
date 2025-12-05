@@ -114,7 +114,6 @@ python test_exit_semantic.py \
     --semantic_filter_ratio "$FILTER_RATIO" \
     --compression_threshold "$COMPRESSION_THRESHOLD" \
     --num_hypothetical_documents "$NUM_HYPOTHETICAL_DOCUMENTS" \
-    --hypothetical_document_model "$HYPOTHETICAL_DOCUMENT_MODEL" \
     --output_dir "$OUTPUT_DIR"
 
 if [ $? -eq 0 ]; then
