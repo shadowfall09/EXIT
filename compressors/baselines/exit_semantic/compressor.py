@@ -14,7 +14,8 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 import re
-from typing import List, Tuple
+import time
+from typing import List, Tuple, Dict
 from sentence_transformers import SentenceTransformer
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel, PeftConfig
@@ -62,6 +63,19 @@ class EXITSemanticCompressor(BaseCompressor):
         self.threshold = threshold
         self.semantic_filter_ratio = semantic_filter_ratio
         self.num_hypothetical_documents = num_hypothetical_documents
+        
+        # Initialize timing statistics
+        self.timing_stats = {
+            'sentence_split': 0.0,
+            'hyde_generation': 0.0,
+            'query_encoding': 0.0,
+            'doc_encoding': 0.0,
+            'similarity_compute': 0.0,
+            'filtering': 0.0,
+            'exit_inference': 0.0,
+            'total_compress': 0.0,
+            'count': 0
+        }
         
         # Set device
         if device is None:
@@ -114,7 +128,7 @@ class EXITSemanticCompressor(BaseCompressor):
             self.model = self.base_model
         
         # Initialize hypothetical document model (use base_model if not specified)
-        if hypothetical_document_model is None:
+        if hypothetical_document_model is None or hypothetical_document_model == base_model:
             # Use the same model reference for memory efficiency
             self.hypothetical_document_model = self.model
             self.hypothetical_document_tokenizer = self.tokenizer
@@ -217,13 +231,30 @@ class EXITSemanticCompressor(BaseCompressor):
             if line and len(hypothetical_docs) < self.num_hypothetical_documents:
                 hypothetical_docs.append(line)
         
+        # Debug: print HyDE prompt and output
+        import sys
+        sys.stderr.write("\n" + "="*80 + "\n")
+        sys.stderr.write("[HyDE DEBUG]\n")
+        sys.stderr.write("="*80 + "\n")
+        sys.stderr.write(f"Query: {query}\n")
+        sys.stderr.write("-"*80 + "\n")
+        sys.stderr.write(f"Full Prompt:\n{prompt}\n")
+        sys.stderr.write("-"*80 + "\n")
+        sys.stderr.write(f"Generated Text:\n{generated_text}\n")
+        sys.stderr.write("-"*80 + "\n")
+        sys.stderr.write(f"Parsed Hypothetical Documents ({len(hypothetical_docs)}):\n")
+        for i, doc in enumerate(hypothetical_docs, 1):
+            sys.stderr.write(f"  {i}. {doc}\n")
+        sys.stderr.write("="*80 + "\n\n")
+        sys.stderr.flush()
+        
         return hypothetical_docs[:self.num_hypothetical_documents]
     
     def _semantic_filter(
         self,
         query: str,
         documents: List[SearchResult]
-    ) -> Tuple[List[SearchResult], List[int]]:
+    ) -> Tuple[List[SearchResult], List[int], Dict[str, float]]:
         """Filter sentences based on semantic similarity to the query.
         
         Args:
@@ -231,9 +262,12 @@ class EXITSemanticCompressor(BaseCompressor):
             documents: List of documents to filter
             
         Returns:
-            Tuple of (filtered_documents, kept_sentence_indices)
+            Tuple of (filtered_documents, kept_sentence_indices, timing_dict)
         """
+        timing = {}
+        
         # Step 1: Split documents into sentences
+        t0 = time.time()
         all_sentences = []
         sentence_to_doc = []  # Track which document each sentence belongs to
         sentence_positions = []  # Track position within each document
@@ -247,37 +281,47 @@ class EXITSemanticCompressor(BaseCompressor):
                 all_sentences.append(sent)
                 sentence_to_doc.append(doc_idx)
                 sentence_positions.append(pos)
+        timing['sentence_split'] = time.time() - t0
         
         if not all_sentences:
-            return documents, []
+            return documents, [], timing
         
         # Step 2: Generate hypothetical documents and create expanded query
+        t0 = time.time()
         hypothetical_docs = self._generate_hypothetical_documents(query)
         expanded_query = [query] + hypothetical_docs  # Query + hypothetical documents
+        timing['hyde_generation'] = time.time() - t0
         
         # Step 3: Encode the expanded query (query + hypothetical documents)
+        t0 = time.time()
         expanded_query_embeddings = self.embedding_model.encode(
             expanded_query,
             convert_to_tensor=True,
             device=self.device
         )  # Shape: (num_hypothetical_documents + 1, embedding_dim)
+        timing['query_encoding'] = time.time() - t0
         
         # Step 4: Encode all document sentences
+        t0 = time.time()
         doc_embeddings = self.embedding_model.encode(
             all_sentences,
             convert_to_tensor=True,
             device=self.device
         )  # Shape: (num_sentences, embedding_dim)
+        timing['doc_encoding'] = time.time() - t0
         
         # Step 5: Compute cosine similarity between each document sentence and all expanded query embeddings
+        t0 = time.time()
         # Vectorized computation: compute all similarities at once and take max per sentence
         # Shape: (num_sentences, num_expanded_queries)
         doc_norm = F.normalize(doc_embeddings, p=2, dim=1)
         query_norm = F.normalize(expanded_query_embeddings, p=2, dim=1)
         similarity_matrix = doc_norm @ query_norm.T
         similarities = similarity_matrix.max(dim=1).values.cpu().numpy() # Shape: (num_sentences,)
+        timing['similarity_compute'] = time.time() - t0
         
         # Step 6: Filter out bottom sentences, keep top by similarity
+        t0 = time.time()
         num_to_keep = max(1, int(self.semantic_filter_ratio * len(all_sentences)))
         top_indices = np.argsort(similarities)[::-1][:num_to_keep]
         top_indices_sorted = np.sort(top_indices)  # Maintain original order
@@ -304,8 +348,9 @@ class EXITSemanticCompressor(BaseCompressor):
                 text=filtered_text,
                 score=original_doc.score
             ))
+        timing['filtering'] = time.time() - t0
         
-        return filtered_docs, top_indices_sorted.tolist()
+        return filtered_docs, top_indices_sorted.tolist(), timing
     
     @lru_cache(maxsize=1024)
     def _generate_prompt(
@@ -384,8 +429,10 @@ class EXITSemanticCompressor(BaseCompressor):
         Returns:
             List containing single SearchResult with compressed text
         """
+        compress_start = time.time()
+        
         # Step 1: Semantic filtering - keep top 50% of sentences by similarity
-        filtered_docs, kept_indices = self._semantic_filter(query, documents)
+        filtered_docs, kept_indices, semantic_timing = self._semantic_filter(query, documents)
         
         if not filtered_docs:
             return [SearchResult(
@@ -397,6 +444,7 @@ class EXITSemanticCompressor(BaseCompressor):
             )]
         
         # Step 2: Apply EXIT to the filtered documents
+        exit_start = time.time()
         # Prepare full context from filtered documents
         context = "\n".join(
             f"{doc.title}\n{doc.text}" if doc.title else doc.text
@@ -439,6 +487,8 @@ class EXITSemanticCompressor(BaseCompressor):
                     if prob[0].item() >= self.threshold:
                         current_texts.append(sent)
         
+        exit_time = time.time() - exit_start
+        
         # Add last document if exists
         if current_texts:
             doc_text = " ".join(current_texts)
@@ -448,6 +498,36 @@ class EXITSemanticCompressor(BaseCompressor):
         # Combine all selected texts
         compressed_text = "\n\n".join(selected_texts)
         
+        total_time = time.time() - compress_start
+        
+        # Update timing statistics
+        self.timing_stats['sentence_split'] += semantic_timing.get('sentence_split', 0)
+        self.timing_stats['hyde_generation'] += semantic_timing.get('hyde_generation', 0)
+        self.timing_stats['query_encoding'] += semantic_timing.get('query_encoding', 0)
+        self.timing_stats['doc_encoding'] += semantic_timing.get('doc_encoding', 0)
+        self.timing_stats['similarity_compute'] += semantic_timing.get('similarity_compute', 0)
+        self.timing_stats['filtering'] += semantic_timing.get('filtering', 0)
+        self.timing_stats['exit_inference'] += exit_time
+        self.timing_stats['total_compress'] += total_time
+        self.timing_stats['count'] += 1
+        
+        # Log timing to file for every sample
+        import sys
+        timing_msg = (
+            f"[Sample {self.timing_stats['count']}] "
+            f"Split:{semantic_timing.get('sentence_split', 0):.3f}s "
+            f"HyDE:{semantic_timing.get('hyde_generation', 0):.3f}s "
+            f"QEnc:{semantic_timing.get('query_encoding', 0):.3f}s "
+            f"DEnc:{semantic_timing.get('doc_encoding', 0):.3f}s "
+            f"Sim:{semantic_timing.get('similarity_compute', 0):.3f}s "
+            f"Filt:{semantic_timing.get('filtering', 0):.3f}s "
+            f"EXIT:{exit_time:.3f}s "
+            f"Total:{total_time:.3f}s"
+        )
+        # Force flush to ensure it's written immediately
+        sys.stderr.write(timing_msg + "\n")
+        sys.stderr.flush()
+        
         # Return compressed result
         return [SearchResult(
             evi_id=0,
@@ -456,3 +536,42 @@ class EXITSemanticCompressor(BaseCompressor):
             text=compressed_text,
             score=1.0
         )]
+    
+    def get_average_timing(self) -> Dict[str, float]:
+        """Get average timing statistics across all compressions."""
+        if self.timing_stats['count'] == 0:
+            return {}
+        
+        count = self.timing_stats['count']
+        return {
+            'sentence_split': self.timing_stats['sentence_split'] / count,
+            'hyde_generation': self.timing_stats['hyde_generation'] / count,
+            'query_encoding': self.timing_stats['query_encoding'] / count,
+            'doc_encoding': self.timing_stats['doc_encoding'] / count,
+            'similarity_compute': self.timing_stats['similarity_compute'] / count,
+            'filtering': self.timing_stats['filtering'] / count,
+            'exit_inference': self.timing_stats['exit_inference'] / count,
+            'total_compress': self.timing_stats['total_compress'] / count,
+            'num_samples': count
+        }
+    
+    def print_average_timing(self):
+        """Print average timing statistics."""
+        avg_timing = self.get_average_timing()
+        if not avg_timing:
+            print("No timing statistics available.")
+            return
+        
+        print(f"\n{'='*70}")
+        print(f"AVERAGE COMPRESSION TIMING ({avg_timing['num_samples']} samples)")
+        print(f"{'='*70}")
+        print(f"  1. Sentence Split:      {avg_timing['sentence_split']:.4f}s")
+        print(f"  2. HyDE Generation:     {avg_timing['hyde_generation']:.4f}s")
+        print(f"  3. Query Encoding:      {avg_timing['query_encoding']:.4f}s")
+        print(f"  4. Document Encoding:   {avg_timing['doc_encoding']:.4f}s")
+        print(f"  5. Similarity Compute:  {avg_timing['similarity_compute']:.4f}s")
+        print(f"  6. Filtering:           {avg_timing['filtering']:.4f}s")
+        print(f"  7. EXIT Inference:      {avg_timing['exit_inference']:.4f}s")
+        print(f"  ---")
+        print(f"  Total Compression:      {avg_timing['total_compress']:.4f}s")
+        print(f"{'='*70}")

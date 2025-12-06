@@ -1,0 +1,764 @@
+{
+  "results": [
+    {
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "prediction": "No",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 8.745875120162964,
+      "compressed_context": "Scott Derrickson\nand has two children. Scott Derrickson Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.\n\nScott Derrickson\nScott Derrickson Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+      "original_tokens": 757,
+      "compressed_tokens": 65,
+      "token_compression_ratio": 0.08586525759577279,
+      "char_compression_ratio": 0.08538899430740038
+    },
+    {
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "prediction": "None, the information provided does not mention the woman who portrayed Corliss Archer holding a government position.",
+      "ground_truths": [
+        "Chief of Protocol"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 7.729866027832031,
+      "compressed_context": "Kiss and Tell (1945 film)\nKiss and Tell (1945 film) Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.\n\nKiss and Tell (1945 film) Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.\n\nKiss and Tell (1945 film)\nwho performed the ceremony, the man confirms that an Archer was married there months ago.\n\nCorliss Archer (Shirley Temple) is an impulsive teenager excited by notorious playboy Kenneth Marquis (David Niven), who has already been",
+      "original_tokens": 666,
+      "compressed_tokens": 135,
+      "token_compression_ratio": 0.20270270270270271,
+      "char_compression_ratio": 0.18157543391188252
+    },
+    {
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "prediction": "Animorphs",
+      "ground_truths": [
+        "Animorphs"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 11.890507459640503,
+      "compressed_context": "Animorphs\nAnimorphs Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.\n\nAlso known as the \"Posleen Series\" and \"Posleen War Series\" after the name of the invading species besetting and successfully conquering much of Earth.\n\nStephen Hunt (author)\nhuman colonists' enslavement of the local sentient species.\n\nPJ Haarsma\ncompanion to the books and is set in the same universe.",
+      "original_tokens": 669,
+      "compressed_tokens": 141,
+      "token_compression_ratio": 0.21076233183856502,
+      "char_compression_ratio": 0.21219110378912687
+    },
+    {
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "prediction": "No.",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 9.970210552215576,
+      "compressed_context": "Esma Sultan Mansion The Esma Sultan Mansion (), a historical yalı () located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.\n\nEsma Sultan Mansion\nEsma Sultan Mansion The Esma Sultan Mansion (), a historical yalı () located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.\n\nLaleli Mosque\nLaleli Mosque The Laleli Mosque () is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey. The Laleli Mosque was built by Sultan Mustafa III from 1760–1763, designed in the baroque style by Ottoman imperial architect Mehmet Tahir Ağa.\n\nEsma Sultan Mansion\nrestaurant, and an event hall at several levels.",
+      "original_tokens": 664,
+      "compressed_tokens": 196,
+      "token_compression_ratio": 0.29518072289156627,
+      "char_compression_ratio": 0.28330019880715707
+    },
+    {
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "prediction": "New York City",
+      "ground_truths": [
+        "Greenwich Village, New York City"
+      ],
+      "em": 0.0,
+      "f1": 0.7499999999999999,
+      "latency": 6.023083209991455,
+      "compressed_context": "In 2014, Trigiani directed the major motion picture \"Big Stone Gap (film),\" a romantic comedy film adaptation of her namesake bestselling novel, produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.\n\nBig Stone Gap (film)\nBig Stone Gap (film) Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.",
+      "original_tokens": 721,
+      "compressed_tokens": 103,
+      "token_compression_ratio": 0.14285714285714285,
+      "char_compression_ratio": 0.15105348460291734
+    },
+    {
+      "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+      "prediction": "YG Entertainment",
+      "ground_truths": [
+        "YG Entertainment"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 8.228379249572754,
+      "compressed_context": "Internationally, \"2014 S/S\" took the top spot in Billboard's World Album Chart. 2014 S/S 2014 S/S is the debut album of South Korean group WINNER.\n\n2014 S/S\n2014 S/S 2014 S/S is the debut album of South Korean group WINNER.",
+      "original_tokens": 709,
+      "compressed_tokens": 66,
+      "token_compression_ratio": 0.0930888575458392,
+      "char_compression_ratio": 0.07371900826446282
+    },
+    {
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "prediction": "Aladin (Eenasul Fateh)",
+      "ground_truths": [
+        "Eenasul Fateh"
+      ],
+      "em": 0.0,
+      "f1": 0.8,
+      "latency": 6.801072359085083,
+      "compressed_context": "Eenasul Fateh Eenasul Fateh (; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.\n\nEenasul Fateh\nEenasul Fateh Eenasul Fateh (; born 3 April 1959), also known by his stage name Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist and former international management consultant.",
+      "original_tokens": 747,
+      "compressed_tokens": 106,
+      "token_compression_ratio": 0.14190093708165996,
+      "char_compression_ratio": 0.13498098859315588
+    },
+    {
+      "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+      "prediction": "4,800",
+      "ground_truths": [
+        "3,677 seated"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 10.052955150604248,
+      "compressed_context": "Androscoggin Bank Colisée\naccommodate up to 4,800 patrons. In 2003, The Lewiston Maineiacs came to the Central Maine Civic Center, and it was renamed the Lewiston Colisee.\n\nLewiston Maineiacs\nLewiston Maineiacs The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine. The team played its home games at the Androscoggin Bank Colisée.\n\nLewiston Maineiacs\nCivic Center in Portland. The team played its home games at the Androscoggin Bank Colisée.\n\nThe Lewiston Maineiacs were a major junior hockey team that played in the Quebec Major Junior Hockey League (QMJHL)/\"la Ligue de hockey junior majeur du Québec (LHJMQ)\". They played their home games at the Androscoggin Bank Colisée in Lewiston.",
+      "original_tokens": 753,
+      "compressed_tokens": 204,
+      "token_compression_ratio": 0.27091633466135456,
+      "char_compression_ratio": 0.2530241935483871
+    },
+    {
+      "question": "Who is older, Annie Morton or Terry Richardson?",
+      "prediction": "I'm sorry, I do not have information on who Annie Morton and Terry Richardson are.",
+      "ground_truths": [
+        "Terry Richardson"
+      ],
+      "em": 0.0,
+      "f1": 0.23529411764705882,
+      "latency": 7.771618604660034,
+      "compressed_context": "",
+      "original_tokens": 758,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "Are Local H and For Against both from the United States?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 7.946685552597046,
+      "compressed_context": "",
+      "original_tokens": 671,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+      "prediction": "I'm a Jayhawk I'm a Jayhawk",
+      "ground_truths": [
+        "Kansas Song"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 10.12823224067688,
+      "compressed_context": "\"Alma Mater\" is the name of the official school song of Kansas State University.\n\nKansas State University\nsong is sung at most K-State sporting events by fans, students and alumni. Wildcat Victory and Wabash Cannonball are both commonly used as fight songs.\n\nI'm a Jayhawk I'm a Jayhawk is the fight song of the University of Kansas.\n\nKansas State University Marching Band\n\"We shall ever be,\" \"Fighting ever fighting for a\" \"Wildcat victory!\"\n\nThe \"Wabash Cannonball\" (arranged by Joel Leach) is known as a second fight song for K-State.",
+      "original_tokens": 680,
+      "compressed_tokens": 127,
+      "token_compression_ratio": 0.18676470588235294,
+      "char_compression_ratio": 0.17971887550200802
+    },
+    {
+      "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+      "prediction": "David Diamond",
+      "ground_truths": [
+        "David Weissman"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "latency": 10.53247594833374,
+      "compressed_context": "Evolution (2001 film)\ninto a screenplay along with David Diamond and David Weissman.\n\nDavid Diamond (screenwriter)\nits opening weekend, behind \"What Women Want\" and \"Cast Away\", which opened at the top spot. Diamond and Weissman next wrote the sci-fi comedy \"Evolution\", helmed by Ivan Reitman. \"Evolution\" was based on a story by Don Jakoby, who turned it into a screenplay along with Diamond and Weissman.",
+      "original_tokens": 724,
+      "compressed_tokens": 96,
+      "token_compression_ratio": 0.13259668508287292,
+      "char_compression_ratio": 0.13175785043703464
+    },
+    {
+      "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "prediction": "1999",
+      "ground_truths": [
+        "1999"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 9.1395742893219,
+      "compressed_context": "The video was similar to the one for \"You Could Be Mine\" (released to promote \"\"), where Schwarzenegger interacted with Guns N' Roses.\n\nEnd of Days (film)\nfirst song released by the \"new line-up\" of Guns N' Roses, the industrial-rock \"Oh My God\". End of Days is a 1999 American supernatural action horror film directed by Peter Hyams and starring Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak, Rod Steiger, CCH Pounder, and Udo Kier. The film follows former New York Police Department detective Jericho Cane (Schwarzenegger) after he saves a banker (Byrne)\n\nNot in This Lifetime... Tour\nIn late December 2015, the Guns N' Roses website was updated, scrapping much of the content and displaying the classic Guns N' Roses bullet-logo.",
+      "original_tokens": 689,
+      "compressed_tokens": 183,
+      "token_compression_ratio": 0.2656023222060958,
+      "char_compression_ratio": 0.24777301220719233
+    },
+    {
+      "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 9.817377090454102,
+      "compressed_context": "Random House Tower\nRandom House Tower The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the American headquarters of book publisher Penguin Random House and a luxury apartment complex.\n\nRandom House Tower\nhousing 130 apartments, as well as of retail space. Random House Tower The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the American headquarters of book publisher Penguin Random House and a luxury apartment complex.\n\nRandom House Tower\nframe.\n\n888 7th Avenue\n888 7th Avenue 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.",
+      "original_tokens": 648,
+      "compressed_tokens": 177,
+      "token_compression_ratio": 0.27314814814814814,
+      "char_compression_ratio": 0.2687851704733532
+    },
+    {
+      "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+      "prediction": "The 1990s.",
+      "ground_truths": [
+        "from 1986 to 2013"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 8.383257389068604,
+      "compressed_context": "Negotiations were quickly concluded and less than 72 hours later, Ferguson replaced Ron Atkinson and Sir Alex went on to become the most successful manager in British Football History.\n\n14 July 2010: Los Angeles Galaxy winger David Beckham rules out taking over as England manager in the future, but declares his desire to play at Euro 2012 and the 2014 World Cup.\n\nDavid Beckham\nUnited on his 14th birthday, and subsequently signed a Youth Training Scheme contract on 8 July 1991. Having signed for Manchester United as a trainee on 8 July 1991, Beckham was part of a group of young players, including Ryan Giggs, Gary Neville, Phil Neville, Nicky Butt and Paul Scholes, who were coached by Eric Harrison, and helped the club win the FA Youth Cup in .\n\nUnited manager Sir Alex Ferguson had a great deal of confidence in the club's young players. Beckham was part of a group of young talents Ferguson brought into United in the 1990s (known as \"Fergie's Fledglings\"), which included Nicky Butt and Gary and Phil Neville.",
+      "original_tokens": 645,
+      "compressed_tokens": 229,
+      "token_compression_ratio": 0.3550387596899225,
+      "char_compression_ratio": 0.34991423670668953
+    },
+    {
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "prediction": "I can't answer that question as it is not specified in the given context information.",
+      "ground_truths": [
+        "9,984"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 7.391829013824463,
+      "compressed_context": "Brown State Fishing Lake, formerly known as \"Brown County State Park\" is in the county, 8 miles (13 km) east of Hiawatha.",
+      "original_tokens": 735,
+      "compressed_tokens": 32,
+      "token_compression_ratio": 0.04353741496598639,
+      "char_compression_ratio": 0.041339255210112745
+    },
+    {
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "prediction": "Yankee Conference",
+      "ground_truths": [
+        "the North Atlantic Conference"
+      ],
+      "em": 0.0,
+      "f1": 0.4,
+      "latency": 9.417874336242676,
+      "compressed_context": "Vermont Catamounts football\nVermont Catamounts football The Vermont Catamounts football program were the intercollegiate American football team for the University of Vermont located in Burlington, Vermont. Vermont fields a team at the club football level, in a conference that also uses the Yankee Conference name.\n\nVermont began Yankee Conference play in 1947 with Connecticut, Maine, Massachusetts, New Hampshire, and Rhode Island.\n\nVermont Catamounts\nVermont Catamounts The Vermont Catamounts are the varsity intercollegiate athletic programs of the University of Vermont, based in Burlington, Vermont, United States.",
+      "original_tokens": 699,
+      "compressed_tokens": 131,
+      "token_compression_ratio": 0.18741058655221746,
+      "char_compression_ratio": 0.19441831295076828
+    },
+    {
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 10.834615468978882,
+      "compressed_context": "Ambroise Thomas\nthe most influential and important of French 19th-century operatic composers.\" \"See: List of operas by Ambroise Thomas.\" solo voice and piano, except where otherwise stated Ambroise Thomas Charles Louis Ambroise Thomas (; 5 August 1811 – 12 February 1896) was a French composer and teacher, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868).\n\nAmbroise Thomas\nAmbroise Thomas Charles Louis Ambroise Thomas (; 5 August 1811 – 12 February 1896) was a French composer and teacher, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868).\n\nAmbroise Thomas\nsurvived in the operatic repertoire, but the overture became a popular orchestral showpiece.\n\nAmbroise Thomas\n1830.\n\nAmbroise Thomas\nnonetheless clearly showing the influence of Rossini.",
+      "original_tokens": 734,
+      "compressed_tokens": 206,
+      "token_compression_ratio": 0.28065395095367845,
+      "char_compression_ratio": 0.24870967741935485
+    },
+    {
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "prediction": "Nixon",
+      "ground_truths": [
+        "1969 until 1974"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 7.633206367492676,
+      "compressed_context": "In the spring of 1970, while requesting $100 million to train more doctors and nurses, Egeberg alleged the Health, Education and Welfare Secretary, Robert H. Finch, and the department's Under Secretary, John C. Veneman, were not considering his advice on health matters and that Nixon's advisers were ignoring him.\n\nFrom 1969 to 1971, Egeberg was the Assistant Secretary for health and scientific affairs in the Department of Health, Education and Welfare.\n\nRoger O. Egeberg\nRoger O. Egeberg Roger Olaf Egeberg, M.D. (13 November 1902 – 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.\n\nRoger O. Egeberg Roger Olaf Egeberg, M.D. (13 November 1902 – 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health. His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University",
+      "original_tokens": 691,
+      "compressed_tokens": 290,
+      "token_compression_ratio": 0.4196816208393632,
+      "char_compression_ratio": 0.4076923076923077
+    },
+    {
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "prediction": "Robert Erskine Childers",
+      "ground_truths": [
+        "Robert Erskine Childers DSC"
+      ],
+      "em": 0.0,
+      "f1": 0.8571428571428571,
+      "latency": 5.771281719207764,
+      "compressed_context": "",
+      "original_tokens": 700,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+      "prediction": "Pedro Rodríguez",
+      "ground_truths": [
+        "Pedro Rodríguez"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 9.74724555015564,
+      "compressed_context": "Formula One drivers from Mexico\nFormula One drivers from Mexico There have been six Formula One drivers from Mexico who have taken part in races since the championship began in 1950. Pedro Rodríguez is the most successful Mexican driver being the only one to have won a Grand Prix. Sergio Pérez, the only other Mexican to finish on the podium, currently races with Racing Point Force India F1 Team.\n\nFormula One drivers from Mexico\nthen Force India in . Formula One drivers from Mexico There have been six Formula One drivers from Mexico who have taken part in races since the championship began in 1950.\n\nSergio Pérez\nSergio Pérez Sergio Pérez Mendoza ( ; born 26 January 1990) also known as \"Checo\" Pérez, is a Mexican racing driver, currently driving in Formula One for Racing Point F1.",
+      "original_tokens": 662,
+      "compressed_tokens": 175,
+      "token_compression_ratio": 0.26435045317220546,
+      "char_compression_ratio": 0.28530155290718673
+    },
+    {
+      "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+      "prediction": "Jim Cummings",
+      "ground_truths": [
+        "Sonic"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 10.114636182785034,
+      "compressed_context": "Drummond is mainly known for voicing Sonic the Hedgehog along with other characters included in the video games series for SEGA from 1998 to 2004 which includes \"Sonic Adventure\", \"Sonic Heroes\", and \"Sonic Shuffle\".",
+      "original_tokens": 718,
+      "compressed_tokens": 52,
+      "token_compression_ratio": 0.07242339832869081,
+      "char_compression_ratio": 0.07341944255608429
+    },
+    {
+      "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+      "prediction": "iPod Touch",
+      "ground_truths": [
+        "keyboard function keys"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 9.677806615829468,
+      "compressed_context": "Apple Remote\nApple Remote The Apple Remote is a remote control device released in or after October 2005 by Apple Inc. for use with a number of its products which use infrared capabilities. The first three generations of Apple TV used the Apple Remote as their primary control mechanism. Prior to the Apple Remote, Apple produced several nameless IR remotes\n\nITunes Remote\niPod Touch as remote control devices. The remote application was intended as a software alternative to the Apple Remote, allowing users to control their media collection via their iOS device.\n\nThe Apple Remote can also be used to control the iPod Hi-Fi or third party devices tailored to it.\n\nApple offers a free 'Remote' app for iOS devices (available in the Apple App Store) which allows for wireless control of iTunes on Mac/Windows computers or the Apple TV.\n\nApple TV can be controlled by many infrared remote controls or paired with the included Apple Remote to prevent interference from other remotes.",
+      "original_tokens": 592,
+      "compressed_tokens": 190,
+      "token_compression_ratio": 0.32094594594594594,
+      "char_compression_ratio": 0.3284182305630027
+    },
+    {
+      "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+      "prediction": "Badly Drawn Boy",
+      "ground_truths": [
+        "Badly Drawn Boy"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 9.580876588821411,
+      "compressed_context": "Badly Drawn Boy\nwhere he played a busker. Badly Drawn Boy Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist. A chance meeting with Andy Votel\n\nFor the second type, 47 different items are considered for each drawing. The Draw-a-Person test is commonly used as a measure of intelligence in children, but this has been criticized.\n\nBadly Drawn Boy\nBadly Drawn Boy Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist. A chance meeting with Andy Votel at the Generation X bar\n\nThis suggests that the Draw-a-Person test should not be used as a substitute for other well-established intelligence tests.",
+      "original_tokens": 706,
+      "compressed_tokens": 199,
+      "token_compression_ratio": 0.2818696883852691,
+      "char_compression_ratio": 0.26614173228346455
+    },
+    {
+      "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+      "prediction": "World's Best Goalkeeper",
+      "ground_truths": [
+        "World's Best Goalkeeper"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 8.934357166290283,
+      "compressed_context": "Peter Schmeichel\nDenmark Source: Peter Schmeichel Peter Bolesław Schmeichel, MBE (; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993.\n\nPeter Schmeichel\nPeter Schmeichel Peter Bolesław Schmeichel, MBE (; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993.\n\nKasper Schmeichel\ntitles by nearest rivals (Aston Villa and Tottenham Hotspur) not winning. The Schmeichels became the only biological father and son to win the Premier League, as well as being in the same position to do so.\n\nHis son, Kasper, is also a professional football goalkeeper, currently playing for Premier League side Leicester City and the Danish national team. Peter Schmeichel was born in the Søborggård parish of Gladsaxe, Denmark, to Inger, a Danish nurse, and Antoni Schmeichel, a Polish jazz musician.",
+      "original_tokens": 706,
+      "compressed_tokens": 250,
+      "token_compression_ratio": 0.35410764872521244,
+      "char_compression_ratio": 0.31939530395625604
+    },
+    {
+      "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+      "prediction": "Lee Hazlewood was the writer of These Boots Are Made for Walkin'.",
+      "ground_truths": [
+        "Barton Lee Hazlewood"
+      ],
+      "em": 0.0,
+      "f1": 0.28571428571428575,
+      "latency": 6.833071708679199,
+      "compressed_context": "These Boots Are Made for Walkin'\nThese Boots Are Made for Walkin' \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra.\n\nThese Boots Are Made for Walkin'\nmade the point that Hazlewood had been paid royalties for years before he made the complaint, although Mustaine eventually omitted the song anyway from newer pressings of the album.\n\nThese Boots Are Made for Walkin'\nIn 2018, the song was released with the original Lee Hazlewood lyrics on the remixed and remastered version of \"Killing Is My Business... and Business Is Good!\" These Boots Are Made for Walkin' \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra.\n\nThese Boots Are Made for Walkin'\nnot want to promote the song because of its country feel, even though the song is more pop than country.",
+      "original_tokens": 700,
+      "compressed_tokens": 193,
+      "token_compression_ratio": 0.2757142857142857,
+      "char_compression_ratio": 0.29046487953851374
+    },
+    {
+      "question": "The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+      "prediction": "1779",
+      "ground_truths": [
+        "1838"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 9.983787059783936,
+      "compressed_context": "2011–12 VCU Rams men's basketball team\n2011–12 VCU Rams men's basketball team The 2011–12 VCU Rams men's basketball team represented Virginia Commonwealth University during the 2011–12 NCAA Division I men's basketball season. Led by third-year head coach Shaka Smart, the Rams were coming off a season marked by a run to the Final Four.\n\nThis was head coach Shaka Smart's first season at VCU.\n\nSource !colspan=12| Preseason Exhibitions !colspan=12| Regular Season !colspan=9| 2012 CAA Men's Basketball Tournament !colspan=9| 2012 NCAA Tournament 2011–12 VCU Rams men's basketball team The 2011–12 VCU Rams men's basketball team represented Virginia Commonwealth University during the 2011–12 NCAA Division I men's basketball season. Led by third-year head coach Shaka Smart, the Rams were coming off a season marked by a run to the Final Four.",
+      "original_tokens": 747,
+      "compressed_tokens": 210,
+      "token_compression_ratio": 0.28112449799196787,
+      "char_compression_ratio": 0.2661825071045153
+    },
+    {
+      "question": "Are both Dictyosperma, and Huernia described as a genus?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 6.665363550186157,
+      "compressed_context": "Huernia\nHuernia The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810.\n\nHuernia\nhave shown the genus to be monophyletic, and most closely related to the genus \"Tavaresia\", and to a widespread branch of stapeliads comprising the genera \"Orbea\", \"Piaranthus\" and \"Stapelia\". moved to \"Angolluma\" Huernia The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810.\n\nDictyosperma\nDictyosperma Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues).\n\nDictyosperma\nand regular rainfall. Dictyosperma Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, Réunion and Rodrigues).",
+      "original_tokens": 786,
+      "compressed_tokens": 268,
+      "token_compression_ratio": 0.34096692111959287,
+      "char_compression_ratio": 0.2977545370655183
+    },
+    {
+      "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+      "prediction": "Henry J. Kaiser",
+      "ground_truths": [
+        "Henry J. Kaiser"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 11.381659269332886,
+      "compressed_context": "Kaiser Steel\nKaiser Steel Kaiser Steel (later Kaiser Ventures and CIL&D), headquartered in Ontario, California, was founded by Henry J. Kaiser to provide steel plate for the Pacific Coast shipbuilding industry, which expanded during World War II, then shrank, then expanded again during the Korean War.\n\nHenry J. Kaiser Henry John Kaiser (May 9, 1882 – August 24, 1967) was an American industrialist who became known as the father of modern American shipbuilding.\n\nHenry J. Kaiser\nHenry J. Kaiser Henry John Kaiser (May 9, 1882 – August 24, 1967) was an American industrialist who became known as the father of modern American shipbuilding.\n\nWorks cited Kaiser Steel Kaiser Steel (later Kaiser Ventures and CIL&D), headquartered in Ontario, California, was founded by Henry J. Kaiser to provide steel plate for the Pacific Coast shipbuilding industry, which expanded during World War II, then shrank, then expanded again during the Korean War.",
+      "original_tokens": 636,
+      "compressed_tokens": 208,
+      "token_compression_ratio": 0.3270440251572327,
+      "char_compression_ratio": 0.2996504607562758
+    },
+    {
+      "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+      "prediction": "Tunnels & Trolls",
+      "ground_truths": [
+        "Arena of Khazan"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 8.02714729309082,
+      "compressed_context": "Tunnels & Trolls Tunnels & Trolls (abbreviated \"T&T\") is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo.\n\nTunnels & Trolls\nTunnels & Trolls Tunnels & Trolls (abbreviated \"T&T\") is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo.\n\nKen St. Andre\nKen St. Andre Kenneth Eugene St. Andre (born on April 28, 1947 in Ogden, Utah) is an American fantasy author and game designer, best known for his work with \"Tunnels & Trolls\" and \"Wasteland\".",
+      "original_tokens": 722,
+      "compressed_tokens": 150,
+      "token_compression_ratio": 0.2077562326869806,
+      "char_compression_ratio": 0.1803934644881627
+    },
+    {
+      "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+      "prediction": "May 21, 1988",
+      "ground_truths": [
+        "2000"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 8.95458197593689,
+      "compressed_context": "Poison's second album, \"Open Up and Say...Ahh!\", was released May 21, 1988.\n\nwas a bright and raunchy series of party anthems such as the single \"Shut Up, Make Love\" and power ballad \"Be the One\", containing few traces of the seriousness of \"Native Tongue\".",
+      "original_tokens": 710,
+      "compressed_tokens": 70,
+      "token_compression_ratio": 0.09859154929577464,
+      "char_compression_ratio": 0.08747447243022465
+    },
+    {
+      "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+      "prediction": "Japan",
+      "ground_truths": [
+        "Fujioka, Gunma"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 5.988501310348511,
+      "compressed_context": "Hayden (musician)\nHayden (musician) Paul Hayden Desser (born February 12, 1971) who records as Hayden, is a Canadian singer-songwriter from Thornhill, Ontario.\n\nHayden (musician) Paul Hayden Desser (born February 12, 1971) who records as Hayden, is a Canadian singer-songwriter from Thornhill, Ontario.\n\nIn Canada, almost all of Hayden's albums have been issued by Hardwood Records, a small",
+      "original_tokens": 675,
+      "compressed_tokens": 99,
+      "token_compression_ratio": 0.14666666666666667,
+      "char_compression_ratio": 0.1306970509383378
+    },
+    {
+      "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+      "prediction": "Charles Nungesser and François Coli.",
+      "ground_truths": [
+        "Charles Eugène"
+      ],
+      "em": 0.0,
+      "f1": 0.28571428571428575,
+      "latency": 10.959062814712524,
+      "compressed_context": "L'Oiseau Blanc\nfly from New York to Paris, but a number of French aviators planned an attempt to fly in the opposite direction, from Paris to New York.\n\nL'Oiseau Blanc\nL'Oiseau Blanc L'Oiseau Blanc (commonly known in the English-speaking world as The White Bird ) was a French Levasseur PL.8 biplane that disappeared in 1927, during an attempt to make the first non-stop transatlantic flight between Paris and New York City to compete for the Orteig Prize. The aircraft was flown by French World War I aviation heroes Charles Nungesser and François Coli.\n\nThe aircraft christened \"L'Oiseau Blanc\" was painted white and had the French tricolor markings, with Nungesser's personal World War I flying ace logo: a skull and crossbones, candles and a coffin, on a black heart.\n\nL'Oiseau Blanc\ntheir Potez 25 biplane.\n\nThe aircraft, christened \"L'Oiseau Blanc\", was painted white, and had the French tricolor markings, with Nungesser's personal World War I flying ace logo: a skull and crossbones, candles and a coffin, on a black heart, painted on the fuselage.",
+      "original_tokens": 671,
+      "compressed_tokens": 258,
+      "token_compression_ratio": 0.38450074515648286,
+      "char_compression_ratio": 0.35294117647058826
+    },
+    {
+      "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+      "prediction": "No",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 7.033339500427246,
+      "compressed_context": "In the Realm of the Hackers\nnuclear stockpile, and NASA. In the Realm of the Hackers In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.\n\nIn the Realm of the Hackers\nIn the Realm of the Hackers In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.\n\nFreakonomics\nand is aired bi-weekly on NPR.",
+      "original_tokens": 661,
+      "compressed_tokens": 136,
+      "token_compression_ratio": 0.20574886535552195,
+      "char_compression_ratio": 0.18928688793953335
+    },
+    {
+      "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+      "prediction": "Letters to Cleo",
+      "ground_truths": [
+        "Letters to Cleo"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 7.737875461578369,
+      "compressed_context": "Letters to Cleo\nLetters to Cleo Letters to Cleo is an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\". Guitarist Greg McKenna and singer Kay Hanley formed the band Letters to Cleo in 1990.\n\nLetters to Cleo\nhis new band, City Rivals. Letters to Cleo Letters to Cleo is an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\".\n\nLetters to Cleo\nLula but did not have fixed members, except for McKenna and Hanley. The name \"Letters to Cleo\" is a reference to Hanley's childhood pen pal. Letters to\n\nLetters to Cleo appeared in the 1999 film \"10 Things I Hate about You\" as a favorite band of the character portrayed by Julia Stiles.",
+      "original_tokens": 713,
+      "compressed_tokens": 210,
+      "token_compression_ratio": 0.29453015427769985,
+      "char_compression_ratio": 0.28074324324324323
+    },
+    {
+      "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+      "prediction": "The Russian Civil War.",
+      "ground_truths": [
+        "October 1922"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 8.379624605178833,
+      "compressed_context": "Alexander Kerensky\nforces, defeated, and captured. Kerensky escaped the Bolsheviks and fled to Pskov, where he rallied some loyal troops for an attempt to re-take the city. Kerensky narrowly escaped, and he spent the next few weeks in hiding before fleeing the country, eventually arriving in France.\n\nAlexander Kerensky\nCemetery. Alexander Kerensky Alexander Fyodorovich Kerensky (, ; Russian: Александръ Ѳедоровичъ Керенскій; 4 May 1881 – 11 June 1970) was a Russian lawyer and revolutionist who was a key political figure in the Russian Revolution of 1917.\n\nAlexander Kerensky\nAlexander Kerensky Alexander Fyodorovich Kerensky (, ; Russian: Александръ Ѳедоровичъ Керенскій; 4 May 1881 – 11 June 1970) was a Russian lawyer and revolutionist who was a key political figure in the Russian Revolution of 1917.\n\nThis led to the collapse of the Eastern Front. Kerensky replaced Aleksei Brusilov with Lavr Kornilov as Commander-in-Chief of the Army.",
+      "original_tokens": 751,
+      "compressed_tokens": 255,
+      "token_compression_ratio": 0.3395472703062583,
+      "char_compression_ratio": 0.29457605985037405
+    },
+    {
+      "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+      "prediction": "2000",
+      "ground_truths": [
+        "2000"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 8.024424314498901,
+      "compressed_context": "His book, \"Seven Brief Lessons on Physics\", has been translated into 41 languages. Carlo Rovelli Carlo Rovelli (born 3 May 1956) is an Italian theoretical physicist and writer\n\nCarlo Rovelli\nCarlo Rovelli Carlo Rovelli (born 3 May 1956) is an Italian theoretical physicist and writer who has worked in Italy, the United States and since 2000, in France. He has also worked in the history and philosophy of science. His popular science book \"Seven Brief Lessons on Physics\" has been translated in 41 languages and",
+      "original_tokens": 662,
+      "compressed_tokens": 123,
+      "token_compression_ratio": 0.18580060422960726,
+      "char_compression_ratio": 0.16352603002235708
+    },
+    {
+      "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+      "prediction": "World War II",
+      "ground_truths": [
+        "World War II"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 8.932784080505371,
+      "compressed_context": "Livesey Hall War Memorial\ntwo on the front and one on the back.\n\nLivesey Hall War Memorial\nLivesey Hall War Memorial The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London.\n\nLivesey Hall War Memorial The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London.",
+      "original_tokens": 606,
+      "compressed_tokens": 100,
+      "token_compression_ratio": 0.16501650165016502,
+      "char_compression_ratio": 0.15530958145970253
+    },
+    {
+      "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+      "prediction": "No",
+      "ground_truths": [
+        "no"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 9.028985023498535,
+      "compressed_context": "Gerald R. Ford International Airport\nGerald R. Ford International Airport Gerald R. Ford International Airport is a commercial airport in Cascade Township approximately southeast of Grand Rapids, Michigan.\n\nGerald R. Ford International Airport\nStates. The airport is the largest commercial airport in the West Michigan region and is the second largest airport in Michigan after Detroit Metropolitan Wayne County Airport.\n\nGerald R. Ford International Airport\nthe parking deck in March 2015 to increase close-in, covered long-term parking. Gerald R. Ford International Airport Gerald R. Ford International Airport is a commercial airport in Cascade Township approximately southeast of Grand Rapids, Michigan.\n\nGerald R. Ford International Airport\n5700’ and reached south to 44th Street.",
+      "original_tokens": 674,
+      "compressed_tokens": 146,
+      "token_compression_ratio": 0.2166172106824926,
+      "char_compression_ratio": 0.252492762946285
+    },
+    {
+      "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+      "prediction": "New York City",
+      "ground_truths": [
+        "New York City"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 5.934317588806152,
+      "compressed_context": "Ralph Hefferline\nof psychology. Ralph Hefferline Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana – 16 March 1974) was a psychology professor at Columbia University.\n\nRalph Hefferline\nRalph Hefferline Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana – 16 March 1974) was a psychology professor at Columbia University.",
+      "original_tokens": 707,
+      "compressed_tokens": 90,
+      "token_compression_ratio": 0.1272984441301273,
+      "char_compression_ratio": 0.10935023771790808
+    },
+    {
+      "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+      "prediction": "Neither, the information does not mention the Manchester Terrier or the Scotch Collie.",
+      "ground_truths": [
+        "Scotch Collie"
+      ],
+      "em": 0.0,
+      "f1": 0.33333333333333337,
+      "latency": 10.234259605407715,
+      "compressed_context": "Before that they were known as black and tan setters, and were found in many kennels beside those of the Alexander Gordon, 4th Duke of Gordon (1743–1827).\n\nGordon Setter\non the breed. In a letter to ‘’The Field’’ of 12 November 1864 Samuel Brown stated: ‘An old gentleman sportsman, and one too who has shot over the same breed for fifty years and knew them during his boyhood, assures me that the late Duke of Gordon, Marquis of Anglesey, and several other noblemen, had their original stock of setters from the late Mr Coke of Longford, and that the colour was usually black-white- and -tan.\n\nGordon Setter\n\"originally produced by a commixture between the Spanish pointer and the larger breed of the English spaniel\".\n\nGordon Setter\nchapter of his book ‘’The Dogs of the British Islands’’ (1867) a Setter ‘from Mr Coke of Norfolk and doubtless related to the late Duke of Gordon’s kennel, as Mr Coke and the duke bred together and interchanged setters frequently’.\n\nInitially, the list included the Irish Red and White Setter and the Gordon Setter but Gordons were re-classified as viable in January 2007 after consultation with the breed clubs.",
+      "original_tokens": 676,
+      "compressed_tokens": 262,
+      "token_compression_ratio": 0.3875739644970414,
+      "char_compression_ratio": 0.3952446588559614
+    },
+    {
+      "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+      "prediction": "Tata Consultancy Services is headquartered in Mumbai, India.",
+      "ground_truths": [
+        "Mumbai"
+      ],
+      "em": 0.0,
+      "f1": 0.2222222222222222,
+      "latency": 7.3809027671813965,
+      "compressed_context": "Sachin Warrier\nSachin Warrier Sachin Warrier is a playback singer and composer in the Malayalam cinema industry from Kerala. He was working as a software engineer in Tata Consultancy Services in Kochi.\n\nSachin Warrier\nMTV Indies channel. Sachin Warrier Sachin Warrier is a playback singer and composer in the Malayalam cinema industry from Kerala. He was working as a software engineer in Tata Consultancy Services in Kochi.",
+      "original_tokens": 706,
+      "compressed_tokens": 96,
+      "token_compression_ratio": 0.1359773371104816,
+      "char_compression_ratio": 0.1408170043175025
+    },
+    {
+      "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+      "prediction": "2003",
+      "ground_truths": [
+        "1962"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 7.392141819000244,
+      "compressed_context": "",
+      "original_tokens": 724,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+      "prediction": "Victory",
+      "ground_truths": [
+        "sovereignty"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 10.396951675415039,
+      "compressed_context": "Giuseppe Arimondi\nhours of fighting. With his death and the defeat of his brigade, the battle was lost. Giuseppe Arimondi Giuseppe Edoardo Arimondi, OSML, OMS, OCI (Savigliano, 26 April 1846 – Adwa, 1 March 1896) was an Italian general, mostly known for his role during the First Italo-Ethiopian War.\n\nGiuseppe Arimondi\nGiuseppe Arimondi Giuseppe Edoardo Arimondi, OSML, OMS, OCI (Savigliano, 26 April 1846 – Adwa, 1 March 1896) was an Italian general, mostly known for his role during the First Italo-Ethiopian War.\n\nAt 10:00 a.m. the Ethiopian forces, mixed with the disbanded Italians, launched their first assault on Arimondi's position. After the initial Ethiopian attacks were repulsed, Menelik sent his guard to outflank the left side of Arimondi's forces.\n\nGiuseppe Arimondi\nrapid and daring offensive manoeuvres, and quarreled with Baratieri's more cautious plans.\n\nGiuseppe Arimondi\nwon a series of minor clashes and defeated the Dervishes under Emir Ahmed Alì at the Second Battle of Agordat in December 1893.",
+      "original_tokens": 753,
+      "compressed_tokens": 295,
+      "token_compression_ratio": 0.39176626826029215,
+      "char_compression_ratio": 0.3287141475990977
+    },
+    {
+      "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+      "prediction": "Nelson Rockefeller",
+      "ground_truths": [
+        "Nelson Rockefeller"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 7.885914325714111,
+      "compressed_context": "Alfred Balk\nAlfred Balk Alfred Balk (July 24, 1930 – November 25, 2010) was an American reporter, nonfiction author and magazine editor who wrote groundbreaking articles about housing segregation, the Nation of Islam, the environment and Illinois politics. During a career-long emphasis on media improvement, he served on the Twentieth Century Fund's task force that established a National News Council, consulted for several foundations, served as secretary of New York Governor Nelson Rockefeller's Committee on the Employment of Minority Groups in the News Media, and produced a film, \"That\n\nAlfred Balk\ninfluential articles appeared in the era’s leading magazines, including \"Harper's\", \"The Nation\", \"The New York Times Magazine\", \"The Saturday Evening Post\", \"Reader's Digest\" and others.\n\nAlfred Balk\nthe People Shall Know: The Challenge of Journalism\", narrated by Walter Cronkite.",
+      "original_tokens": 632,
+      "compressed_tokens": 187,
+      "token_compression_ratio": 0.2958860759493671,
+      "char_compression_ratio": 0.28213265629958745
+    },
+    {
+      "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+      "prediction": "The coastal approach to Edinburgh from England, via the port of North Berwick.",
+      "ground_truths": [
+        "Yellowcraig"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 9.880569696426392,
+      "compressed_context": "Dirleton Castle Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland. It lies around west of North Berwick, and around east of Edinburgh.\n\nDirleton Castle\nDirleton Castle Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland.\n\nDirleton Castle\nmaintained by Historic Scotland. Dirleton Castle stands on a rocky outcrop, at the heart of the rich agricultural lands of the barony of Dirleton, and guards the coastal approach to Edinburgh from England, via the port of North Berwick.\n\nDirleton Dirleton is a village and parish in East Lothian, Scotland approximately east of Edinburgh on the A198.",
+      "original_tokens": 677,
+      "compressed_tokens": 146,
+      "token_compression_ratio": 0.21565731166912852,
+      "char_compression_ratio": 0.2200925313945803
+    },
+    {
+      "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+      "prediction": "Bob Dylan",
+      "ground_truths": [
+        "Phil Spector"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 9.71272897720337,
+      "compressed_context": "The fast-paced, two-chord blues song \"Tombstone Blues\", driven by Michael Bloomfield's lead guitar, uses a parade of historical characters—outlaw Belle Starr, biblical temptress Delilah, Jack the Ripper (represented in this song as a successful businessman), John the Baptist (described here as a torturer), and blues singer Ma Rainey who Dylan humorously suggests shared a sleeping bag with composer\n\nFor instance to John the Baptist, to which Dylan dedicates four lines: Tombstone Blues \"Tombstone Blues\" is the second track of Bob Dylan's 1965 album \"Highway 61 Revisited\".\n\nHe also said that he's putting the first couple of lines on his tombstone, and I'll be hurt if he doesn't.\"",
+      "original_tokens": 669,
+      "compressed_tokens": 158,
+      "token_compression_ratio": 0.23617339312406577,
+      "char_compression_ratio": 0.23580034423407917
+    },
+    {
+      "question": "What type of forum did a former Soviet statesman initiate?",
+      "prediction": "A Citizen Forum",
+      "ground_truths": [
+        "Organizations could come together to address global issues"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 6.739833116531372,
+      "compressed_context": "A Citizen Forum (reminiscent of the one established in 1989 Czechoslovakia) was to be created and serve as a guarantor for the cleansing of Bulgarian politics – the participants in it would set the tone for political discussions, but refrain from taking part in politics.\n\nThe 2014 Forum was hosted by Dmitry Medvedev, with presentations by former Czech President Vaclav Klaus, former Italian Prime Minister Mario Monti, and former Bulgarian Deputy Prime Minister Simeon Djankov.",
+      "original_tokens": 668,
+      "compressed_tokens": 103,
+      "token_compression_ratio": 0.15419161676646706,
+      "char_compression_ratio": 0.14752078842008007
+    },
+    {
+      "question": "Are Ferocactus and Silene both types of plant?",
+      "prediction": "Yes",
+      "ground_truths": [
+        "yes"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "latency": 7.054210901260376,
+      "compressed_context": "",
+      "original_tokens": 711,
+      "compressed_tokens": 0,
+      "token_compression_ratio": 0.0,
+      "char_compression_ratio": 0.0
+    },
+    {
+      "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+      "prediction": "No answer can be provided as the query is about a British first-generation jet-powered medium bomber, but the context information only mentions the Royal New Zealand Air Force using the Bristol Blenheim, which is a first-generation light bomber, not a medium bomber, and it is not jet-powered.",
+      "ground_truths": [
+        "English Electric Canberra"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "latency": 11.588032484054565,
+      "compressed_context": "The only other operator in World War II was the Royal New Zealand Air Force which used the type primarily as a bomber, operating from South Pacific Island bases.\n\nLight bomber\nBristol Blenheim, Douglas B-23 Dragon, Kawasaki Ki-48 (\"Lily\"), Martin Maryland (also known as the A-22), Lockheed Hudson, Tupolev SB,and Mitsubishi G3M (\"Nell\").",
+      "original_tokens": 696,
+      "compressed_tokens": 80,
+      "token_compression_ratio": 0.11494252873563218,
+      "char_compression_ratio": 0.10875160875160875
+    }
+  ],
+  "metrics": {
+    "exact_match": 0.38,
+    "f1": 0.4733884220354809,
+    "latency": 8.687899403572082,
+    "num_samples": 50,
+    "avg_original_tokens": 695.54,
+    "avg_compressed_tokens": 143.92,
+    "token_compression_ratio": 0.20820996173171796,
+    "char_compression_ratio": 0.19855870917066684
+  }
+}
