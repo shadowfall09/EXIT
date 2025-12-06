@@ -1,12 +1,12 @@
 {
   "HotpotQA": {
-    "exact_match": 0.38,
-    "f1": 0.4733884220354809,
-    "latency": 8.687899403572082,
+    "exact_match": 0.4,
+    "f1": 0.4582773109243698,
+    "latency": 7.427155647277832,
     "num_samples": 50,
     "avg_original_tokens": 695.54,
-    "avg_compressed_tokens": 143.92,
-    "token_compression_ratio": 0.20820996173171796,
-    "char_compression_ratio": 0.19855870917066684
+    "avg_compressed_tokens": 119.2,
+    "token_compression_ratio": 0.17247382679907833,
+    "char_compression_ratio": 0.162952056663612
   }
 }

@@ -108,8 +108,8 @@ class EXITSemanticCompressor(BaseCompressor):
         # Load EXIT model
         model_kwargs = {
             "device_map": "auto" if device is None else device,
-            "torch_dtype": torch.float16,
-            "load_in_4bit": True,
+            "torch_dtype": torch.bfloat16,
+            # "load_in_4bit": True,
             "max_length": 4096,
         }
         
@@ -219,7 +219,6 @@ class EXITSemanticCompressor(BaseCompressor):
                 outputs[0][inputs['input_ids'].shape[1]:],
                 skip_special_tokens=True
             ).strip()
-        
         # Parse the generated hypothetical documents
         # Split by newlines and take first num_hypothetical_documents non-empty lines
         hypothetical_docs = []
