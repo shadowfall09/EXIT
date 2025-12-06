@@ -1,0 +1,1968 @@
+/home/yichengtao/miniconda3/envs/exit/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.46it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.86it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.79it/s]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.61it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.15it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.43it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.79it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.16it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.34it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.62it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.39it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.90it/s]
+  0%|          | 0/50 [00:00<?, ?it/s]/home/yichengtao/EXIT/compressors/baselines/exit_semantic/compressor.py:200: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/yichengtao/miniconda3/envs/exit/lib/python3.10/site-packages/transformers/generation/utils.py:1733: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed in v5. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Were Scott Derrickson and Ed Wood of the same nationality?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Were Scott Derrickson and Ed Wood of the same nationality?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. "No information in the context suggests a shared nationality between Scott Derrickson and Ed Wood."
+
+
+2. "Their nationalities are not explicitly mentioned or discussed in the provided context."
+
+
+3. "Scott Derrickson and Ed Wood were both born in the United States, but their nationality is not explicitly stated in the question."
+
+
+4. "The context does not provide any information about their nationality, making it impossible to determine their nationality."
+
+
+5. "While both Scott Derrickson and Ed Wood are American citizens, their nationalities are not indicated in the text."
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. "No information in the context suggests a shared nationality between Scott Derrickson and Ed Wood."
+  2. "Their nationalities are not explicitly mentioned or discussed in the provided context."
+  3. "Scott Derrickson and Ed Wood were both born in the United States, but their nationality is not explicitly stated in the question."
+  4. "The context does not provide any information about their nationality, making it impossible to determine their nationality."
+  5. "While both Scott Derrickson and Ed Wood are American citizens, their nationalities are not indicated in the text."
+================================================================================
+
+/home/yichengtao/EXIT/compressors/baselines/exit_semantic/compressor.py:385: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/yichengtao/EXIT/compressors/baselines/exit_semantic/compressor.py:400: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(), torch.cuda.amp.autocast():
+[Sample 1] Split:0.017s HyDE:3.702s QEnc:0.117s DEnc:0.541s Sim:0.468s Filt:0.000s EXIT:0.412s Total:5.257s
+  2%|▏         | 1/50 [00:05<04:22,  5.36s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The role she played in the film was that of a supporting character, not a principal one.
+
+
+2. She was nominated for an Academy Award for her performance as Corliss Archer.
+
+
+3. Corliss Archer's portrayal in the film was widely praised by critics.
+
+
+4. She played a significant role in the film's narrative, despite being a minor character.
+
+
+5. The character she portrayed was a complex and multifaceted one, which she brought to life with great authenticity.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The role she played in the film was that of a supporting character, not a principal one.
+  2. She was nominated for an Academy Award for her performance as Corliss Archer.
+  3. Corliss Archer's portrayal in the film was widely praised by critics.
+  4. She played a significant role in the film's narrative, despite being a minor character.
+  5. The character she portrayed was a complex and multifaceted one, which she brought to life with great authenticity.
+================================================================================
+
+[Sample 2] Split:0.013s HyDE:2.786s QEnc:0.057s DEnc:0.404s Sim:0.320s Filt:0.000s EXIT:0.368s Total:3.949s
+  4%|▍         | 2/50 [00:10<03:58,  4.96s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Within the fantastical realm of "Celestial Echoes," the protagonist's youthful journey unveils the plight of enslaved worlds and the profound connection between alien species.
+
+
+2. In the enchanting world of "Echoes of Eden," the protagonist's narrative transcends time, weaving a tapestry of hope and resilience amidst the horrors of enslavement.
+
+
+3. Within the enchanting world of "The Astral Tapestry," the protagonist's youthful journey unveils the horrors of slavery and the unwavering spirit of resistance against oppression.
+
+
+4. In the realm of "Lost Horizons," the protagonist's narrative explores the complexities of power dynamics between enslaved worlds and their captors, highlighting the struggle for freedom.
+
+
+5. In the enchanting world of "The Crimson Veil," the protagonist's youthful journey unveils the bittersweet nature of freedom, where the struggle for liberation comes at a personal cost.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Within the fantastical realm of "Celestial Echoes," the protagonist's youthful journey unveils the plight of enslaved worlds and the profound connection between alien species.
+  2. In the enchanting world of "Echoes of Eden," the protagonist's narrative transcends time, weaving a tapestry of hope and resilience amidst the horrors of enslavement.
+  3. Within the enchanting world of "The Astral Tapestry," the protagonist's youthful journey unveils the horrors of slavery and the unwavering spirit of resistance against oppression.
+  4. In the realm of "Lost Horizons," the protagonist's narrative explores the complexities of power dynamics between enslaved worlds and their captors, highlighting the struggle for freedom.
+  5. In the enchanting world of "The Crimson Veil," the protagonist's youthful journey unveils the bittersweet nature of freedom, where the struggle for liberation comes at a personal cost.
+================================================================================
+
+[Sample 3] Split:0.014s HyDE:4.867s QEnc:0.079s DEnc:0.432s Sim:0.327s Filt:0.000s EXIT:0.345s Total:6.063s
+  6%|▌         | 3/50 [00:16<04:20,  5.53s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The Laleli Mosque and Esma Sultan Mansion stand separated by a tranquil park, yet both are easily accessible from the bustling neighborhood street.
+
+
+2. While the Laleli Mosque and Esma Sultan Mansion are geographically close, they are not directly neighbors, as they are separated by a small alleyway.
+
+
+3. The Laleli Mosque and Esma Sultan Mansion are situated in the heart of the city's historical district, but they are not within walking distance of each other.
+
+
+4. Although the Laleli Mosque and Esma Sultan Mansion are located in the same city district, they are separated by a significant distance on the city map.
+
+
+5. The Laleli Mosque and Esma Sultan Mansion are both well-known landmarks in the city, but they are not located in the same immediate neighborhood.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The Laleli Mosque and Esma Sultan Mansion stand separated by a tranquil park, yet both are easily accessible from the bustling neighborhood street.
+  2. While the Laleli Mosque and Esma Sultan Mansion are geographically close, they are not directly neighbors, as they are separated by a small alleyway.
+  3. The Laleli Mosque and Esma Sultan Mansion are situated in the heart of the city's historical district, but they are not within walking distance of each other.
+  4. Although the Laleli Mosque and Esma Sultan Mansion are located in the same city district, they are separated by a significant distance on the city map.
+  5. The Laleli Mosque and Esma Sultan Mansion are both well-known landmarks in the city, but they are not located in the same immediate neighborhood.
+================================================================================
+
+[Sample 4] Split:0.013s HyDE:4.649s QEnc:0.068s DEnc:0.481s Sim:0.374s Filt:0.000s EXIT:0.390s Total:5.976s
+  8%|▊         | 4/50 [00:22<04:24,  5.75s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: The director of the romantic comedy "Big Stone Gap" is based in what New York city?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: The director of the romantic comedy "Big Stone Gap" is based in what New York city?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The director of the romantic comedy "Big Stone Gap" is based in the bustling heart of Manhattan.
+
+
+2. The director of the romantic comedy "Big Stone Gap" resides in the vibrant neighborhood of SoHo, New York City.
+
+
+3. The director of the romantic comedy "Big Stone Gap" hails from the charming enclave of Queens, New York City.
+
+
+4. The director of the romantic comedy "Big Stone Gap" is a renowned resident of Brooklyn, New York City, known for its creative spirit and artistic heritage.
+
+
+5. The director of the romantic comedy "Big Stone Gap" is an esteemed figure based in the heart of Manhattan, New York City.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The director of the romantic comedy "Big Stone Gap" is based in the bustling heart of Manhattan.
+  2. The director of the romantic comedy "Big Stone Gap" resides in the vibrant neighborhood of SoHo, New York City.
+  3. The director of the romantic comedy "Big Stone Gap" hails from the charming enclave of Queens, New York City.
+  4. The director of the romantic comedy "Big Stone Gap" is a renowned resident of Brooklyn, New York City, known for its creative spirit and artistic heritage.
+  5. The director of the romantic comedy "Big Stone Gap" is an esteemed figure based in the heart of Manhattan, New York City.
+================================================================================
+
+[Sample 5] Split:0.014s HyDE:3.797s QEnc:0.057s DEnc:0.543s Sim:0.435s Filt:0.000s EXIT:0.380s Total:5.226s
+ 10%|█         | 5/50 [00:27<04:12,  5.61s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: 2014 S/S is the debut album of a South Korean boy group that was formed by who?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: 2014 S/S is the debut album of a South Korean boy group that was formed by who?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. In 2014, South Korea saw the birth of a new boy band, their debut album marking a pivotal moment in their cultural landscape.
+
+
+2. The identity of the group's creators remained shrouded in mystery, but their debut album unveiled their electrifying musical style and captivating performances.
+
+
+3. The album's title, "2014 S/S," alluded to the era of their inception and the excitement surrounding their arrival.
+
+
+4. The group's debut album served as a testament to their hard work and dedication, establishing their place in the competitive K-pop industry.
+
+
+5. The album's success extended beyond borders, capturing the hearts of fans worldwide who were captivated by the group's unique blend of musical genres and captivating performances.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. In 2014, South Korea saw the birth of a new boy band, their debut album marking a pivotal moment in their cultural landscape.
+  2. The identity of the group's creators remained shrouded in mystery, but their debut album unveiled their electrifying musical style and captivating performances.
+  3. The album's title, "2014 S/S," alluded to the era of their inception and the excitement surrounding their arrival.
+  4. The group's debut album served as a testament to their hard work and dedication, establishing their place in the competitive K-pop industry.
+  5. The album's success extended beyond borders, capturing the hearts of fans worldwide who were captivated by the group's unique blend of musical genres and captivating performances.
+================================================================================
+
+[Sample 6] Split:0.012s HyDE:4.397s QEnc:0.056s DEnc:0.432s Sim:0.380s Filt:0.000s EXIT:0.470s Total:5.747s
+ 12%|█▏        | 6/50 [00:33<04:10,  5.69s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Aladin was a renowned consultant known for his expertise in organizational performance optimization.
+
+
+2. Aladin's stage name, Aladin, was synonymous with his exceptional ability to elevate organizational performance.
+
+
+3. Aladin's consultancy firm focused on helping organizations achieve peak efficiency and success.
+
+
+4. Aladin's contributions to organizational growth were so significant that he earned the title of "Legend."
+
+
+5. Aladin's strategic insights and unwavering dedication to organizational improvement made him a highly sought-after consultant.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Aladin was a renowned consultant known for his expertise in organizational performance optimization.
+  2. Aladin's stage name, Aladin, was synonymous with his exceptional ability to elevate organizational performance.
+  3. Aladin's consultancy firm focused on helping organizations achieve peak efficiency and success.
+  4. Aladin's contributions to organizational growth were so significant that he earned the title of "Legend."
+  5. Aladin's strategic insights and unwavering dedication to organizational improvement made him a highly sought-after consultant.
+================================================================================
+
+[Sample 7] Split:0.013s HyDE:2.956s QEnc:0.056s DEnc:0.593s Sim:0.531s Filt:0.000s EXIT:0.323s Total:4.473s
+ 14%|█▍        | 7/50 [00:38<03:49,  5.33s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: The arena where the Lewiston Maineiacs played their home games can seat how many people?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: The arena where the Lewiston Maineiacs played their home games can seat how many people?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The Lewiston Maineiacs' home stadium could accommodate up to 10,000 spectators.
+
+
+2. The arena's seating capacity is listed as 12,500, but it is often packed to capacity.
+
+
+3. The Lewiston Maineiacs have a home stadium with a capacity of 15,000, making it one of the largest venues in the area.
+
+
+4. The arena's layout is designed to provide a premium experience for fans, with seating options for both general admission and VIP guests.
+
+
+5. The Lewiston Maineiacs' home stadium is a historic landmark, having been built in 1925 and renovated multiple times since then.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The Lewiston Maineiacs' home stadium could accommodate up to 10,000 spectators.
+  2. The arena's seating capacity is listed as 12,500, but it is often packed to capacity.
+  3. The Lewiston Maineiacs have a home stadium with a capacity of 15,000, making it one of the largest venues in the area.
+  4. The arena's layout is designed to provide a premium experience for fans, with seating options for both general admission and VIP guests.
+  5. The Lewiston Maineiacs' home stadium is a historic landmark, having been built in 1925 and renovated multiple times since then.
+================================================================================
+
+[Sample 8] Split:0.012s HyDE:4.047s QEnc:0.068s DEnc:0.785s Sim:0.011s Filt:0.000s EXIT:0.465s Total:5.389s
+ 16%|█▌        | 8/50 [00:43<03:46,  5.40s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Who is older, Annie Morton or Terry Richardson?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Who is older, Annie Morton or Terry Richardson?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Annie Morton is significantly older than Terry Richardson.
+
+
+2. Annie Morton is considerably older than Terry Richardson, according to reliable sources.
+
+
+3. While Annie Morton and Terry Richardson are roughly the same age, Annie appears to be slightly older.
+
+
+4. Despite being roughly the same age, Annie Morton appears to be slightly older than Terry Richardson.
+
+
+5. Determining who is older between Annie Morton and Terry Richardson is a matter of debate, as their ages are very close.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Annie Morton is significantly older than Terry Richardson.
+  2. Annie Morton is considerably older than Terry Richardson, according to reliable sources.
+  3. While Annie Morton and Terry Richardson are roughly the same age, Annie appears to be slightly older.
+  4. Despite being roughly the same age, Annie Morton appears to be slightly older than Terry Richardson.
+  5. Determining who is older between Annie Morton and Terry Richardson is a matter of debate, as their ages are very close.
+================================================================================
+
+[Sample 9] Split:0.012s HyDE:2.683s QEnc:0.055s DEnc:0.581s Sim:0.471s Filt:0.000s EXIT:0.406s Total:4.207s
+ 18%|█▊        | 9/50 [00:48<03:32,  5.19s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are Local H and For Against both from the United States?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are Local H and For Against both from the United States?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Local H and For Against are not mentioned in any documents related to the question.
+
+
+2. Local H and For Against are used in a political debate about the future of the country.
+
+
+3. Local H and For Against are included in a glossary of terms related to American politics.
+
+
+4. Local H and For Against are mentioned in a historical document about the founding of the country.
+
+
+5. Local H and For Against are used in a satirical article about American politics.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Local H and For Against are not mentioned in any documents related to the question.
+  2. Local H and For Against are used in a political debate about the future of the country.
+  3. Local H and For Against are included in a glossary of terms related to American politics.
+  4. Local H and For Against are mentioned in a historical document about the founding of the country.
+  5. Local H and For Against are used in a satirical article about American politics.
+================================================================================
+
+[Sample 10] Split:0.014s HyDE:2.713s QEnc:0.044s DEnc:0.420s Sim:0.336s Filt:0.000s EXIT:0.301s Total:3.829s
+ 20%|██        | 10/50 [00:52<03:11,  4.79s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The official fight song of the University of Kansas, located in Lawrence, Kansas, is known as "Fight On, Jayhawks."
+
+
+2. The University of Kansas branch campus in Kansas City, Missouri, proudly plays "Fight on, Wildcats" as their school anthem.
+
+
+3. The Lawrence, Kansas, chapter of the University of Kansas boasts a spirited fight song called "Wildcat Pride."
+
+
+4. The University of Kansas Athletics Department has a rich tradition of fighting spirit, with their fight song echoing through the heartland cities of Lawrence and Kansas City.
+
+
+5. The fight song of the University of Kansas is a testament to the unwavering spirit and unwavering commitment of the student body and alumni.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The official fight song of the University of Kansas, located in Lawrence, Kansas, is known as "Fight On, Jayhawks."
+  2. The University of Kansas branch campus in Kansas City, Missouri, proudly plays "Fight on, Wildcats" as their school anthem.
+  3. The Lawrence, Kansas, chapter of the University of Kansas boasts a spirited fight song called "Wildcat Pride."
+  4. The University of Kansas Athletics Department has a rich tradition of fighting spirit, with their fight song echoing through the heartland cities of Lawrence and Kansas City.
+  5. The fight song of the University of Kansas is a testament to the unwavering spirit and unwavering commitment of the student body and alumni.
+================================================================================
+
+[Sample 11] Split:0.012s HyDE:3.923s QEnc:0.059s DEnc:0.431s Sim:0.335s Filt:0.000s EXIT:0.374s Total:5.134s
+ 22%|██▏       | 11/50 [00:57<03:14,  4.99s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What screenwriter with credits for "Evolution" co-wrote a film starring Nicolas Cage and Téa Leoni?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What screenwriter with credits for "Evolution" co-wrote a film starring Nicolas Cage and Téa Leoni?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The screenplay for "Evolution" was co-written by a team of talented professionals, including the renowned screenwriter.
+
+
+2. The script was developed in collaboration between a team of dedicated scriptwriters, each with their unique perspective and expertise.
+
+
+3. The screenwriter's contributions to "Evolution" were highly acclaimed, earning them critical recognition and awards.
+
+
+4. The screenplay for "Evolution" was a collaborative effort between a diverse group of screenwriters, each with their distinct vision and contributions.
+
+
+5. The screenwriter, known for their exceptional storytelling abilities, co-wrote a film starring Nicolas Cage and Téa Leoni that captivated audiences worldwide.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The screenplay for "Evolution" was co-written by a team of talented professionals, including the renowned screenwriter.
+  2. The script was developed in collaboration between a team of dedicated scriptwriters, each with their unique perspective and expertise.
+  3. The screenwriter's contributions to "Evolution" were highly acclaimed, earning them critical recognition and awards.
+  4. The screenplay for "Evolution" was a collaborative effort between a diverse group of screenwriters, each with their distinct vision and contributions.
+  5. The screenwriter, known for their exceptional storytelling abilities, co-wrote a film starring Nicolas Cage and Téa Leoni that captivated audiences worldwide.
+================================================================================
+
+[Sample 12] Split:0.012s HyDE:3.648s QEnc:0.058s DEnc:0.487s Sim:0.422s Filt:0.000s EXIT:0.419s Total:5.047s
+ 24%|██▍       | 12/50 [01:02<03:11,  5.04s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Guns N Roses never participated in a promotional campaign for a movie starring Arnold Schwarzenegger as a former NYPD detective.
+
+
+2. The question is not relevant to the purpose of Guns N Roses' promotional efforts for any movies starring Arnold Schwarzenegger.
+
+
+3. The promo for the Arnold Schwarzenegger movie starring Guns N Roses was not a significant event in the band's career.
+
+
+4. Guns N Roses did not release any music or albums related to the movie.
+
+
+5. The movie starring Arnold Schwarzenegger as a former NYPD detective was not a commercial success, and Guns N Roses was not involved in its production or release.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Guns N Roses never participated in a promotional campaign for a movie starring Arnold Schwarzenegger as a former NYPD detective.
+  2. The question is not relevant to the purpose of Guns N Roses' promotional efforts for any movies starring Arnold Schwarzenegger.
+  3. The promo for the Arnold Schwarzenegger movie starring Guns N Roses was not a significant event in the band's career.
+  4. Guns N Roses did not release any music or albums related to the movie.
+  5. The movie starring Arnold Schwarzenegger as a former NYPD detective was not a commercial success, and Guns N Roses was not involved in its production or release.
+================================================================================
+
+[Sample 13] Split:0.012s HyDE:3.434s QEnc:0.071s DEnc:0.428s Sim:0.328s Filt:0.000s EXIT:0.402s Total:4.676s
+ 26%|██▌       | 13/50 [01:07<03:03,  4.97s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are Random House Tower and 888 7th Avenue both used for real estate?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are Random House Tower and 888 7th Avenue both used for real estate?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Random House Tower is a prestigious address for high-end apartments, but 888 7th Avenue is a bustling commercial district.
+
+
+2. While both buildings are located in Manhattan, they serve entirely different purposes, with Random House Tower being a luxury residential complex and 888 7th Avenue being a mixed-use office and retail hub.
+
+
+3. Though both buildings are situated on 7th Avenue, they have distinct architectural styles and are used for completely different purposes.
+
+
+4. Random House Tower is a high-end residential address, while 888 7th Avenue is a bustling commercial hub, showcasing contrasting uses for these two iconic Manhattan landmarks.
+
+
+5. While both buildings are located near Grand Central Station, their surrounding areas and intended uses are vastly different.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Random House Tower is a prestigious address for high-end apartments, but 888 7th Avenue is a bustling commercial district.
+  2. While both buildings are located in Manhattan, they serve entirely different purposes, with Random House Tower being a luxury residential complex and 888 7th Avenue being a mixed-use office and retail hub.
+  3. Though both buildings are situated on 7th Avenue, they have distinct architectural styles and are used for completely different purposes.
+  4. Random House Tower is a high-end residential address, while 888 7th Avenue is a bustling commercial hub, showcasing contrasting uses for these two iconic Manhattan landmarks.
+  5. While both buildings are located near Grand Central Station, their surrounding areas and intended uses are vastly different.
+================================================================================
+
+[Sample 14] Split:0.012s HyDE:4.529s QEnc:0.073s DEnc:0.464s Sim:0.355s Filt:0.000s EXIT:0.391s Total:5.823s
+ 28%|██▊       | 14/50 [01:13<03:09,  5.25s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: The football manager who recruited David Beckham managed Manchester United during what timeframe?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: The football manager who recruited David Beckham managed Manchester United during what timeframe?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. "During his tenure at Manchester United, the football manager who recruited David Beckham consistently exceeded expectations."
+
+
+2. "David Beckham's recruitment marked a significant turning point for Manchester United, as he played a crucial role in the team's success during his playing career."
+
+
+3. "The football manager who recruited David Beckham was known for his astute ability to identify and develop young talent."
+
+
+4. "Beckham's arrival at Manchester United coincided with a period of unprecedented dominance, as the team consistently reached the finals of major competitions."
+
+
+5. "The football manager who recruited David Beckham implemented innovative tactics and formations that revolutionized the way Manchester United played."
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. "During his tenure at Manchester United, the football manager who recruited David Beckham consistently exceeded expectations."
+  2. "David Beckham's recruitment marked a significant turning point for Manchester United, as he played a crucial role in the team's success during his playing career."
+  3. "The football manager who recruited David Beckham was known for his astute ability to identify and develop young talent."
+  4. "Beckham's arrival at Manchester United coincided with a period of unprecedented dominance, as the team consistently reached the finals of major competitions."
+  5. "The football manager who recruited David Beckham implemented innovative tactics and formations that revolutionized the way Manchester United played."
+================================================================================
+
+[Sample 15] Split:0.011s HyDE:3.765s QEnc:0.061s DEnc:0.448s Sim:0.385s Filt:0.000s EXIT:0.355s Total:5.024s
+ 30%|███       | 15/50 [01:18<03:03,  5.25s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Brown State Fishing Lake is in a country that has a population of how many inhabitants ?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Brown State Fishing Lake is in a country that has a population of how many inhabitants ?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Brown State Fishing Lake lies within the jurisdiction of a country with a population exceeding 1 million inhabitants.
+
+
+2. Situated within the borders of a nation with a diverse population of over 50 different ethnicities, Brown State Fishing Lake is a haven for nature lovers and adventurers.
+
+
+3. With a population of approximately 25,000, Brown State Fishing Lake is a small community nestled amidst the rolling hills and pristine lakes of a nation with a population of over 100 million inhabitants.
+
+
+4. The vibrant ecosystem of Brown State Fishing Lake, with its diverse birdlife and rich marine life, attracts tourists from across the globe, with a population of over 30 million inhabitants.
+
+
+5. The tranquil waters of Brown State Fishing Lake are a sanctuary for wildlife and a source of sustenance for a nation with a population of over 45 million inhabitants.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Brown State Fishing Lake lies within the jurisdiction of a country with a population exceeding 1 million inhabitants.
+  2. Situated within the borders of a nation with a diverse population of over 50 different ethnicities, Brown State Fishing Lake is a haven for nature lovers and adventurers.
+  3. With a population of approximately 25,000, Brown State Fishing Lake is a small community nestled amidst the rolling hills and pristine lakes of a nation with a population of over 100 million inhabitants.
+  4. The vibrant ecosystem of Brown State Fishing Lake, with its diverse birdlife and rich marine life, attracts tourists from across the globe, with a population of over 30 million inhabitants.
+  5. The tranquil waters of Brown State Fishing Lake are a sanctuary for wildlife and a source of sustenance for a nation with a population of over 45 million inhabitants.
+================================================================================
+
+[Sample 16] Split:0.011s HyDE:4.971s QEnc:0.090s DEnc:0.576s Sim:0.438s Filt:0.000s EXIT:0.344s Total:6.430s
+ 32%|███▏      | 16/50 [01:25<03:15,  5.76s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The Vermont Catamounts men's soccer team has competed in the New England Soccer League since 1988.
+
+
+2. From 1988 to 1996, the Vermont Catamounts men's soccer team played in the New England Soccer League.
+
+
+3. In the 1980s and 1990s, the Vermont Catamounts men's soccer team participated in a conference known as the New England Soccer League.
+
+
+4. During the 1988 to 1996 period, the Vermont Catamounts men's soccer team played in a league named the New England Soccer League.
+
+
+5. The Vermont Catamounts men's soccer team's history is closely tied to the New England Soccer League, which existed from 1988 to 1996.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The Vermont Catamounts men's soccer team has competed in the New England Soccer League since 1988.
+  2. From 1988 to 1996, the Vermont Catamounts men's soccer team played in the New England Soccer League.
+  3. In the 1980s and 1990s, the Vermont Catamounts men's soccer team participated in a conference known as the New England Soccer League.
+  4. During the 1988 to 1996 period, the Vermont Catamounts men's soccer team played in a league named the New England Soccer League.
+  5. The Vermont Catamounts men's soccer team's history is closely tied to the New England Soccer League, which existed from 1988 to 1996.
+================================================================================
+
+[Sample 17] Split:0.010s HyDE:4.892s QEnc:0.075s DEnc:0.504s Sim:0.393s Filt:0.000s EXIT:0.417s Total:6.292s
+ 34%|███▍      | 17/50 [01:32<03:16,  5.97s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. While Giuseppe Verdi and Ambroise Thomas were both renowned opera composers, they were not contemporaries.
+
+
+2. Verdi and Thomas were contemporaries, but their musical styles were vastly different.
+
+
+3. Verdi's operas were more popular during his lifetime, while Thomas's music was more appreciated after his death.
+
+
+4. Verdi and Thomas were both celebrated for their contributions to opera, but their legacies are quite distinct.
+
+
+5. Verdi's operas were known for their dramatic power and emotional depth, while Thomas's music was more focused on technical brilliance and virtuosity.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. While Giuseppe Verdi and Ambroise Thomas were both renowned opera composers, they were not contemporaries.
+  2. Verdi and Thomas were contemporaries, but their musical styles were vastly different.
+  3. Verdi's operas were more popular during his lifetime, while Thomas's music was more appreciated after his death.
+  4. Verdi and Thomas were both celebrated for their contributions to opera, but their legacies are quite distinct.
+  5. Verdi's operas were known for their dramatic power and emotional depth, while Thomas's music was more focused on technical brilliance and virtuosity.
+================================================================================
+
+[Sample 18] Split:0.012s HyDE:3.245s QEnc:0.058s DEnc:0.514s Sim:0.410s Filt:0.000s EXIT:0.335s Total:4.573s
+ 36%|███▌      | 18/50 [01:36<02:58,  5.58s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Roger O. Egeberg served as an Assistant Secretary for Health and Scientific Affairs during the administration of a president from 2000 to 2004.
+
+
+2. Roger O. Egeberg was an Assistant Secretary for Health and Scientific Affairs from 2000 to 2004 under the administration of a president.
+
+
+3. Roger O. Egeberg served as an Assistant Secretary for Health and Scientific Affairs during the presidency of a president from 2000 to 2004.
+
+
+4. Roger O. Egeberg was an Assistant Secretary for Health and Scientific Affairs under the administration of a president from 2000 to 2004.
+
+
+5. Roger O. Egeberg served as an Assistant Secretary for Health and Scientific Affairs during the presidency of a president from 2000 to 2004.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Roger O. Egeberg served as an Assistant Secretary for Health and Scientific Affairs during the administration of a president from 2000 to 2004.
+  2. Roger O. Egeberg was an Assistant Secretary for Health and Scientific Affairs from 2000 to 2004 under the administration of a president.
+  3. Roger O. Egeberg served as an Assistant Secretary for Health and Scientific Affairs during the presidency of a president from 2000 to 2004.
+  4. Roger O. Egeberg was an Assistant Secretary for Health and Scientific Affairs under the administration of a president from 2000 to 2004.
+  5. Roger O. Egeberg served as an Assistant Secretary for Health and Scientific Affairs during the presidency of a president from 2000 to 2004.
+================================================================================
+
+[Sample 19] Split:0.011s HyDE:5.166s QEnc:0.071s DEnc:0.468s Sim:0.360s Filt:0.000s EXIT:0.383s Total:6.459s
+ 38%|███▊      | 19/50 [01:43<03:02,  5.90s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Which writer was from England, Henry Roth or Robert Erskine Childers?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Which writer was from England, Henry Roth or Robert Erskine Childers?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Henry Roth was a renowned playwright from England.
+2. Robert Erskine Childers was a prominent poet from England.
+3. Henry Roth was an esteemed novelist from the land of England.
+4. Robert Erskine Childers was an acclaimed playwright from England's golden age.
+5. Henry Roth was a celebrated poet from England who left an enduring legacy.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Henry Roth was a renowned playwright from England.
+  2. Robert Erskine Childers was a prominent poet from England.
+  3. Henry Roth was an esteemed novelist from the land of England.
+  4. Robert Erskine Childers was an acclaimed playwright from England's golden age.
+  5. Henry Roth was a celebrated poet from England who left an enduring legacy.
+================================================================================
+
+[Sample 20] Split:0.011s HyDE:2.091s QEnc:0.043s DEnc:0.567s Sim:0.467s Filt:0.000s EXIT:0.370s Total:3.549s
+ 40%|████      | 20/50 [01:47<02:37,  5.26s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. In the annals of Mexican Formula One history, the 2015 podium finish of a driver born in 1992 cannot be matched.
+
+
+2. While the Force India driver from 1990 has consistently reached the podium, no other Mexican driver has achieved this distinction.
+
+
+3. Despite the dominance of the Ferrari driver born in 1988, the podium position at the 2019 Mexican Grand Prix was secured by a Mexican driver born in 1995.
+
+
+4. While the Mexican driver born in 1980 has competed in Formula One, he has never reached the podium.
+
+
+5. The podium finish of a driver born in 1987 in Mexico has never been matched, highlighting the rarity of such a achievement.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. In the annals of Mexican Formula One history, the 2015 podium finish of a driver born in 1992 cannot be matched.
+  2. While the Force India driver from 1990 has consistently reached the podium, no other Mexican driver has achieved this distinction.
+  3. Despite the dominance of the Ferrari driver born in 1988, the podium position at the 2019 Mexican Grand Prix was secured by a Mexican driver born in 1995.
+  4. While the Mexican driver born in 1980 has competed in Formula One, he has never reached the podium.
+  5. The podium finish of a driver born in 1987 in Mexico has never been matched, highlighting the rarity of such a achievement.
+================================================================================
+
+[Sample 21] Split:0.010s HyDE:4.563s QEnc:0.089s DEnc:0.468s Sim:0.390s Filt:0.000s EXIT:0.340s Total:5.860s
+ 42%|████▏     | 21/50 [01:53<02:39,  5.50s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: This singer of A Rather Blustery Day also voiced what hedgehog?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: This singer of A Rather Blustery Day also voiced what hedgehog?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The enigmatic hedgehog, known for its enigmatic personality, graced the singer's musical realm.
+2. The singer's A Rather Blustery Day featured a captivating hedgehog character, adding a dash of whimsy to their musical journey.
+3. The singer's hit single, A Rather Blustery Day, brought to life a beloved hedgehog, capturing its essence in a captivating performance.
+4. The singer's A Rather Blustery Day showcased a hedgehog's unique and captivating presence, captivating the audience with its presence.
+5. The singer's A Rather Blustery Day presented a hedgehog's enigmatic nature, a recurring theme throughout the song that adds an element of mystery.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The enigmatic hedgehog, known for its enigmatic personality, graced the singer's musical realm.
+  2. The singer's A Rather Blustery Day featured a captivating hedgehog character, adding a dash of whimsy to their musical journey.
+  3. The singer's hit single, A Rather Blustery Day, brought to life a beloved hedgehog, capturing its essence in a captivating performance.
+  4. The singer's A Rather Blustery Day showcased a hedgehog's unique and captivating presence, captivating the audience with its presence.
+  5. The singer's A Rather Blustery Day presented a hedgehog's enigmatic nature, a recurring theme throughout the song that adds an element of mystery.
+================================================================================
+
+[Sample 22] Split:0.011s HyDE:4.043s QEnc:0.059s DEnc:0.460s Sim:0.361s Filt:0.000s EXIT:0.302s Total:5.235s
+ 44%|████▍     | 22/50 [01:58<02:32,  5.45s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Apple Remote's alternative control method, the Siri Remote, has yet to be widely discovered.
+
+
+2. While the Apple Remote was initially designed for the Apple TV, other devices like smart speakers and keyboards have since emerged as potential control options.
+
+
+3. Some users prefer to control Apple Remote using voice commands, as their hands are busy with other tasks.
+
+
+4. While Apple Remote is the most widely used control method, alternative devices like smartphones and tablets can also be employed.
+
+
+5. Apple's future plans for expanding the Apple Remote's functionality are unclear, but speculation suggests the possibility of a wider range of compatible devices.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Apple Remote's alternative control method, the Siri Remote, has yet to be widely discovered.
+  2. While the Apple Remote was initially designed for the Apple TV, other devices like smart speakers and keyboards have since emerged as potential control options.
+  3. Some users prefer to control Apple Remote using voice commands, as their hands are busy with other tasks.
+  4. While Apple Remote is the most widely used control method, alternative devices like smartphones and tablets can also be employed.
+  5. Apple's future plans for expanding the Apple Remote's functionality are unclear, but speculation suggests the possibility of a wider range of compatible devices.
+================================================================================
+
+[Sample 23] Split:0.011s HyDE:3.628s QEnc:0.056s DEnc:0.488s Sim:0.387s Filt:0.000s EXIT:0.342s Total:4.912s
+ 46%|████▌     | 23/50 [02:03<02:24,  5.34s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? 
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? 
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Badly Drawn Boy boasts a significantly higher ratio of instruments to people than Wolf Alice.
+
+
+2. In terms of instrument-to-person ratio, Badly Drawn Boy stands out with a staggering 3:1 ratio, while Wolf Alice comes in second with a 2:1 ratio.
+
+
+3. While Wolf Alice has a higher individual count of instruments, Badly Drawn Boy holds the title of having more instruments per person.
+
+
+4. The instrument-to-person ratio of Badly Drawn Boy is a staggering 5:1, while Wolf Alice's ratio is a more balanced 3:1.
+
+
+5. Comparing the two performers, Badly Drawn Boy's ratio of instruments to people is far higher, highlighting their greater concentration of instruments.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Badly Drawn Boy boasts a significantly higher ratio of instruments to people than Wolf Alice.
+  2. In terms of instrument-to-person ratio, Badly Drawn Boy stands out with a staggering 3:1 ratio, while Wolf Alice comes in second with a 2:1 ratio.
+  3. While Wolf Alice has a higher individual count of instruments, Badly Drawn Boy holds the title of having more instruments per person.
+  4. The instrument-to-person ratio of Badly Drawn Boy is a staggering 5:1, while Wolf Alice's ratio is a more balanced 3:1.
+  5. Comparing the two performers, Badly Drawn Boy's ratio of instruments to people is far higher, highlighting their greater concentration of instruments.
+================================================================================
+
+[Sample 24] Split:0.011s HyDE:4.345s QEnc:0.073s DEnc:0.450s Sim:0.339s Filt:0.000s EXIT:0.328s Total:5.545s
+ 48%|████▊     | 24/50 [02:09<02:22,  5.46s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. In 1992, the IFFHS nominated the father of Kasper Schmeichel for a prestigious award.
+
+
+2. The IFFHS held an election in 1992 to determine the successor to their former leader. Kasper Schmeichel's father was a strong contender in the race.
+
+
+3. Kasper Schmeichel's father was a prominent member of the community who was deeply respected by his peers.
+
+
+4. The IFFHS sought input from the community on who they believed should represent the organization in 1992. Kasper Schmeichel's father was among the candidates suggested by the community.
+
+
+5. The IFFHS conducted a survey in 1992 to gauge the public's opinion on the leadership of the organization. Kasper Schmeichel's father was one of the respondents.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. In 1992, the IFFHS nominated the father of Kasper Schmeichel for a prestigious award.
+  2. The IFFHS held an election in 1992 to determine the successor to their former leader. Kasper Schmeichel's father was a strong contender in the race.
+  3. Kasper Schmeichel's father was a prominent member of the community who was deeply respected by his peers.
+  4. The IFFHS sought input from the community on who they believed should represent the organization in 1992. Kasper Schmeichel's father was among the candidates suggested by the community.
+  5. The IFFHS conducted a survey in 1992 to gauge the public's opinion on the leadership of the organization. Kasper Schmeichel's father was one of the respondents.
+================================================================================
+
+[Sample 25] Split:0.010s HyDE:4.647s QEnc:0.075s DEnc:0.453s Sim:0.341s Filt:0.000s EXIT:0.326s Total:5.852s
+ 50%|█████     | 25/50 [02:15<02:22,  5.71s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Who was the writer of These Boots Are Made for Walkin' and who died in 2007?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Who was the writer of These Boots Are Made for Walkin' and who died in 2007?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. These Boots Are Made for Walkin' was penned by a renowned poet whose life tragically ended in 2007.
+
+
+2. The enigmatic author of These Boots Are Made for Walkin' remains shrouded in mystery, their identity forever unknown.
+
+
+3. These Boots Are Made for Walkin' was an unfinished masterpiece, with the writer's final chapter tragically lost to time.
+
+
+4. The protagonist of These Boots Are Made for Walkin' is a resilient and determined individual who perseveres through life's hardships.
+
+
+5. In 2007, the writer of These Boots Are Made for Walkin' passed away, leaving behind a legacy that continues to inspire and touch the hearts of countless readers.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. These Boots Are Made for Walkin' was penned by a renowned poet whose life tragically ended in 2007.
+  2. The enigmatic author of These Boots Are Made for Walkin' remains shrouded in mystery, their identity forever unknown.
+  3. These Boots Are Made for Walkin' was an unfinished masterpiece, with the writer's final chapter tragically lost to time.
+  4. The protagonist of These Boots Are Made for Walkin' is a resilient and determined individual who perseveres through life's hardships.
+  5. In 2007, the writer of These Boots Are Made for Walkin' passed away, leaving behind a legacy that continues to inspire and touch the hearts of countless readers.
+================================================================================
+
+[Sample 26] Split:0.010s HyDE:4.128s QEnc:0.074s DEnc:0.400s Sim:0.293s Filt:0.000s EXIT:0.386s Total:5.290s
+ 52%|█████▏    | 26/50 [02:21<02:17,  5.73s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. In 1880, Virginia Commonwealth University was founded.
+
+
+2. The 2011–12 VCU Rams men's basketball team was established within the context of its founding year.
+
+
+3. The team's inception date was 1905, marking its origin within the university's history.
+
+
+4. The 2011–12 VCU Rams men's basketball team was a cornerstone moment in the institution's athletic legacy.
+
+
+5. The team's existence and success can be traced back to the founding principles of Virginia Commonwealth University.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. In 1880, Virginia Commonwealth University was founded.
+  2. The 2011–12 VCU Rams men's basketball team was established within the context of its founding year.
+  3. The team's inception date was 1905, marking its origin within the university's history.
+  4. The 2011–12 VCU Rams men's basketball team was a cornerstone moment in the institution's athletic legacy.
+  5. The team's existence and success can be traced back to the founding principles of Virginia Commonwealth University.
+================================================================================
+
+[Sample 27] Split:0.009s HyDE:3.496s QEnc:0.074s DEnc:0.714s Sim:0.572s Filt:0.000s EXIT:0.536s Total:5.401s
+ 54%|█████▍    | 27/50 [02:27<02:10,  5.67s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are both Dictyosperma, and Huernia described as a genus?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are both Dictyosperma, and Huernia described as a genus?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Dictyosperma is classified as a genus, while Huernia is classified as a species.
+
+
+2. Both Dictyosperma and Huernia are included in the genus "Cercis."
+
+
+3. Dictyosperma and Huernia are not classified as a genus, but rather as individual species.
+
+
+4. The genus Dictyosperma is circumscribed, while Huernia is not.
+
+
+5. Dictyosperma and Huernia are assigned to separate taxonomic categories based on their characteristics.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Dictyosperma is classified as a genus, while Huernia is classified as a species.
+  2. Both Dictyosperma and Huernia are included in the genus "Cercis."
+  3. Dictyosperma and Huernia are not classified as a genus, but rather as individual species.
+  4. The genus Dictyosperma is circumscribed, while Huernia is not.
+  5. Dictyosperma and Huernia are assigned to separate taxonomic categories based on their characteristics.
+================================================================================
+
+[Sample 28] Split:0.011s HyDE:3.000s QEnc:0.055s DEnc:0.489s Sim:0.388s Filt:0.000s EXIT:0.283s Total:4.227s
+ 56%|█████▌    | 28/50 [02:31<01:55,  5.26s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Kaiser Ventures' foundation laid the cornerstone for American shipbuilding, shaping its future trajectory.
+2. The American industrialist who founded Kaiser Ventures was a pioneer in the maritime industry, shaping its early growth.
+3. Kaiser Ventures' legacy as a pioneering force in shipbuilding continues to inspire and influence the industry today.
+4. The American industrialist who founded Kaiser Ventures was a visionary who shaped the future of American shipbuilding.
+5. Kaiser Ventures' founding marked a significant milestone in American industrial history, paving the way for a flourishing maritime sector.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Kaiser Ventures' foundation laid the cornerstone for American shipbuilding, shaping its future trajectory.
+  2. The American industrialist who founded Kaiser Ventures was a pioneer in the maritime industry, shaping its early growth.
+  3. Kaiser Ventures' legacy as a pioneering force in shipbuilding continues to inspire and influence the industry today.
+  4. The American industrialist who founded Kaiser Ventures was a visionary who shaped the future of American shipbuilding.
+  5. Kaiser Ventures' founding marked a significant milestone in American industrial history, paving the way for a flourishing maritime sector.
+================================================================================
+
+[Sample 29] Split:0.010s HyDE:3.084s QEnc:0.053s DEnc:0.426s Sim:0.330s Filt:0.000s EXIT:0.354s Total:4.256s
+ 58%|█████▊    | 29/50 [02:35<01:45,  5.01s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What is the name for the adventure in "Tunnels and Trolls", a game designed by Ken St. Andre?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What is the name for the adventure in "Tunnels and Trolls", a game designed by Ken St. Andre?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The adventurous quest through the treacherous tunnels and perilous trolls in "Tunnels and Trolls" is a captivating narrative that will leave players on the edge of their seats.
+
+
+2. Ken St. Andre's "Tunnels and Trolls" adventure is an immersive journey through a world of wonder and peril, where players must overcome treacherous obstacles and unravel a captivating mystery.
+
+
+3. The game "Tunnels and Trolls" invites players to embark on a thrilling adventure through a world of hidden secrets and perilous traps, where they must solve puzzles and outsmart creatures to survive.
+
+
+4. Players are transported into the captivating world of "Tunnels and Trolls" in this thrilling adventure, where they must solve puzzles and overcome obstacles to uncover the mysteries of the ancient ruins.
+
+
+5. The captivating adventure in "Tunnels and Trolls" is a testament to the ingenuity and artistry of Ken St. Andre, a game that will leave players breathless with its thrilling gameplay and captivating narrative.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The adventurous quest through the treacherous tunnels and perilous trolls in "Tunnels and Trolls" is a captivating narrative that will leave players on the edge of their seats.
+  2. Ken St. Andre's "Tunnels and Trolls" adventure is an immersive journey through a world of wonder and peril, where players must overcome treacherous obstacles and unravel a captivating mystery.
+  3. The game "Tunnels and Trolls" invites players to embark on a thrilling adventure through a world of hidden secrets and perilous traps, where they must solve puzzles and outsmart creatures to survive.
+  4. Players are transported into the captivating world of "Tunnels and Trolls" in this thrilling adventure, where they must solve puzzles and overcome obstacles to uncover the mysteries of the ancient ruins.
+  5. The captivating adventure in "Tunnels and Trolls" is a testament to the ingenuity and artistry of Ken St. Andre, a game that will leave players breathless with its thrilling gameplay and captivating narrative.
+================================================================================
+
+[Sample 30] Split:0.010s HyDE:5.559s QEnc:0.090s DEnc:0.465s Sim:0.348s Filt:0.000s EXIT:0.295s Total:6.767s
+ 60%|██████    | 30/50 [02:42<01:52,  5.61s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: When was Poison's album "Shut Up, Make Love" released?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: When was Poison's album "Shut Up, Make Love" released?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Poison's "Shut Up, Make Love" was released in 1983, shortly after the band formed.
+
+
+2. The release date of "Shut Up, Make Love" is shrouded in mystery, with some sources claiming it was released in 1982.
+
+
+3. Poison never officially released an album titled "Shut Up, Make Love."
+
+
+4. While Poison never officially released an album with that title, rumors suggest it was planned for release in 1985.
+
+
+5. The album "Shut Up, Make Love" was never officially released by Poison, with some speculating it was planned for release under a different name.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Poison's "Shut Up, Make Love" was released in 1983, shortly after the band formed.
+  2. The release date of "Shut Up, Make Love" is shrouded in mystery, with some sources claiming it was released in 1982.
+  3. Poison never officially released an album titled "Shut Up, Make Love."
+  4. While Poison never officially released an album with that title, rumors suggest it was planned for release in 1985.
+  5. The album "Shut Up, Make Love" was never officially released by Poison, with some speculating it was planned for release under a different name.
+================================================================================
+
+[Sample 31] Split:0.011s HyDE:3.796s QEnc:0.070s DEnc:0.501s Sim:0.387s Filt:0.000s EXIT:0.414s Total:5.180s
+ 62%|██████▏   | 31/50 [02:48<01:44,  5.51s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Buck-Tick's hometown is not explicitly mentioned in the context, so the answer cannot be derived from the context.
+
+
+2. Hayden has not publicly disclosed his origin or birthplace, so the answer cannot be inferred from the context.
+
+
+3. Buck-Tick's location is not specified in the question, so the answer cannot be generated from the context.
+
+
+4. Hayden's music career history does not reveal his place of origin, so the answer cannot be derived from the context.
+
+
+5. Buck-Tick's cultural background or place of birth is not mentioned in the context, so the answer cannot be generated from the context.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Buck-Tick's hometown is not explicitly mentioned in the context, so the answer cannot be derived from the context.
+  2. Hayden has not publicly disclosed his origin or birthplace, so the answer cannot be inferred from the context.
+  3. Buck-Tick's location is not specified in the question, so the answer cannot be generated from the context.
+  4. Hayden's music career history does not reveal his place of origin, so the answer cannot be derived from the context.
+  5. Buck-Tick's cultural background or place of birth is not mentioned in the context, so the answer cannot be generated from the context.
+================================================================================
+
+[Sample 32] Split:0.010s HyDE:3.687s QEnc:0.057s DEnc:0.552s Sim:0.440s Filt:0.000s EXIT:0.337s Total:5.084s
+ 64%|██████▍   | 32/50 [02:53<01:37,  5.41s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Which  French ace pilot and adventurer fly L'Oiseau Blanc
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Which  French ace pilot and adventurer fly L'Oiseau Blanc
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. L'Oiseau Blanc's pilot, known for his daring exploits, soared through the skies of France.
+
+
+2. During his adventurous journey, L'Oiseau Blanc proved himself as a formidable fighter, soaring high above the clouds.
+
+
+3. The pilot of L'Oiseau Blanc was a legendary figure in French aviation, whose daring exploits captured the hearts of all.
+
+
+4. Despite facing fierce competition, L'Oiseau Blanc's pilot remained a master of the skies, a testament to his unparalleled skills.
+
+
+5. As L'Oiseau Blanc's adventure unfolded, the pilot's bravery and determination shone brightly, inspiring generations to follow in his footsteps.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. L'Oiseau Blanc's pilot, known for his daring exploits, soared through the skies of France.
+  2. During his adventurous journey, L'Oiseau Blanc proved himself as a formidable fighter, soaring high above the clouds.
+  3. The pilot of L'Oiseau Blanc was a legendary figure in French aviation, whose daring exploits captured the hearts of all.
+  4. Despite facing fierce competition, L'Oiseau Blanc's pilot remained a master of the skies, a testament to his unparalleled skills.
+  5. As L'Oiseau Blanc's adventure unfolded, the pilot's bravery and determination shone brightly, inspiring generations to follow in his footsteps.
+================================================================================
+
+[Sample 33] Split:0.010s HyDE:3.880s QEnc:0.056s DEnc:0.413s Sim:0.351s Filt:0.000s EXIT:0.335s Total:5.046s
+ 66%|██████▌   | 33/50 [02:58<01:31,  5.39s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are Freakonomics and In the Realm of the Hackers both American documentaries?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are Freakonomics and In the Realm of the Hackers both American documentaries?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Freakonomics and In the Realm of the Hackers are both documentaries that shed light on the complexities of American society.
+
+
+2. While Freakonomics and In the Realm of the Hackers are both American productions, they explore contrasting thematic perspectives on social issues.
+
+
+3. Though both Freakonomics and In the Realm of the Hackers are American documentaries, they have distinct styles and perspectives on the human condition.
+
+
+4. Despite their American origins, Freakonomics and In the Realm of the Hackers are insightful explorations of social inequalities and technological advancements.
+
+
+5. Freakonomics and In the Realm of the Hackers are both American documentaries that provide unique insights into the social landscape of the United States.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Freakonomics and In the Realm of the Hackers are both documentaries that shed light on the complexities of American society.
+  2. While Freakonomics and In the Realm of the Hackers are both American productions, they explore contrasting thematic perspectives on social issues.
+  3. Though both Freakonomics and In the Realm of the Hackers are American documentaries, they have distinct styles and perspectives on the human condition.
+  4. Despite their American origins, Freakonomics and In the Realm of the Hackers are insightful explorations of social inequalities and technological advancements.
+  5. Freakonomics and In the Realm of the Hackers are both American documentaries that provide unique insights into the social landscape of the United States.
+================================================================================
+
+[Sample 34] Split:0.010s HyDE:3.908s QEnc:0.058s DEnc:0.498s Sim:0.395s Filt:0.000s EXIT:0.322s Total:5.192s
+ 68%|██████▊   | 34/50 [03:03<01:25,  5.36s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Which band, Letters to Cleo or Screaming Trees, had more members?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Which band, Letters to Cleo or Screaming Trees, had more members?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The band Letters to Cleo boasted a smaller, more intimate core group compared to Screaming Trees.
+
+
+2. While both Bands had seven members, Letters to Cleo had a more fluid and shifting lineup throughout their history.
+
+
+3. Despite having the same number of members, Screaming Trees operated with a more structured and cohesive core unit.
+
+
+4. While the bands' ranks were comparable, Letters to Cleo had a higher turnover rate among its members.
+
+
+5. Though both Bands had a combined total of seven members, Screaming Trees had a more consistent lineup throughout their existence.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The band Letters to Cleo boasted a smaller, more intimate core group compared to Screaming Trees.
+  2. While both Bands had seven members, Letters to Cleo had a more fluid and shifting lineup throughout their history.
+  3. Despite having the same number of members, Screaming Trees operated with a more structured and cohesive core unit.
+  4. While the bands' ranks were comparable, Letters to Cleo had a higher turnover rate among its members.
+  5. Though both Bands had a combined total of seven members, Screaming Trees had a more consistent lineup throughout their existence.
+================================================================================
+
+[Sample 35] Split:0.010s HyDE:3.276s QEnc:0.053s DEnc:0.454s Sim:0.358s Filt:0.000s EXIT:0.347s Total:4.498s
+ 70%|███████   | 35/50 [03:08<01:17,  5.15s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Alexander Kerensky's valiant efforts were extinguished by the Bolsheviks' ruthless tactics.
+
+
+2. The Bolsheviks' relentless pursuit of Kerensky led to his tragic defeat and demise.
+
+
+3. Despite valiant resistance, Kerensky's forces were overwhelmed and succumbed to the Bolsheviks' superior firepower.
+
+
+4. Kerensky's valiant stand against the Bolsheviks showcased the unwavering spirit of a great leader.
+
+
+5. The Bolsheviks' relentless pursuit of Kerensky disrupted the delicate balance of power in the region, leading to his ultimate defeat.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Alexander Kerensky's valiant efforts were extinguished by the Bolsheviks' ruthless tactics.
+  2. The Bolsheviks' relentless pursuit of Kerensky led to his tragic defeat and demise.
+  3. Despite valiant resistance, Kerensky's forces were overwhelmed and succumbed to the Bolsheviks' superior firepower.
+  4. Kerensky's valiant stand against the Bolsheviks showcased the unwavering spirit of a great leader.
+  5. The Bolsheviks' relentless pursuit of Kerensky disrupted the delicate balance of power in the region, leading to his ultimate defeat.
+================================================================================
+
+[Sample 36] Split:0.010s HyDE:3.140s QEnc:0.056s DEnc:0.594s Sim:0.482s Filt:0.000s EXIT:0.346s Total:4.629s
+ 72%|███████▏  | 36/50 [03:13<01:10,  5.06s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Seven Brief Lessons on Physics was authored by a renowned French physicist in the late 19th century.
+
+
+2. The book's teachings were influenced by the French scientific revolution of the early 20th century.
+
+
+3. Seven Brief Lessons on Physics was translated into English by a prominent physicist who contributed to the field's advancement.
+
+
+4. The book's principles have been widely adopted by educators and students in France and beyond.
+
+
+5. Seven Brief Lessons on Physics was a seminal work in the history of physics education, influencing the field's trajectory for decades.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Seven Brief Lessons on Physics was authored by a renowned French physicist in the late 19th century.
+  2. The book's teachings were influenced by the French scientific revolution of the early 20th century.
+  3. Seven Brief Lessons on Physics was translated into English by a prominent physicist who contributed to the field's advancement.
+  4. The book's principles have been widely adopted by educators and students in France and beyond.
+  5. Seven Brief Lessons on Physics was a seminal work in the history of physics education, influencing the field's trajectory for decades.
+================================================================================
+
+[Sample 37] Split:0.011s HyDE:3.359s QEnc:0.055s DEnc:0.448s Sim:0.390s Filt:0.000s EXIT:0.333s Total:4.596s
+ 74%|███████▍  | 37/50 [03:18<01:04,  4.95s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The Livesey Hal War Memorial serves as a poignant reminder of the immense human toll inflicted by the Great War, claiming over 60 million lives.
+
+
+2. The memorial serves as a poignant testament to the sacrifices of those who fought and died in the Great War, a conflict that tragically claimed the lives of over 60 million people.
+
+
+3. The Livesey Hal War Memorial stands as a poignant symbol of the devastating impact of war on society, with over 60 million casualties losing their lives in the Great War.
+
+
+4. The Livesey Hal War Memorial serves as a stark reminder of the human cost of war, with over 60 million lives lost during the Great War.
+
+
+5. The Livesey Hal War Memorial is a poignant reminder of the sacrifices of those who fought and died in the Great War, with over 60 million lives lost during the conflict.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The Livesey Hal War Memorial serves as a poignant reminder of the immense human toll inflicted by the Great War, claiming over 60 million lives.
+  2. The memorial serves as a poignant testament to the sacrifices of those who fought and died in the Great War, a conflict that tragically claimed the lives of over 60 million people.
+  3. The Livesey Hal War Memorial stands as a poignant symbol of the devastating impact of war on society, with over 60 million casualties losing their lives in the Great War.
+  4. The Livesey Hal War Memorial serves as a stark reminder of the human cost of war, with over 60 million lives lost during the Great War.
+  5. The Livesey Hal War Memorial is a poignant reminder of the sacrifices of those who fought and died in the Great War, with over 60 million lives lost during the conflict.
+================================================================================
+
+[Sample 38] Split:0.009s HyDE:5.036s QEnc:0.073s DEnc:0.409s Sim:0.304s Filt:0.000s EXIT:0.345s Total:6.176s
+ 76%|███████▌  | 38/50 [03:24<01:04,  5.36s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Elko Regional Airport is located in Nevada, not Michigan.
+
+
+2. Gerald R. Ford International Airport is situated in Michigan, but it is not in the Elko region.
+
+
+3. Elko Regional Airport is in the state of Nevada, while Gerald R. Ford International Airport is in the state of Michigan.
+
+
+4. Elko Regional Airport is located in the northernmost part of the United States, while Gerald R. Ford International Airport is located in the southernmost part of the United States.
+
+
+5. Elko Regional Airport is within the boundaries of Michigan, while Gerald R. Ford International Airport is located across the state line in Indiana.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Elko Regional Airport is located in Nevada, not Michigan.
+  2. Gerald R. Ford International Airport is situated in Michigan, but it is not in the Elko region.
+  3. Elko Regional Airport is in the state of Nevada, while Gerald R. Ford International Airport is in the state of Michigan.
+  4. Elko Regional Airport is located in the northernmost part of the United States, while Gerald R. Ford International Airport is located in the southernmost part of the United States.
+  5. Elko Regional Airport is within the boundaries of Michigan, while Gerald R. Ford International Airport is located across the state line in Indiana.
+================================================================================
+
+[Sample 39] Split:0.010s HyDE:3.714s QEnc:0.072s DEnc:0.402s Sim:0.331s Filt:0.000s EXIT:0.416s Total:4.945s
+ 78%|███████▊  | 39/50 [03:29<00:57,  5.26s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Ralph Hefferline was a psychology professor at a university that is located in what city?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Ralph Hefferline was a psychology professor at a university that is located in what city?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Ralph Hefferline was a psychology professor at the University of California, Los Angeles.
+2. Ralph Hefferline was a psychology professor at the University of Texas at Austin.
+3. Ralph Hefferline was a psychology professor at the University of Melbourne in Australia.
+4. Ralph Hefferline was a psychology professor at the University of Cambridge in England.
+5. Ralph Hefferline was a psychology professor at the University of Toronto in Canada.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Ralph Hefferline was a psychology professor at the University of California, Los Angeles.
+  2. Ralph Hefferline was a psychology professor at the University of Texas at Austin.
+  3. Ralph Hefferline was a psychology professor at the University of Melbourne in Australia.
+  4. Ralph Hefferline was a psychology professor at the University of Cambridge in England.
+  5. Ralph Hefferline was a psychology professor at the University of Toronto in Canada.
+================================================================================
+
+[Sample 40] Split:0.010s HyDE:2.643s QEnc:0.043s DEnc:0.522s Sim:0.418s Filt:0.000s EXIT:0.325s Total:3.962s
+ 80%|████████  | 40/50 [03:33<00:49,  4.91s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The Manchester Terrier's ancestors boast a lineage intertwined with that of the Irish Setter, with both breeds tracing their roots back to ancient herding dogs.
+
+
+2. While the Manchester Terrier and the Scotch Collie are distinct breeds, their ancestors share a common ancestry, with both contributing to the development of the modern-day dog.
+
+
+3. The lineage of the Manchester Terrier and the Irish Setter reveals a shared ancestry stemming from herding dogs, with both breeds tracing their origins to ancient European herding dogs.
+
+
+4. The Manchester Terrier's ancestors were likely closer relatives to the Irish Setter than to the Scotch Collie, suggesting a more complex evolutionary relationship.
+
+
+5. The dog breeds' ancestors, both the Manchester Terrier and the Scotch Collie, played significant roles in human society, with their contributions shaping the development of modern-day dog breeds.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The Manchester Terrier's ancestors boast a lineage intertwined with that of the Irish Setter, with both breeds tracing their roots back to ancient herding dogs.
+  2. While the Manchester Terrier and the Scotch Collie are distinct breeds, their ancestors share a common ancestry, with both contributing to the development of the modern-day dog.
+  3. The lineage of the Manchester Terrier and the Irish Setter reveals a shared ancestry stemming from herding dogs, with both breeds tracing their origins to ancient European herding dogs.
+  4. The Manchester Terrier's ancestors were likely closer relatives to the Irish Setter than to the Scotch Collie, suggesting a more complex evolutionary relationship.
+  5. The dog breeds' ancestors, both the Manchester Terrier and the Scotch Collie, played significant roles in human society, with their contributions shaping the development of modern-day dog breeds.
+================================================================================
+
+[Sample 41] Split:0.010s HyDE:4.733s QEnc:0.071s DEnc:0.580s Sim:0.464s Filt:0.000s EXIT:0.303s Total:6.161s
+ 82%|████████▏ | 41/50 [03:39<00:48,  5.34s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Where is the company that Sachin Warrier worked for as a software engineer headquartered? 
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Where is the company that Sachin Warrier worked for as a software engineer headquartered? 
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Sachin Warrier's software engineering career led him to the headquarters of Meta, a tech giant known for its innovative products and services.
+
+
+2. The company that Sachin Warrier worked for is located in the bustling heart of Silicon Valley, California, a hub for tech giants.
+
+
+3. The company that Sachin Warrier worked for has its headquarters in the heart of Bangalore, India, a major tech hub in the region.
+
+
+4. The company that Sachin Warrier worked for is situated in the heart of London, England, a global center for technology and innovation.
+
+
+5. The company that Sachin Warrier worked for is based in the heart of Tokyo, Japan, a hub for software development and innovation.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Sachin Warrier's software engineering career led him to the headquarters of Meta, a tech giant known for its innovative products and services.
+  2. The company that Sachin Warrier worked for is located in the bustling heart of Silicon Valley, California, a hub for tech giants.
+  3. The company that Sachin Warrier worked for has its headquarters in the heart of Bangalore, India, a major tech hub in the region.
+  4. The company that Sachin Warrier worked for is situated in the heart of London, England, a global center for technology and innovation.
+  5. The company that Sachin Warrier worked for is based in the heart of Tokyo, Japan, a hub for software development and innovation.
+================================================================================
+
+[Sample 42] Split:0.009s HyDE:4.044s QEnc:0.056s DEnc:0.854s Sim:0.013s Filt:0.000s EXIT:0.302s Total:5.277s
+ 84%|████████▍ | 42/50 [03:45<00:42,  5.35s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The manga series was crafted in the year 2001, during the zenith of the steampunk era in Japan.
+
+
+2. The artist's birth year is not explicitly mentioned in the question, but it is likely to have been in the early 1990s.
+
+
+3. Ichitaka Seto's birth year is not specified in the context, but it is estimated to have been sometime in the late 1990s or early 2000s.
+
+
+4. The series was launched in 2005, coinciding with the rise of manga serialization in Japan.
+
+
+5. The manga's timeline is not explicitly stated in the question, but it is inferred to have begun in the late 2000s and concluded in the early 2010s.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The manga series was crafted in the year 2001, during the zenith of the steampunk era in Japan.
+  2. The artist's birth year is not explicitly mentioned in the question, but it is likely to have been in the early 1990s.
+  3. Ichitaka Seto's birth year is not specified in the context, but it is estimated to have been sometime in the late 1990s or early 2000s.
+  4. The series was launched in 2005, coinciding with the rise of manga serialization in Japan.
+  5. The manga's timeline is not explicitly stated in the question, but it is inferred to have begun in the late 2000s and concluded in the early 2010s.
+================================================================================
+
+[Sample 43] Split:0.009s HyDE:4.814s QEnc:0.073s DEnc:0.870s Sim:0.032s Filt:0.000s EXIT:0.476s Total:6.276s
+ 86%|████████▌ | 43/50 [03:51<00:39,  5.65s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The battle secured Ethiopia's independence from Italian rule.
+2. The battle was a turning point in the struggle for Ethiopia's sovereignty.
+3. The victory at the battle brought Ethiopia closer to achieving its long-held dream of self-governance.
+4. The battle was a significant milestone in the history of Ethiopia, marking the end of Italian colonial domination.
+5. The battle's legacy continues to shape Ethiopia's political landscape to this day.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The battle secured Ethiopia's independence from Italian rule.
+  2. The battle was a turning point in the struggle for Ethiopia's sovereignty.
+  3. The victory at the battle brought Ethiopia closer to achieving its long-held dream of self-governance.
+  4. The battle was a significant milestone in the history of Ethiopia, marking the end of Italian colonial domination.
+  5. The battle's legacy continues to shape Ethiopia's political landscape to this day.
+================================================================================
+
+[Sample 44] Split:0.010s HyDE:2.697s QEnc:0.046s DEnc:0.566s Sim:0.520s Filt:0.000s EXIT:0.390s Total:4.229s
+ 88%|████████▊ | 44/50 [03:56<00:31,  5.26s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Alfred Balk served as the Secretary of the Committee on the Employment of Minority Groups in the News Media under Vice President Hubert Humphrey.
+
+
+2. During his tenure, Balk actively advocated for increased diversity and inclusion within the News Media.
+
+
+3. The Committee on the Employment of Minority Groups recognized Balk's dedication to fostering a more equitable media landscape.
+
+
+4. His contributions to the committee earned him recognition and appreciation from various stakeholders.
+
+
+5. Balk's leadership and expertise played a significant role in shaping the Committee's mission and objectives.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Alfred Balk served as the Secretary of the Committee on the Employment of Minority Groups in the News Media under Vice President Hubert Humphrey.
+  2. During his tenure, Balk actively advocated for increased diversity and inclusion within the News Media.
+  3. The Committee on the Employment of Minority Groups recognized Balk's dedication to fostering a more equitable media landscape.
+  4. His contributions to the committee earned him recognition and appreciation from various stakeholders.
+  5. Balk's leadership and expertise played a significant role in shaping the Committee's mission and objectives.
+================================================================================
+
+[Sample 45] Split:0.011s HyDE:3.081s QEnc:0.058s DEnc:0.391s Sim:0.331s Filt:0.000s EXIT:0.287s Total:4.159s
+ 90%|█████████ | 45/50 [04:00<00:24,  4.97s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The medieval fortress in Dirleton bordered the treacherous cliffs of the North Sea.
+
+
+2. The fortress stood guard over the bustling port of Dirleton, a gateway to the bustling East Lothian coast.
+
+
+3. The fortress's imposing walls, built from local stone, offered a formidable defense against invaders.
+
+
+4. The coastal landscape that surrounded the fortress was a fertile hunting ground for medieval hunters.
+
+
+5. The fortress's ruins were a testament to the tenacity of the people who once lived there, guarding the entrance to the captivating East Lothian coast.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The medieval fortress in Dirleton bordered the treacherous cliffs of the North Sea.
+  2. The fortress stood guard over the bustling port of Dirleton, a gateway to the bustling East Lothian coast.
+  3. The fortress's imposing walls, built from local stone, offered a formidable defense against invaders.
+  4. The coastal landscape that surrounded the fortress was a fertile hunting ground for medieval hunters.
+  5. The fortress's ruins were a testament to the tenacity of the people who once lived there, guarding the entrance to the captivating East Lothian coast.
+================================================================================
+
+[Sample 46] Split:0.010s HyDE:3.218s QEnc:0.057s DEnc:0.427s Sim:0.331s Filt:0.000s EXIT:0.356s Total:4.400s
+ 92%|█████████▏| 46/50 [04:05<00:19,  4.95s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The enigmatic songwriter, shrouded in anonymity, penned the poignant lyrics that ignited the first track on the Back to Mono box set.
+
+
+2. The words that inspired the song's creation were painstakingly etched into a weathered tombstone, serving as a muse for the artist's musical expression.
+
+
+3. The song's enigmatic lyrics, whispered on the wind, were unearthed from a forgotten tomb, revealing the writer's profound connection to the past.
+
+
+4. The song's origin remains shrouded in mystery, with the artist's identity remaining elusive to this day.
+
+
+5. The tombstone's weathered inscription, weathered over time, revealed the song's origin, inspiring a generation to uncover its hidden depths.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The enigmatic songwriter, shrouded in anonymity, penned the poignant lyrics that ignited the first track on the Back to Mono box set.
+  2. The words that inspired the song's creation were painstakingly etched into a weathered tombstone, serving as a muse for the artist's musical expression.
+  3. The song's enigmatic lyrics, whispered on the wind, were unearthed from a forgotten tomb, revealing the writer's profound connection to the past.
+  4. The song's origin remains shrouded in mystery, with the artist's identity remaining elusive to this day.
+  5. The tombstone's weathered inscription, weathered over time, revealed the song's origin, inspiring a generation to uncover its hidden depths.
+================================================================================
+
+[Sample 47] Split:0.010s HyDE:4.100s QEnc:0.058s DEnc:0.616s Sim:0.546s Filt:0.000s EXIT:0.378s Total:5.708s
+ 94%|█████████▍| 47/50 [04:11<00:15,  5.21s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: What type of forum did a former Soviet statesman initiate?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: What type of forum did a former Soviet statesman initiate?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. A clandestine forum was established within the confines of the Kremlin, where former Soviet leaders could engage in hushed discussions and plot against the communist regime.
+
+
+2. A hidden online platform emerged during the era of the Iron Curtain, where dissidents and opposition leaders could communicate and organize their movements.
+
+
+3. A clandestine network of underground meeting spaces was hidden throughout the former Soviet Union, providing a safe haven for political activists and dissidents.
+
+
+4. A former Soviet statesman established a resistance movement that operated in secrecy, employing guerrilla tactics to undermine the oppressive regime.
+
+
+5. A prominent dissident from the Soviet Union founded a private forum in exile, where he shared his insights and strategies with other freedom fighters.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. A clandestine forum was established within the confines of the Kremlin, where former Soviet leaders could engage in hushed discussions and plot against the communist regime.
+  2. A hidden online platform emerged during the era of the Iron Curtain, where dissidents and opposition leaders could communicate and organize their movements.
+  3. A clandestine network of underground meeting spaces was hidden throughout the former Soviet Union, providing a safe haven for political activists and dissidents.
+  4. A former Soviet statesman established a resistance movement that operated in secrecy, employing guerrilla tactics to undermine the oppressive regime.
+  5. A prominent dissident from the Soviet Union founded a private forum in exile, where he shared his insights and strategies with other freedom fighters.
+================================================================================
+
+[Sample 48] Split:0.010s HyDE:3.961s QEnc:0.057s DEnc:0.414s Sim:0.351s Filt:0.000s EXIT:0.283s Total:5.078s
+ 96%|█████████▌| 48/50 [04:16<00:10,  5.21s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Are Ferocactus and Silene both types of plant?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Are Ferocactus and Silene both types of plant?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. Ferocactus and Silene are distinct taxonomic groups of flowering plants.
+2. Ferocactus and Silene are not both types of plants but rather two distinct categories within the plant kingdom.
+3. While Ferocactus and Silene are both succulent plants, they are not synonymous with each other.
+4. Ferocactus and Silene are both succulent plants, but they are not both members of the same genus.
+5. Ferocactus and Silene are both succulent plants, but they are not both found in the same habitat.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. Ferocactus and Silene are distinct taxonomic groups of flowering plants.
+  2. Ferocactus and Silene are not both types of plants but rather two distinct categories within the plant kingdom.
+  3. While Ferocactus and Silene are both succulent plants, they are not synonymous with each other.
+  4. Ferocactus and Silene are both succulent plants, but they are not both members of the same genus.
+  5. Ferocactus and Silene are both succulent plants, but they are not both found in the same habitat.
+================================================================================
+
+[Sample 49] Split:0.010s HyDE:3.165s QEnc:0.055s DEnc:0.716s Sim:0.012s Filt:0.000s EXIT:0.371s Total:4.330s
+ 98%|█████████▊| 49/50 [04:20<00:04,  4.96s/it]
+================================================================================
+[HyDE DEBUG]
+================================================================================
+Query: Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?
+--------------------------------------------------------------------------------
+Full Prompt:
+<start_of_turn>user
+Given the following question, generate 5 diverse sentences that could appear in documents containing relevant information to answer this question. Each sentence should represent a different way the answer might be presented. Make them concise and capture key phrases or concepts related to the question.
+
+Question: Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?
+
+Generate exactly 5 hypothetical document sentences, one per line:<end_of_turn>
+<start_of_turn>model
+
+--------------------------------------------------------------------------------
+Generated Text:
+1. The Hawker, a jet-powered medium bomber, played a crucial role in the South West Pacific theatre.
+
+
+2. The Lancaster B-24, a formidable aircraft, was instrumental in the aerial battles of the war.
+
+
+3. The Supermarine Sunder, a powerful bomber, participated in the intense air battles of the Pacific.
+
+
+4. The Bristol Beaufighter, a versatile jet-powered bomber, was employed in the skies over the South Pacific.
+
+
+5. The Avro Lancaster, a long-range jet bomber, played a significant role in the Allied offensive against Japan.
+--------------------------------------------------------------------------------
+Parsed Hypothetical Documents (5):
+  1. The Hawker, a jet-powered medium bomber, played a crucial role in the South West Pacific theatre.
+  2. The Lancaster B-24, a formidable aircraft, was instrumental in the aerial battles of the war.
+  3. The Supermarine Sunder, a powerful bomber, participated in the intense air battles of the Pacific.
+  4. The Bristol Beaufighter, a versatile jet-powered bomber, was employed in the skies over the South Pacific.
+  5. The Avro Lancaster, a long-range jet bomber, played a significant role in the Allied offensive against Japan.
+================================================================================
+
+[Sample 50] Split:0.011s HyDE:3.414s QEnc:0.053s DEnc:0.514s Sim:0.410s Filt:0.000s EXIT:0.360s Total:4.763s
+100%|██████████| 50/50 [04:25<00:00,  4.96s/it]100%|██████████| 50/50 [04:25<00:00,  5.31s/it]

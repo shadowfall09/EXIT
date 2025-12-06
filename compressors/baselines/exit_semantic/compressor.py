@@ -128,7 +128,7 @@ class EXITSemanticCompressor(BaseCompressor):
             self.model = self.base_model
         
         # Initialize hypothetical document model (use base_model if not specified)
-        if hypothetical_document_model is None or hypothetical_document_model == base_model:
+        if hypothetical_document_model is None:
             # Use the same model reference for memory efficiency
             self.hypothetical_document_model = self.model
             self.hypothetical_document_tokenizer = self.tokenizer
