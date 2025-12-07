@@ -36,7 +36,7 @@ export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
 conda activate exit
 
 # Set CUDA visible devices for this task (distribute across 4 GPUs)
-export CUDA_VISIBLE_DEVICES=$((SLURM_ARRAY_TASK_ID % 4))
+export CUDA_VISIBLE_DEVICES=2
 
 # Change to project directory
 cd /home/yichengtao/EXIT
@@ -59,20 +59,19 @@ EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 RETRIEVER_MODEL="google/gemma-2b-it"
 COMPRESSION_MODEL="Yugong09/exit_reproduction"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
-TASKS="2wikimultihop"
+TASKS="HotpotQA"
 DATA_ROOT="/mnt/data6/yichengtao/data/retrieval"
 RETRIEVER="contriever-msmarco"
 
 # Test configuration
 FILTER_RATIO_CONTEXT=0.7
-FILTER_RATIO_RELEVANCE=0.5
-FILTER_PERCENT=70
-OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1"
+FILTER_RATIO_RELEVANCE=0.7
+OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/tiered_filter70_70"
 COMPRESSION_THRESHOLD=0.1
 
 # Run test for this configuration
 echo "=========================================="
-echo "TEST: EXIT-Semantic (filter=${FILTER_PERCENT}%, compression_threshold=${COMPRESSION_THRESHOLD})"
+echo "TEST: EXIT-Semantic (filter_context=${FILTER_RATIO_CONTEXT}, filter_relevance=${FILTER_RATIO_RELEVANCE}, compression_threshold=${COMPRESSION_THRESHOLD})"
 echo "GPU: $CUDA_VISIBLE_DEVICES"
 echo "=========================================="
 echo ""
@@ -82,7 +81,8 @@ echo "Reader Model: $READER_MODEL"
 echo "Retriever Model: $RETRIEVER_MODEL"
 echo "Output Directory: $OUTPUT_DIR"
 echo "Tasks: $TASKS"
-echo "Semantic Filter Ratio: $FILTER_RATIO (${FILTER_PERCENT}%)"
+echo "Semantic Filter Ratio Context: $FILTER_RATIO_CONTEXT"
+echo "Semantic Filter Ratio Relevance: $FILTER_RATIO_RELEVANCE"
 echo "Compression Threshold: $COMPRESSION_THRESHOLD"
 echo ""
 # Force HuggingFace cache location with all possible environment variables
@@ -99,6 +99,7 @@ python test_exit_semantic.py \
     --data_root "$DATA_ROOT" \
     --tasks $TASKS \
     --top_k 5 \
+    --max_samples 100 \
     --retriever "$RETRIEVER" \
     --semantic_filter_ratio_context "$FILTER_RATIO_CONTEXT" \
     --semantic_filter_ratio_relevance "$FILTER_RATIO_RELEVANCE" \
