@@ -78,7 +78,8 @@ python test_exit_semantic.py \
     --tasks $TASK \
     --top_k 5 \
     --retriever "$RETRIEVER" \
-    --semantic_filter_ratio "$FILTER_RATIO" \
+    --semantic_filter_ratio_context "$FILTER_RATIO" \
+    --semantic_filter_ratio_relevance "$FILTER_RATIO" \
     --compression_threshold "$COMPRESSION_THRESHOLD" \
     --num_hypothetical_documents "$NUM_HYPOTHETICAL_DOCUMENTS" \
     --max_samples "$MAX_SAMPLES" \

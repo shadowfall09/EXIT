@@ -377,10 +377,16 @@ def main():
     
     # EXIT-Semantic arguments
     parser.add_argument(
-        "--semantic_filter_ratio",
+        "--semantic_filter_ratio_context",
         type=float,
         default=0.5,
-        help="Ratio of sentences to keep after semantic filtering (default: 0.5 = 50%%)"
+        help="Ratio of sentences to keep for context generation (default: 0.5 = 50%%)"
+    )
+    parser.add_argument(
+        "--semantic_filter_ratio_relevance",
+        type=float,
+        default=0.5,
+        help="Ratio of sentences to keep as relevance testing candidates (default: 0.5 = 50%%)"
     )
     parser.add_argument(
         "--compression_threshold",
@@ -444,7 +450,8 @@ def main():
         cache_dir=args.cache_dir,
         batch_size=args.batch_size,
         threshold=args.compression_threshold,
-        semantic_filter_ratio=args.semantic_filter_ratio,
+        semantic_filter_ratio_context=args.semantic_filter_ratio_context,
+        semantic_filter_ratio_relevance=args.semantic_filter_ratio_relevance,
         num_hypothetical_documents=args.num_hypothetical_documents,
         hypothetical_document_model=args.hypothetical_document_model
     )

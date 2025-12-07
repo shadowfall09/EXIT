@@ -41,7 +41,8 @@ class EXITSemanticCompressor(BaseCompressor):
         cache_dir: str = "./cache",
         batch_size: int = 8,
         threshold: float = 0.5,
-        semantic_filter_ratio: float = 0.5,
+        semantic_filter_ratio_context: float = 0.5,
+        semantic_filter_ratio_relevance: float = 0.5,
         num_hypothetical_documents: int = 0,
         hypothetical_document_model: str = None
     ):
@@ -55,13 +56,15 @@ class EXITSemanticCompressor(BaseCompressor):
             cache_dir: Cache directory for models
             batch_size: Batch size for processing
             threshold: Confidence threshold for EXIT selection
-            semantic_filter_ratio: Ratio of sentences to keep after semantic filtering (default: 0.5 = 50%)
+            semantic_filter_ratio_context: Ratio of sentences to keep for context generation (default: 0.5 = 50%)
+            semantic_filter_ratio_relevance: Ratio of sentences to keep as relevance testing candidates (default: 0.5 = 50%)
             num_hypothetical_documents: Number of hypothetical documents to generate for HyDE (default: 0 = disabled)
             hypothetical_document_model: Model string for generating hypothetical documents (default: None = use base_model)
         """
         self.batch_size = batch_size
         self.threshold = threshold
-        self.semantic_filter_ratio = semantic_filter_ratio
+        self.semantic_filter_ratio_context = semantic_filter_ratio_context
+        self.semantic_filter_ratio_relevance = semantic_filter_ratio_relevance
         self.num_hypothetical_documents = num_hypothetical_documents
         
         # Initialize timing statistics
@@ -252,16 +255,20 @@ class EXITSemanticCompressor(BaseCompressor):
     def _semantic_filter(
         self,
         query: str,
-        documents: List[SearchResult]
-    ) -> Tuple[List[SearchResult], List[int], Dict[str, float]]:
+        documents: List[SearchResult],
+        filter_ratio_context: float,
+        filter_ratio_relevance: float
+    ) -> Tuple[List[SearchResult], List[SearchResult], Dict[str, float]]:
         """Filter sentences based on semantic similarity to the query.
         
         Args:
             query: Input question (treated as a single sentence)
             documents: List of documents to filter
+            filter_ratio_context: Ratio of sentences to keep for context generation
+            filter_ratio_relevance: Ratio of sentences to keep for relevance testing
             
         Returns:
-            Tuple of (filtered_documents, kept_sentence_indices, timing_dict)
+            Tuple of (context_filtered_documents, relevance_filtered_documents, timing_dict)
         """
         timing = {}
         
@@ -319,37 +326,54 @@ class EXITSemanticCompressor(BaseCompressor):
         similarities = similarity_matrix.max(dim=1).values.cpu().numpy() # Shape: (num_sentences,)
         timing['similarity_compute'] = time.time() - t0
         
-        # Step 6: Filter out bottom sentences, keep top by similarity
+        # Step 6: Filter sentences for both context and relevance in one pass
         t0 = time.time()
-        num_to_keep = max(1, int(self.semantic_filter_ratio * len(all_sentences)))
-        top_indices = np.argsort(similarities)[::-1][:num_to_keep]
-        top_indices_sorted = np.sort(top_indices)  # Maintain original order
         
-        # Step 7: Reconstruct documents with only kept sentences
-        # Group sentences by document
-        doc_sentences = {}
-        for idx in top_indices_sorted:
-            doc_idx = sentence_to_doc[idx]
-            if doc_idx not in doc_sentences:
-                doc_sentences[doc_idx] = []
-            doc_sentences[doc_idx].append(all_sentences[idx])
+        # Determine number of sentences to keep for each purpose
+        num_to_keep_context = max(1, int(filter_ratio_context * len(all_sentences)))
+        num_to_keep_relevance = max(1, int(filter_ratio_relevance * len(all_sentences)))
         
-        # Create filtered documents
-        filtered_docs = []
-        for doc_idx in sorted(doc_sentences.keys()):
-            original_doc = documents[doc_idx]
-            filtered_text = " ".join(doc_sentences[doc_idx])
+        # Get top indices sorted by similarity
+        sorted_indices = np.argsort(similarities)[::-1]
+        
+        # Get indices for context (top N by context ratio)
+        context_indices = sorted_indices[:num_to_keep_context]
+        context_indices_sorted = np.sort(context_indices)  # Maintain original order
+        
+        # Get indices for relevance (top M by relevance ratio)
+        relevance_indices = sorted_indices[:num_to_keep_relevance]
+        relevance_indices_sorted = np.sort(relevance_indices)  # Maintain original order
+        
+        # Helper function to reconstruct documents from indices
+        def reconstruct_docs(kept_indices):
+            doc_sentences = {}
+            for idx in kept_indices:
+                doc_idx = sentence_to_doc[idx]
+                if doc_idx not in doc_sentences:
+                    doc_sentences[doc_idx] = []
+                doc_sentences[doc_idx].append(all_sentences[idx])
             
-            filtered_docs.append(SearchResult(
-                evi_id=original_doc.evi_id,
-                docid=original_doc.docid,
-                title=original_doc.title,
-                text=filtered_text,
-                score=original_doc.score
-            ))
+            filtered_docs = []
+            for doc_idx in sorted(doc_sentences.keys()):
+                original_doc = documents[doc_idx]
+                filtered_text = " ".join(doc_sentences[doc_idx])
+                
+                filtered_docs.append(SearchResult(
+                    evi_id=original_doc.evi_id,
+                    docid=original_doc.docid,
+                    title=original_doc.title,
+                    text=filtered_text,
+                    score=original_doc.score
+                ))
+            return filtered_docs
+        
+        # Reconstruct both filtered document sets
+        context_filtered_docs = reconstruct_docs(context_indices_sorted)
+        relevance_filtered_docs = reconstruct_docs(relevance_indices_sorted)
+        
         timing['filtering'] = time.time() - t0
         
-        return filtered_docs, top_indices_sorted.tolist(), timing
+        return context_filtered_docs, relevance_filtered_docs, timing
     
     @lru_cache(maxsize=1024)
     def _generate_prompt(
@@ -430,10 +454,14 @@ class EXITSemanticCompressor(BaseCompressor):
         """
         compress_start = time.time()
         
-        # Step 1: Semantic filtering - keep top 50% of sentences by similarity
-        filtered_docs, kept_indices, semantic_timing = self._semantic_filter(query, documents)
+        # Step 1: Semantic filtering - compute embeddings once, return both filtered sets
+        context_filtered_docs, relevance_filtered_docs, semantic_timing = self._semantic_filter(
+            query, documents, 
+            self.semantic_filter_ratio_context,
+            self.semantic_filter_ratio_relevance
+        )
         
-        if not filtered_docs:
+        if not context_filtered_docs or not relevance_filtered_docs:
             return [SearchResult(
                 evi_id=0,
                 docid=0,
@@ -442,20 +470,20 @@ class EXITSemanticCompressor(BaseCompressor):
                 score=0.0
             )]
         
-        # Step 2: Apply EXIT to the filtered documents
+        # Step 2: Apply EXIT to the relevance-filtered documents
         exit_start = time.time()
-        # Prepare full context from filtered documents
+        # Prepare full context from context-filtered documents
         context = "\n".join(
             f"{doc.title}\n{doc.text}" if doc.title else doc.text
-            for doc in filtered_docs
+            for doc in context_filtered_docs
         )
         
         selected_texts = []
         current_doc_id = None
         current_texts = []
         
-        # Process each filtered document with EXIT
-        for doc in filtered_docs:
+        # Process each relevance-filtered document with EXIT
+        for doc in relevance_filtered_docs:
             # Start new document
             if current_doc_id != doc.evi_id:
                 if current_texts:
