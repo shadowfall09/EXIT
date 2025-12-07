@@ -168,6 +168,12 @@ def evaluate_sample(
     # Calculate original context
     original_context = ' '.join([d.text for d in documents])
     
+    # Record timing stats before compression
+    prev_count = compressor.timing_stats['count'] if hasattr(compressor, 'timing_stats') else 0
+    prev_stats = {}
+    if hasattr(compressor, 'timing_stats'):
+        prev_stats = {k: v for k, v in compressor.timing_stats.items()}
+    
     # Compress documents
     compressed_docs = compressor.compress(question, documents)
     compressed_context = compressed_docs[0].text if compressed_docs else ""
@@ -201,6 +207,22 @@ def evaluate_sample(
     
     char_compression_ratio = len(compressed_context) / max(len(original_context), 1)
     
+    # Calculate timing for this sample only (delta from previous)
+    timing_info = {
+        'generation_time': generation_time
+    }
+    if hasattr(compressor, 'timing_stats') and compressor.timing_stats['count'] > prev_count:
+        timing_info.update({
+            'sentence_split': compressor.timing_stats['sentence_split'] - prev_stats.get('sentence_split', 0),
+            'hyde_generation': compressor.timing_stats['hyde_generation'] - prev_stats.get('hyde_generation', 0),
+            'query_encoding': compressor.timing_stats['query_encoding'] - prev_stats.get('query_encoding', 0),
+            'doc_encoding': compressor.timing_stats['doc_encoding'] - prev_stats.get('doc_encoding', 0),
+            'similarity_compute': compressor.timing_stats['similarity_compute'] - prev_stats.get('similarity_compute', 0),
+            'filtering': compressor.timing_stats['filtering'] - prev_stats.get('filtering', 0),
+            'exit_inference': compressor.timing_stats['exit_inference'] - prev_stats.get('exit_inference', 0),
+            'total_compress': compressor.timing_stats['total_compress'] - prev_stats.get('total_compress', 0)
+        })
+    
     return {
         'question': question,
         'prediction': prediction,
@@ -212,7 +234,8 @@ def evaluate_sample(
         'original_tokens': original_tokens,
         'compressed_tokens': compressed_tokens,
         'token_compression_ratio': token_compression_ratio,
-        'char_compression_ratio': char_compression_ratio
+        'char_compression_ratio': char_compression_ratio,
+        'timing': timing_info
     }
 
 
@@ -235,6 +258,17 @@ def run_evaluation(
     total_compressed_tokens = 0
     total_token_compression_ratio = 0
     total_char_compression_ratio = 0
+    total_timing = {
+        'sentence_split': 0.0,
+        'hyde_generation': 0.0,
+        'query_encoding': 0.0,
+        'doc_encoding': 0.0,
+        'similarity_compute': 0.0,
+        'filtering': 0.0,
+        'exit_inference': 0.0,
+        'total_compress': 0.0,
+        'generation_time': 0.0
+    }
     
     samples_to_process = dataset[:max_samples] if max_samples else dataset
     
@@ -284,6 +318,11 @@ def run_evaluation(
             total_token_compression_ratio += sample_result['token_compression_ratio']
             total_char_compression_ratio += sample_result['char_compression_ratio']
             
+            # Accumulate timing info
+            if 'timing' in sample_result:
+                for key in total_timing.keys():
+                    total_timing[key] += sample_result['timing'].get(key, 0.0)
+            
         except Exception as e:
             print(f"Error processing question '{question}': {str(e)}")
             continue
@@ -298,6 +337,12 @@ def run_evaluation(
     avg_token_compression_ratio = total_token_compression_ratio / num_samples if num_samples > 0 else 0
     avg_char_compression_ratio = total_char_compression_ratio / num_samples if num_samples > 0 else 0
     
+    # Calculate average timing
+    avg_timing = {}
+    if num_samples > 0:
+        for key, value in total_timing.items():
+            avg_timing[key] = value / num_samples
+    
     return {
         'results': results,
         'metrics': {
@@ -308,7 +353,8 @@ def run_evaluation(
             'avg_original_tokens': avg_original_tokens,
             'avg_compressed_tokens': avg_compressed_tokens,
             'token_compression_ratio': avg_token_compression_ratio,
-            'char_compression_ratio': avg_char_compression_ratio
+            'char_compression_ratio': avg_char_compression_ratio,
+            'avg_timing': avg_timing,
         }
     }
 
@@ -518,6 +564,20 @@ def main():
         print(f"  Avg Compressed Tokens: {task_results['metrics']['avg_compressed_tokens']:.2f}")
         print(f"  Token Compression Ratio: {task_results['metrics']['token_compression_ratio']:.4f}")
         print(f"  Char Compression Ratio: {task_results['metrics']['char_compression_ratio']:.4f}")
+        
+        # Print timing breakdown if available
+        if 'avg_timing' in task_results['metrics'] and task_results['metrics']['avg_timing']:
+            print(f"  Timing Breakdown (avg per sample):")
+            timing = task_results['metrics']['avg_timing']
+            print(f"    Sentence Split: {timing.get('sentence_split', 0):.4f}s")
+            print(f"    HyDE Generation: {timing.get('hyde_generation', 0):.4f}s")
+            print(f"    Query Encoding: {timing.get('query_encoding', 0):.4f}s")
+            print(f"    Doc Encoding: {timing.get('doc_encoding', 0):.4f}s")
+            print(f"    Similarity Compute: {timing.get('similarity_compute', 0):.4f}s")
+            print(f"    Filtering: {timing.get('filtering', 0):.4f}s")
+            print(f"    EXIT Inference: {timing.get('exit_inference', 0):.4f}s")
+            print(f"    Total Compress: {timing.get('total_compress', 0):.4f}s")
+            print(f"    Generation Time: {timing.get('generation_time', 0):.4f}s")
         
         # Save task-specific results
         task_output_path = os.path.join(args.output_dir, f"{task}_results.json")

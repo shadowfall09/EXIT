@@ -36,7 +36,7 @@ export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
 conda activate exit
 
 # Set CUDA visible devices for this task (distribute across 4 GPUs)
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=1
 
 # Change to project directory
 cd /home/yichengtao/EXIT
@@ -59,14 +59,14 @@ EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 RETRIEVER_MODEL="google/gemma-2b-it"
 COMPRESSION_MODEL="Yugong09/exit_reproduction"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
-TASKS="HotpotQA"
+TASKS="TQA"
 DATA_ROOT="/mnt/data6/yichengtao/data/retrieval"
 RETRIEVER="contriever-msmarco"
 
 # Test configuration
 FILTER_RATIO_CONTEXT=0.7
-FILTER_RATIO_RELEVANCE=0.7
-OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/tiered_filter70_70"
+FILTER_RATIO_RELEVANCE=0.5
+OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/tiered_filter${FILTER_RATIO_CONTEXT}_${FILTER_RATIO_RELEVANCE}"
 COMPRESSION_THRESHOLD=0.1
 
 # Run test for this configuration
@@ -91,6 +91,8 @@ export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
 export HF_HOME=/mnt/data6/yichengtao/hf_cache
 export TOKENIZERS_PARALLELISM=false
 
+    # --max_samples 10 \
+
 python test_exit_semantic.py \
     --embedding_model "$EMBEDDING_MODEL" \
     --compression_model "$COMPRESSION_MODEL" \
@@ -99,7 +101,6 @@ python test_exit_semantic.py \
     --data_root "$DATA_ROOT" \
     --tasks $TASKS \
     --top_k 5 \
-    --max_samples 100 \
     --retriever "$RETRIEVER" \
     --semantic_filter_ratio_context "$FILTER_RATIO_CONTEXT" \
     --semantic_filter_ratio_relevance "$FILTER_RATIO_RELEVANCE" \
