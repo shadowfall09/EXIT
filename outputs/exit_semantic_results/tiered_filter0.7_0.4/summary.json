@@ -1,0 +1,23 @@
+{
+  "HotpotQA": {
+    "exact_match": 0.27697501688048615,
+    "f1": 0.3834630940458642,
+    "latency": 1.9030377467527009,
+    "num_samples": 7405,
+    "avg_original_tokens": 700.894665766374,
+    "avg_compressed_tokens": 116.58514517218096,
+    "token_compression_ratio": 0.1667743625691638,
+    "char_compression_ratio": 0.15816448856187634,
+    "avg_timing": {
+      "sentence_split": 0.008663684109591858,
+      "hyde_generation": 2.4121327628806023e-06,
+      "query_encoding": 0.04426526852671477,
+      "doc_encoding": 0.5023828248571979,
+      "similarity_compute": 0.37852660294403345,
+      "filtering": 0.00011840397888224806,
+      "exit_inference": 0.7333030324300989,
+      "total_compress": 1.6673147281386578,
+      "generation_time": 0.23559388998470782
+    }
+  }
+}

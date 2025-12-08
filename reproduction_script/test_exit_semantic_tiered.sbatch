@@ -36,7 +36,7 @@ export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
 conda activate exit
 
 # Set CUDA visible devices for this task (distribute across 4 GPUs)
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=2
 
 # Change to project directory
 cd /home/yichengtao/EXIT
@@ -59,13 +59,13 @@ EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 RETRIEVER_MODEL="google/gemma-2b-it"
 COMPRESSION_MODEL="Yugong09/exit_reproduction"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
-TASKS="TQA"
+TASKS="HotpotQA"
 DATA_ROOT="/mnt/data6/yichengtao/data/retrieval"
 RETRIEVER="contriever-msmarco"
 
 # Test configuration
 FILTER_RATIO_CONTEXT=0.7
-FILTER_RATIO_RELEVANCE=0.5
+FILTER_RATIO_RELEVANCE=0.4
 OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/tiered_filter${FILTER_RATIO_CONTEXT}_${FILTER_RATIO_RELEVANCE}"
 COMPRESSION_THRESHOLD=0.1
 

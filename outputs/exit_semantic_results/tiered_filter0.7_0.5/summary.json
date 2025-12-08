@@ -1,0 +1,23 @@
+{
+  "2wikimultihop": {
+    "exact_match": 0.14980916030534353,
+    "f1": 0.24581910104129703,
+    "latency": 2.307127261453761,
+    "num_samples": 12576,
+    "avg_original_tokens": 730.3064567430025,
+    "avg_compressed_tokens": 103.67430025445293,
+    "token_compression_ratio": 0.14262586562329002,
+    "char_compression_ratio": 0.13082863158606778,
+    "avg_timing": {
+      "sentence_split": 0.008782858915304713,
+      "hyde_generation": 2.5168364587934264e-06,
+      "query_encoding": 0.044264056167681406,
+      "doc_encoding": 0.5547117665410042,
+      "similarity_compute": 0.3997082920702359,
+      "filtering": 0.00013082876384409937,
+      "exit_inference": 0.9305993366332455,
+      "total_compress": 1.938269498011538,
+      "generation_time": 0.36871208969039165
+    }
+  }
+}
