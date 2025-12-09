@@ -14,7 +14,7 @@
 #SBATCH --mail-user=yt2@andrew.cmu.edu
 
 # Test configuration:
-# EXIT-Semantic with semantic_filter_ratio=0.7 (70%)
+# EXIT-Semantic with semantic_filter_ratio_context=0.7 semantic_filter_ratio_relevance=0.5
 # With compression_threshold=0.1
 
 # Print job information
@@ -36,7 +36,7 @@ export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
 conda activate exit
 
 # Set CUDA visible devices for this task (distribute across 4 GPUs)
-export CUDA_VISIBLE_DEVICES=$((SLURM_ARRAY_TASK_ID % 4))
+export CUDA_VISIBLE_DEVICES=2
 
 # Change to project directory
 cd /home/yichengtao/EXIT
@@ -59,19 +59,19 @@ EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 RETRIEVER_MODEL="google/gemma-2b-it"
 COMPRESSION_MODEL="Yugong09/exit_reproduction"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
-TASKS="2wikimultihop"
+TASKS="HotpotQA"
 DATA_ROOT="/mnt/data6/yichengtao/data/retrieval"
 RETRIEVER="contriever-msmarco"
 
 # Test configuration
-FILTER_RATIO=0.7
-FILTER_PERCENT=70
-OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1"
+FILTER_RATIO_CONTEXT=0.7
+FILTER_RATIO_RELEVANCE=0.4
+OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/tiered_filter${FILTER_RATIO_CONTEXT}_${FILTER_RATIO_RELEVANCE}"
 COMPRESSION_THRESHOLD=0.1
 
 # Run test for this configuration
 echo "=========================================="
-echo "TEST: EXIT-Semantic (filter=${FILTER_PERCENT}%, compression_threshold=${COMPRESSION_THRESHOLD})"
+echo "TEST: EXIT-Semantic (filter_context=${FILTER_RATIO_CONTEXT}, filter_relevance=${FILTER_RATIO_RELEVANCE}, compression_threshold=${COMPRESSION_THRESHOLD})"
 echo "GPU: $CUDA_VISIBLE_DEVICES"
 echo "=========================================="
 echo ""
@@ -81,7 +81,8 @@ echo "Reader Model: $READER_MODEL"
 echo "Retriever Model: $RETRIEVER_MODEL"
 echo "Output Directory: $OUTPUT_DIR"
 echo "Tasks: $TASKS"
-echo "Semantic Filter Ratio: $FILTER_RATIO (${FILTER_PERCENT}%)"
+echo "Semantic Filter Ratio Context: $FILTER_RATIO_CONTEXT"
+echo "Semantic Filter Ratio Relevance: $FILTER_RATIO_RELEVANCE"
 echo "Compression Threshold: $COMPRESSION_THRESHOLD"
 echo ""
 # Force HuggingFace cache location with all possible environment variables
@@ -89,6 +90,8 @@ export TRANSFORMERS_CACHE=/mnt/data6/yichengtao/hf_cache
 export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
 export HF_HOME=/mnt/data6/yichengtao/hf_cache
 export TOKENIZERS_PARALLELISM=false
+
+    # --max_samples 10 \
 
 python test_exit_semantic.py \
     --embedding_model "$EMBEDDING_MODEL" \
@@ -99,8 +102,8 @@ python test_exit_semantic.py \
     --tasks $TASKS \
     --top_k 5 \
     --retriever "$RETRIEVER" \
-    --semantic_filter_ratio_context "$FILTER_RATIO" \
-    --semantic_filter_ratio_relevance "$FILTER_RATIO" \
+    --semantic_filter_ratio_context "$FILTER_RATIO_CONTEXT" \
+    --semantic_filter_ratio_relevance "$FILTER_RATIO_RELEVANCE" \
     --compression_threshold "$COMPRESSION_THRESHOLD" \
     --output_dir "$OUTPUT_DIR"
 

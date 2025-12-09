@@ -1,22 +1,12 @@
 {
-  "HotpotQA": {
-    "exact_match": 0.2835921674544227,
-    "f1": 0.39134547785964224,
-    "latency": 2.5610590984658725,
-    "num_samples": 7405,
-    "avg_original_tokens": 700.894665766374,
-    "avg_compressed_tokens": 191.5257258609048,
-    "token_compression_ratio": 0.27418583607775227,
-    "char_compression_ratio": 0.2614271062386562
-  },
-  "TQA": {
-    "exact_match": 0.5778308141076638,
-    "f1": 0.6787063070472884,
-    "latency": 2.4203675182072435,
-    "num_samples": 11313,
-    "avg_original_tokens": 683.844515159551,
-    "avg_compressed_tokens": 200.7966056748873,
-    "token_compression_ratio": 0.2940409280982369,
-    "char_compression_ratio": 0.2808850484846372
+  "2wikimultihop": {
+    "exact_match": 0.15768129770992367,
+    "f1": 0.25266491457292756,
+    "latency": 2.803656649233124,
+    "num_samples": 12576,
+    "avg_original_tokens": 730.3064567430025,
+    "avg_compressed_tokens": 163.9313772264631,
+    "token_compression_ratio": 0.22465556630151232,
+    "char_compression_ratio": 0.20782539047557205
   }
 }

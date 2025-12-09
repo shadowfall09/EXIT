@@ -9,13 +9,16 @@
 #SBATCH --gres=gpu:1
 #SBATCH --partition=aries
 #SBATCH --time=48:00:00
-#SBATCH --array=0
+#SBATCH --array=0-2%4
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=yt2@andrew.cmu.edu
 
-# Test configuration:
-# EXIT-Semantic with semantic_filter_ratio=0.7 (70%)
-# With compression_threshold=0.1
+# Job array indices:
+# 0: EXIT-Semantic with semantic_filter_ratio=0.5 (50%)
+# 1: EXIT-Semantic with semantic_filter_ratio=0.3 (30%)
+# 2: EXIT-Semantic with semantic_filter_ratio=0.7 (70%)
+# All with compression_threshold=0.1
+# Will run on 4 GPUs with SLURM scheduling (max 4 parallel tasks)
 
 # Print job information
 echo "=========================================="
@@ -28,21 +31,16 @@ echo "=========================================="
 
 # Activate conda environment
 source ~/miniconda3/etc/profile.d/conda.sh
-
-# Set HuggingFace cache BEFORE activating environment
-export HF_HOME=/mnt/data6/yichengtao/hf_cache
-export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
-
 conda activate exit
 
 # Set CUDA visible devices for this task (distribute across 4 GPUs)
-export CUDA_VISIBLE_DEVICES=$((SLURM_ARRAY_TASK_ID % 4))
+# export CUDA_VISIBLE_DEVICES=$((SLURM_ARRAY_TASK_ID % 4))
 
 # Change to project directory
 cd /home/yichengtao/EXIT
 
-# Ensure cache directories exist
-mkdir -p /mnt/data6/yichengtao/hf_cache/datasets
+# Set HuggingFace cache
+export HF_HOME=/mnt/data6/yichengtao/hf_cache
 
 # Print environment info
 echo ""
@@ -58,21 +56,40 @@ echo ""
 EMBEDDING_MODEL="Qwen/Qwen3-Embedding-4B"
 RETRIEVER_MODEL="google/gemma-2b-it"
 COMPRESSION_MODEL="Yugong09/exit_reproduction"
+HYPOTHETICAL_DOCUMENT_MODEL="meta-llama/Llama-3.1-8B-Instruct"
 READER_MODEL="meta-llama/Llama-3.1-8B-Instruct"
-TASKS="2wikimultihop"
+TASKS="HotpotQA TQA"
 DATA_ROOT="/mnt/data6/yichengtao/data/retrieval"
 RETRIEVER="contriever-msmarco"
 
-# Test configuration
-FILTER_RATIO=0.7
-FILTER_PERCENT=70
-OUTPUT_DIR="/home/yichengtao/EXIT/outputs/exit_semantic_results/filter70_th0.1"
+# Define test configurations array
+# Array index: 0 = filter50_th0.1, 1 = filter30_th0.1, 2 = filter70_th0.1
+FILTER_RATIOS=(0.5 0.3 0.7)
+OUTPUT_DIRS=(
+    "/home/yichengtao/EXIT/outputs/exit_semantic_hyde_results/filter50_th0.1"
+    "/home/yichengtao/EXIT/outputs/exit_semantic_hyde_results/filter30_th0.1"
+    "/home/yichengtao/EXIT/outputs/exit_semantic_hyde_results/filter70_th0.1"
+)
+
+# Get configuration for this task
+FILTER_RATIO=${FILTER_RATIOS[$SLURM_ARRAY_TASK_ID]}
+OUTPUT_DIR=${OUTPUT_DIRS[$SLURM_ARRAY_TASK_ID]}
+NUM_HYPOTHETICAL_DOCUMENTS=5
 COMPRESSION_THRESHOLD=0.1
+
+# Determine filter percentage for display
+if [ "$FILTER_RATIO" = "0.5" ]; then
+    FILTER_PERCENT=50
+elif [ "$FILTER_RATIO" = "0.3" ]; then
+    FILTER_PERCENT=30
+elif [ "$FILTER_RATIO" = "0.7" ]; then
+    FILTER_PERCENT=70
+fi
 
 # Run test for this configuration
 echo "=========================================="
 echo "TEST: EXIT-Semantic (filter=${FILTER_PERCENT}%, compression_threshold=${COMPRESSION_THRESHOLD})"
-echo "GPU: $CUDA_VISIBLE_DEVICES"
+echo "Task ID: $SLURM_ARRAY_TASK_ID / GPU: $CUDA_VISIBLE_DEVICES"
 echo "=========================================="
 echo ""
 echo "Embedding Model: $EMBEDDING_MODEL"
@@ -84,11 +101,6 @@ echo "Tasks: $TASKS"
 echo "Semantic Filter Ratio: $FILTER_RATIO (${FILTER_PERCENT}%)"
 echo "Compression Threshold: $COMPRESSION_THRESHOLD"
 echo ""
-# Force HuggingFace cache location with all possible environment variables
-export TRANSFORMERS_CACHE=/mnt/data6/yichengtao/hf_cache
-export HF_DATASETS_CACHE=/mnt/data6/yichengtao/hf_cache/datasets
-export HF_HOME=/mnt/data6/yichengtao/hf_cache
-export TOKENIZERS_PARALLELISM=false
 
 python test_exit_semantic.py \
     --embedding_model "$EMBEDDING_MODEL" \
@@ -102,6 +114,7 @@ python test_exit_semantic.py \
     --semantic_filter_ratio_context "$FILTER_RATIO" \
     --semantic_filter_ratio_relevance "$FILTER_RATIO" \
     --compression_threshold "$COMPRESSION_THRESHOLD" \
+    --num_hypothetical_documents "$NUM_HYPOTHETICAL_DOCUMENTS" \
     --output_dir "$OUTPUT_DIR"
 
 if [ $? -eq 0 ]; then
