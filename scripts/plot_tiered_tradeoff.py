@@ -30,6 +30,16 @@ for ratio, filepath in data_files:
         latency.append(metrics['latency'])
         token_compression.append(metrics['token_compression_ratio'])
 
+# Read baseline data
+with open(r"outputs\baseline_results\reproduction_0.1\HotpotQA_results.json", 'r', encoding="utf-8") as f:
+    baseline_data = json.load(f)
+    baseline_metrics = baseline_data['metrics']
+    
+    baseline_em = baseline_metrics['exact_match']
+    baseline_f1 = baseline_metrics['f1']
+    baseline_latency = baseline_metrics['latency']
+    baseline_token_compression = baseline_metrics['token_compression_ratio']
+
 # Create figure with two subplots
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
 
@@ -47,8 +57,13 @@ ax1_twin.set_ylabel('F1 Score', color=color2, fontsize=12)
 line2 = ax1_twin.plot(ratios, f1_scores, 's-', color=color2, label='F1 Score', linewidth=2, markersize=8)
 ax1_twin.tick_params(axis='y', labelcolor=color2)
 
-ax1.set_title('QA Performance vs Semantic Filter Relevance Ratio', fontsize=14)
-lines1 = line1 + line2
+ax1.set_title('HotpotQA Performance vs Semantic Filter Relevance Ratio', fontsize=14)
+
+# Add baseline horizontal lines for QA performance
+line_base_em = ax1.axhline(y=baseline_em, color=color1, linestyle='--', linewidth=1.5, alpha=0.7, label='Baseline: Original EXIT (EM)')
+line_base_f1 = ax1_twin.axhline(y=baseline_f1, color=color2, linestyle='--', linewidth=1.5, alpha=0.7, label='Baseline: Original EXIT (F1)')
+
+lines1 = line1 + line2 + [line_base_em, line_base_f1]
 labels1 = [l.get_label() for l in lines1]
 ax1.legend(lines1, labels1, loc='best')
 
@@ -67,7 +82,12 @@ line4 = ax2_twin.plot(ratios, token_compression, 's-', color=color4, label='Toke
 ax2_twin.tick_params(axis='y', labelcolor=color4)
 
 ax2.set_title('Compression Performance vs Semantic Filter Relevance Ratio', fontsize=14)
-lines2 = line3 + line4
+
+# Add baseline horizontal lines for compression performance
+line_base_latency = ax2.axhline(y=baseline_latency, color=color3, linestyle='--', linewidth=1.5, alpha=0.7, label='Baseline: Original EXIT (Latency)')
+line_base_token = ax2_twin.axhline(y=baseline_token_compression, color=color4, linestyle='--', linewidth=1.5, alpha=0.7, label='Baseline: Original EXIT (Token)')
+
+lines2 = line3 + line4 + [line_base_latency, line_base_token]
 labels2 = [l.get_label() for l in lines2]
 ax2.legend(lines2, labels2, loc='best')
 
